@@ -1,4 +1,4 @@
-# Nombre del laboratorio 
+# Práctica 3.1. Binding con Angular.
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
