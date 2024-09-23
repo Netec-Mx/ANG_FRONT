@@ -1,4 +1,4 @@
-# Nombre del laboratorio 
+# Práctica 8.2. Instalación de Angular.
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
