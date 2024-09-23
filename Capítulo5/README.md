@@ -1,4 +1,4 @@
-# Nombre del laboratorio 
+# Práctica 5. Utilizando directivas.
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
