@@ -1,4 +1,4 @@
-# Nombre del laboratorio 
+# Práctica 6.1. Usando módulos. 
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
