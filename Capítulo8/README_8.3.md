@@ -1,4 +1,4 @@
-# Nombre del laboratorio 
+# Práctica 8.3. Instalando Extensiones de IDE para Angular.
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
