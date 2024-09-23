@@ -1,4 +1,4 @@
-# Nombre del laboratorio 
+# Práctica 8.1. Instalación de NodeJS.
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
