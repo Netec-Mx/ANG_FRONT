@@ -1,41 +1,100 @@
-# Nombre del laboratorio 
+## Instalación de PrimeNG y PrimeIcons
 
-## Objetivo de la práctica:
-Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
+1. Primero, asegúrate de tener PrimeNG y PrimeIcons instalados en tu proyecto. Si aún no lo has hecho, ejecuta:
 
-## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
+````bash
 
-![diagrama1](../images/img1.png)
+npm install primeng primeicons
+````
+2. Configuración de Angular
 
-## Duración aproximada:
-- xx minutos.
+- Importar Módulos
+- Abre tu archivo app.module.ts y añade los módulos que deseas usar. Por ejemplo, si deseas usar un botón y un campo de entrada, tu archivo podría verse así:
 
-## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
-| --- | --- | ---|
-| Netec2024 | edgardo@netec.com | 123abc |
+````typescript
 
-## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { AppComponent } from './app.component';
 
-Paso 2. <!-- Añadir instrucción -->
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    ButtonModule,
+    InputTextModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
 
-Paso 3. <!-- Añadir instrucción -->
+````
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+3. Agregar Estilos
 
-Paso 2. <!-- Añadir instrucción -->
+- Asegúrate de añadir los estilos de PrimeNG en tu archivo styles.css o styles.scss. Puedes hacerlo así:
 
-Paso 3. <!-- Añadir instrucción -->
+````css
+@import "~primeng/resources/themes/saga-blue/theme.css"; /* Cambia "saga-blue" por el tema que prefieras */
+@import "~primeng/resources/primeng.min.css";
+@import "~primeicons/primeicons.css";
+````
 
-### Resultado esperado
-En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+4. Usar Componentes en las Plantillas
+
+- Ahora puedes empezar a usar los componentes de PrimeNG en tus archivos de plantilla. Por ejemplo, en app.component.html:
+
+````html
+<div class="p-fluid">
+  <h2>Ejemplo de PrimeNG</h2>
+  <p-inputText placeholder="Ingrese su nombre" [(ngModel)]="nombre"></p-inputText>
+  <p-button label="Enviar" icon="pi pi-check" (click)="enviar()"></p-button>
+</div>
+````
+5. Lógica en el Componente
+
+- Asegúrate de tener la lógica necesaria en tu componente. Aquí hay un ejemplo básico en app.component.ts:
+
+````typescript
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+})
+export class AppComponent {
+  nombre: string = '';
+
+  enviar() {
+    console.log('Nombre ingresado:', this.nombre);
+  }
+}
+````
+
+6. Ejecución de la Aplicación
+
+- Finalmente, ejecuta tu aplicación con:
+
+````bash
+ng serve
+
+````
+
+- Visita http://localhost:4200 y deberías ver tu formulario con los componentes de PrimeNG.
+
+## Ejemplo de Otros Componentes
+
+- Puedes integrar otros componentes de PrimeNG siguiendo un patrón similar. Solo importa el módulo correspondiente en tu app.module.ts y utiliza su etiqueta en tus plantillas. 
+
+- Aquí hay algunos ejemplos de componentes populares:
+
+- Tabla: TableModule
+- Diálogo: DialogModule
+- Menú: MenuModule
+- Gráfico: ChartModule

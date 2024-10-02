@@ -1,41 +1,159 @@
-# Práctica 5. Utilizando directivas.
+## Ejercicio Práctico Usando Directivas Sin Personalizadas
 
-## Objetivo de la práctica:
-Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
+## Objetivo
+1. Crear una pequeña aplicación Angular que muestre una lista de tareas con funcionalidad para agregar, marcar como completadas y eliminar tareas. Utilizaremos las directivas   
 
-## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
+- *ngFor, *ngIf, *ngClass, y *ngModel.
 
-![diagrama1](../images/img1.png)
+1. Paso 1: Configuración del Proyecto
 
-## Duración aproximada:
-- xx minutos.
+ - Crea un nuevo proyecto Angular:
 
-## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
-| --- | --- | ---|
-| Netec2024 | edgardo@netec.com | 123abc |
+```bash
+ng new tareas-app
+cd tareas-app
+ng serve
+```
 
-## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+ - Abre el proyecto en tu editor de código.
 
-Paso 2. <!-- Añadir instrucción -->
+2. Paso 2: Crear el Componente
 
-Paso 3. <!-- Añadir instrucción -->
+- Genera un nuevo componente para las tareas:
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+```bash
+ng generate component tareas
 
-Paso 2. <!-- Añadir instrucción -->
+```
 
-Paso 3. <!-- Añadir instrucción -->
+3. Paso 3: Implementar la Lógica en el Componente
+- Abre tareas.component.ts y agrega la siguiente lógica:
 
-### Resultado esperado
-En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-tareas',
+  templateUrl: './tareas.component.html',
+  styleUrls: ['./tareas.component.css']
+})
+export class TareasComponent {
+  nuevaTarea: string = '';
+  tareas: { nombre: string, completada: boolean }[] = [];
+
+  agregarTarea() {
+    if (this.nuevaTarea.trim()) {
+      this.tareas.push({ nombre: this.nuevaTarea, completada: false });
+      this.nuevaTarea = '';
+    }
+  }
+
+  eliminarTarea(index: number) {
+    this.tareas.splice(index, 1);
+  }
+}
+
+```
+
+4. Paso 4: Crear la Plantilla HTML
+
+- Abre tareas.component.html y agrega el siguiente código:
+
+```html
+<h2>Lista de Tareas</h2>
+
+<input [(ngModel)]="nuevaTarea" placeholder="Agregar nueva tarea" />
+<button (click)="agregarTarea()">Agregar</button>
+
+<ul>
+  <li *ngFor="let tarea of tareas; let i = index">
+    <span [ngClass]="{ 'completada': tarea.completada }" (click)="tarea.completada = !tarea.completada">
+      {{ tarea.nombre }}
+    </span>
+    <button (click)="eliminarTarea(i)">Eliminar</button>
+  </li>
+</ul>
+
+<p *ngIf="tareas.length === 0">No hay tareas en la lista.</p>
+```
+
+5. Paso 5: Estilos CSS (Opcional)
+
+- Abre tareas.component.css y agrega algo de estilo:
+
+```css
+.completada {
+  text-decoration: line-through;
+  color: gray;
+}
+```
+
+6. Paso 6: Integrar el Componente en la Aplicación
+
+- Asegúrate de que tu componente tareas se incluya en el app.component.html:
+
+```html
+Copy code
+<app-tareas></app-tareas>
+```
+
+7. Paso 7: Probar la Aplicación
+
+- Ejecuta la aplicación si no lo has hecho:
+
+```bash
+Copy code
+ng serve
+
+```
+
+## Ejercicio Independiente: Crear Directivas Personalizadas
+
+- Ejercicio: Directiva de Resaltado de Texto
+
+1. Genera la Directiva:
+
+- Usa Angular CLI para generar una directiva llamada resaltado.
+
+```bash
+Copy code
+ng generate directive resaltado
+```
+
+2. Implementa la Lógica:
+
+- Abre resaltado.directive.ts y agrega la siguiente lógica para cambiar el color del texto al pasar el ratón:
+
+```typescript
+Copy code
+import { Directive, ElementRef, Renderer2, HostListener } from '@angular/core';
+
+@Directive({
+  selector: '[appResaltado]'
+})
+export class ResaltadoDirective {
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.renderer.setStyle(this.el.nativeElement, 'backgroundColor', 'yellow');
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.renderer.removeStyle(this.el.nativeElement, 'backgroundColor');
+  }
+}
+
+```
+
+3. Usa la Directiva:
+
+- En cualquier componente de tu aplicación, aplica la directiva:
+
+```html
+Copy code
+<p appResaltado>Este texto se resaltará al pasar el ratón.</p>
+```
+
+4. Probar la Directiva:
+
+- Ejecuta la aplicación y verifica que el texto se resalte al pasar el ratón.

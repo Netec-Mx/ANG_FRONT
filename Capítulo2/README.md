@@ -1,41 +1,147 @@
-# Nombre del laboratorio 
+## Creación de un Componente Manualmente
 
-## Objetivo de la práctica:
-Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
+1. Crear la Carpeta del Componente:
 
-## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
+    - Navega a la carpeta donde deseas crear el componente (por ejemplo, src/app).
+    - Crea una nueva carpeta para tu componente, por ejemplo, mi-componente.
 
-![diagrama1](../images/img1.png)
+2. Crear el Archivo TypeScript:
 
-## Duración aproximada:
-- xx minutos.
+    - Dentro de la carpeta mi-componente, crea un archivo llamado mi-componente.component.ts.
+    - Agrega el siguiente código:
 
-## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
-| --- | --- | ---|
-| Netec2024 | edgardo@netec.com | 123abc |
+    ````typescript
+    import { Component } from '@angular/core';
 
-## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+    @Component({
+    selector: 'app-mi-componente',
+    templateUrl: './mi-componente.component.html',
+    styleUrls: ['./mi-componente.component.css']
+    })
+    export class MiComponenteComponent {
+    // Lógica del componente
+    }
+    ````
+3. Crear el Archivo de Template:
 
-Paso 2. <!-- Añadir instrucción -->
+    - Crea un archivo llamado mi-componente.component.html.
+    - Agrega el contenido HTML que deseas mostrar en tu componente.
 
-Paso 3. <!-- Añadir instrucción -->
+4. Crear el Archivo de Estilos:
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+    - Crea un archivo llamado mi-componente.component.css.
+    - Añade los estilos específicos para tu componente.
 
-Paso 2. <!-- Añadir instrucción -->
+5. Declarar el Componente en el Módulo:
 
-Paso 3. <!-- Añadir instrucción -->
+    - Abre el archivo app.module.ts y añade tu nuevo componente a la sección de declarations:
+    
+    ````typescript
+    import { MiComponenteComponent } from './mi-componente/mi-componente.component';
 
-### Resultado esperado
-En esta sección se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+    @NgModule({
+    declarations: [
+        MiComponenteComponent,
+        // otros componentes
+    ],
+    // otras propiedades
+    })
+    export class AppModule { }
+    ````
+
+6. Usar el Componente:
+
+    - En el template de otro componente (por ejemplo, app.component.html), usa el selector de tu nuevo componente:
+
+    ````html
+    <app-mi-componente></app-mi-componente>
+    ````
+
+
+## Creación de un Componente con Angular CLI
+
+1. Abrir la Terminal:
+
+    - Navega a la carpeta raíz de tu proyecto Angular.
+
+2. Ejecutar el Comando de Generación:
+
+    - Usa el siguiente comando para crear un nuevo componente:
+
+``
+    ng generate component mi-componente
+``
+
+    - O simplemente
+
+``
+    ng g c mi-componente
+``
+
+3. Archivos Generados:
+
+    - Angular CLI generará automáticamente:
+
+        - mi-componente.component.ts
+        - mi-componente.component.html
+        - mi-componente.component.css
+        - mi-componente.component.spec.ts
+
+    - Además, el nuevo componente se añadirá automáticamente a las declaraciones en el módulo correspondiente (usualmente app.module.ts).
+
+4. Usar el Componente:
+
+    - Abre el archivo app.component.html o el template donde desees utilizar el nuevo componente y añade:
+
+````html
+    <app-mi-componente></app-mi-componente>
+````
+
+## Instalación de Bootstrap con npm
+
+1. Abrir la Terminal: Asegúrate de estar en la carpeta raíz de tu proyecto Angular.
+
+2. Instalar Bootstrap: Ejecuta el siguiente comando en la terminal:
+
+    - npm install bootstrap
+
+## Incluir Bootstrap en el Proyecto
+
+3. Modificar angular.json: Abre el archivo angular.json y busca la sección styles. Añade la ruta de Bootstrap como sigue:
+
+```json
+    "styles": [
+    "src/styles.css",
+    "node_modules/bootstrap/dist/css/bootstrap.min.css"
+    ],
+```
+
+## Usar Bootstrap en tu Aplicación
+
+4. Reiniciar el Servidor: Si el servidor de desarrollo está en ejecución, reinícialo para que los cambios surtan efecto.
+
+5. Aplicar Clases de Bootstrap: Ahora puedes utilizar las clases de Bootstrap en tus componentes. Por ejemplo, en app.component.html:
+
+````html
+    <button class="btn btn-primary">Botón Bootstrap</button>
+````
+
+## Opcional: Integrar Bootstrap JavaScript
+
+Si necesitas componentes de JavaScript de Bootstrap (como modales o dropdowns), puedes instalar jQuery y Popper.js:
+
+1. Instalar jQuery y Popper.js:
+
+``
+    npm install jquery popper.js
+``
+
+2. Modificar angular.json: Añade jQuery y Popper.js en la sección scripts:
+
+```json
+    "scripts": [
+    "node_modules/jquery/dist/jquery.min.js",
+    "node_modules/popper.js/dist/umd/popper.min.js",
+    "node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ]
+```
