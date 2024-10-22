@@ -1,6 +1,10 @@
-## Instalación de PrimeNG y PrimeIcons
+## Práctica 8. Instalación de PrimeNG y PrimeIcons
 
-1. Primero, asegúrate de tener PrimeNG y PrimeIcons instalados en tu proyecto. Si aún no lo has hecho, ejecuta:
+## Objetivos
+- Instalar y configurar PrimeNG y Primelcons en tu proyecto Angular.
+- Aprender a integrar los conjuntos de estos componentes y estilos en tu aplicación.
+
+1. Primero, asegúrate de tener PrimeNG y PrimeIcons instalados en tu proyecto. Si aún no lo has hecho, ejecutar:
 
 ````bash
 
@@ -9,7 +13,7 @@ npm install primeng primeicons
 2. Configuración de Angular
 
 - Importar Módulos
-- Abre tu archivo app.module.ts y añade los módulos que deseas usar. Por ejemplo, si deseas usar un botón y un campo de entrada, tu archivo podría verse así:
+- Abrir tu archivo app.module.ts y añadir los módulos que deseas usar. Por ejemplo, si deseas usar un botón y un campo de entrada, tu archivo podría verse así:
 
 ````typescript
 
@@ -79,7 +83,7 @@ export class AppComponent {
 
 6. Ejecución de la Aplicación
 
-- Finalmente, ejecuta tu aplicación con:
+- Finalmente, ejecutar tu aplicación con:
 
 ````bash
 ng serve
@@ -90,7 +94,7 @@ ng serve
 
 ## Ejemplo de Otros Componentes
 
-- Puedes integrar otros componentes de PrimeNG siguiendo un patrón similar. Solo importa el módulo correspondiente en tu app.module.ts y utiliza su etiqueta en tus plantillas. 
+- Puedes integrar otros componentes de PrimeNG siguiendo un patrón similar. Solo importa el módulo correspondiente en tu app.module.ts y utilizar su etiqueta en tus plantillas. 
 
 - Aquí hay algunos ejemplos de componentes populares:
 
