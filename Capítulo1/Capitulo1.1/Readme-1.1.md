@@ -6,9 +6,15 @@ Con Node.js, por fin puedes crear aplicaciones web con conexiones bidireccionale
 
 Si quieres mejorar tus habilidades de desarrollo web y convertirte en un desarrollador de JavaScript full-stack, Node.js prepara el camino hacia esa entusiasta palabra de moda.
 
-## Obejtivos
+## Obejtivos de la práctica:
 
 1. Guiar al estudiante en la instalación de Node.js.
+
+# Duración aproximada:
+
+- 10 minutos.
+
+# Instrucciones
 
 ## Tarea 1. Abrir una terminal o el cmd de windows
 
