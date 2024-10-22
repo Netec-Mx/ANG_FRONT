@@ -1,4 +1,9 @@
+# Práctica 10. Estructurando aplicaciones Angular: Uso de módulos para la modularidad
 
+# Objetivo
+- Crear una aplicación Angular que gestione una lista de tareas dividiendo la funcionalidad en módulos, específicamente utilizando un módulo de tareas y un módulo compartido.
+
+  
 1. Módulo Raíz
 
 AppModule: Es el módulo principal de una aplicación Angular, definido en app.module.ts. Aquí se declaran todos los componentes, directivas y servicios que se usarán en la aplicación. Se importa el BrowserModule, que es necesario para ejecutar aplicaciones en el navegador.
@@ -50,10 +55,7 @@ export class AppModule { }
 
 ## Ejercicio Práctico Usando Módulos en Angular
 
-## Objetivo
-- Crear una aplicación Angular que gestione una lista de tareas dividiendo la funcionalidad en módulos, específicamente utilizando un módulo de tareas y un módulo compartido.
-
-## Pasos a Seguir
+## Pasos a seguir
 1. Configurar el Proyecto:
 
 - Crea un nuevo proyecto Angular:
