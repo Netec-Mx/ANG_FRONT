@@ -1,3 +1,9 @@
+## Práctica 7. Creación de Pipes personalizados en Angular
+
+## Objetivos
+- Crear y utlizar Pipes personalizados en Angular.
+- Aprender a transformar datos en tu aplicación de manera eficiente.
+
 ## Tipos de Data Binding
 
 1. Interpolación:
@@ -54,7 +60,7 @@
 
 <div [ngClass]="{'activo': isActivo, 'inactivo': !isActivo}">Contenido</div>
 ````
- - Aquí, la clase activo se aplica si isActivo es verdadero, y inactivo si es falso.
+ - Aquí, la clase activo se aplica si isActivo es verdadero, e inactivo si es falso.
 
 3. Estilos Binding
  - El Estilos Binding permite aplicar estilos CSS directamente a un elemento HTML usando la directiva ngStyle. Esto es útil para cambiar estilos basados en condiciones.
@@ -64,7 +70,7 @@
 
 <div [ngStyle]="{ 'background-color': color, 'font-size': tamano + 'px' }">Texto</div>
 ````
- - En este caso, color y tamano son propiedades del componente que determinan el color de fondo y el tamaño de fuente del elemento.
+ - En este caso, color y tamaño son propiedades del componente que determinan el color de fondo y el tamaño de fuente del elemento.
 
 
 
@@ -88,7 +94,7 @@
 
 4. Uso en Plantillas:
 
- - Los pipes se aplican utilizando la sintaxis {{ valor | pipeName }} en las plantillas HTML.
+ - Los Pipes se aplican utilizando la sintaxis {{ valor | pipeName }} en las plantillas HTML.
 
 ## Ejemplo de Uso de Pipes
 
@@ -100,7 +106,7 @@
 
 ````
 
-2. Creación de un Pipe Personalizado: Para crear un pipe que invierte una cadena de texto, sigue estos pasos:
+2. Creación de un Pipe Personalizado: Para crear un pipe que invierte una cadena de texto, seguir estos pasos:
 
  - Generar el pipe:
 
@@ -134,8 +140,6 @@ export class InvertirTextoPipe implements PipeTransform {
 <p>{{ 'Angular' | invertirTexto }}</p> <!-- Salida: "ralugnA" -->
 
 ````
-
-## Creación de Pipes Personalizados en Angular
 
 ## Pasos para Crear un Pipe Personalizado
 
@@ -173,7 +177,7 @@ export class NombreDelPipe implements PipeTransform {
 
 ````
 
-4. Registrar el Pipe: Asegúrate de que el pipe esté declarado en el módulo correspondiente (por ejemplo, app.module.ts):
+4. Registrar el Pipe: Asegúrate de que el Pipe esté declarado en el módulo correspondiente (por ejemplo, app.module.ts):
 
 ````typescript
 
@@ -195,7 +199,7 @@ export class AppModule {}
 ````
 
 ## Ejemplo de un Pipe Personalizado
- - Supongamos que quieres crear un pipe que invierte una cadena de texto:
+ - Supongamos que quieres crear un Pipe que invierte una cadena de texto:
 
 1. Implementación del Pipe:
 
@@ -265,7 +269,7 @@ export class InvertirTextoPipe implements PipeTransform {
 ng add @angular/router
 
 ````
-2. Definir Rutas: Crea un archivo de enrutamiento (por ejemplo, app-routing.module.ts):
+2. Definir Rutas: CreaR un archivo de enrutamiento (por ejemplo, app-routing.module.ts):
 
 ````typescript
 
