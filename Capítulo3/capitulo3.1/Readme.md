@@ -1,11 +1,16 @@
-## Práctica 6. Binding con Angular
+# Práctica 6. Binding con Angular
 
-## Objetivos
+## Objetivos de la práctica:
 - Implementar diferentes tipos de binding en Angular.
+
+## Duración aproximada:
+- 30 minutos.
+
+## Instrucciones
 
 ## Interpolación
 
-1. Definir una Propiedad en el Componente: En tu componente TypeScript (por ejemplo, app.component.ts), define una propiedad:
+1. Definir una Propiedad en el Componente: En tu Componente TypeScript (por ejemplo, app.component.ts), define una propiedad:
 
 ````typescript
 
@@ -83,7 +88,7 @@ export class AppComponent {
 
 ```
 
-2. Usar Property Binding en el Template: En el archivo HTML correspondiente (por ejemplo, app.component.html), utiliza property binding para enlazar la propiedad:
+2. Usar Property Binding en el Template: En el archivo HTML correspondiente (por ejemplo, app.component.html), utilizar property binding para enlazar la propiedad:
 
 ``` html
 
@@ -93,7 +98,7 @@ export class AppComponent {
 
 ## Event Binding en Angular
 
-1. Definir un Método en el Componente: En tu componente TypeScript (por ejemplo, app.component.ts), define un método:
+1. Definir un Método en el Componente: En tu Componente TypeScript (por ejemplo, app.component.ts), define un método:
 
 ```typescript
 
@@ -123,7 +128,7 @@ export class AppComponent {
 
 ```
 
-## Two way binding con Angular.
+## Two way binding con Angular
 
 1. Importar FormsModule: Asegúrate de que FormsModule esté importado en tu módulo. Abrir app.module.ts y añadir la importación:
 
@@ -169,7 +174,7 @@ export class AppComponent {
 
 ## Property Binding entre Componentes en Angular
 
-1. Crear el Componente Hijo: Primero, crear un componente que recibirá los datos. Por ejemplo, hijo.component.ts:
+1. Crear el Componente Hijo: Primero, crear un Componente que recibirá los datos. Por ejemplo, hijo.component.ts:
 
 ```typescript
 
@@ -185,7 +190,7 @@ export class HijoComponent {
 
 ```
 
-2. Crear el Componente Padre: Ahora, crear un componente padre que pasará datos al componente hijo. Por ejemplo, padre.component.ts:
+2. Crear el Componente Padre: Ahora, crear un Componente Padre que pasará datos al Componente Hijo. Por ejemplo, padre.component.ts:
 
 
 ```typescript
@@ -205,7 +210,7 @@ export class HijoComponent {
 
 ```
 
-3. Incluir el Componente Hijo en el Padre: Asegúrate de que el componente hijo esté declarado en el mismo módulo que el componente padre (usualmente app.module.ts):
+3. Incluir el Componente Hijo en el Padre: Asegúrate de que el Componente Hijo esté declarado en el mismo módulo que el componente padre (usualmente app.module.ts):
 
 ``` typescript
 
@@ -228,7 +233,7 @@ export class AppModule {}
 
 ```
 
-4. Usar el Componente Padre en la Aplicación: Finalmente, utilizar el componente padre en tu aplicación, por ejemplo, en app.component.html:
+4. Usar el Componente Padre en la aplicación: Finalmente, utilizar el Componente Padre en tu aplicación, por ejemplo, en app.component.html:
 
 ```html
 
@@ -236,7 +241,7 @@ export class AppModule {}
 
 ```
 
-## Event Biding entre Componentes en Angular.
+## Event Biding entre Componentes en Angular
 
 1. Crear el Componente Hijo: Primero, definir un componente hijo que emitirá un evento. Por ejemplo, hijo.component.ts:
 
