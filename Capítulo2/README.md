@@ -1,5 +1,11 @@
-## Creación de un Componente Manualmente
+## Práctica 5. Creación de un componente manualmente
 
+## Objetivos 
+ - Crear un componente en Angular de forma manual.
+ - Aprender a definir la estructura y el comportamiento del componente.
+ - Integrar el componente a una aplicación existente.
+
+## Tarea 1
 1. Crear la Carpeta del Componente:
 
     - Navega a la carpeta donde deseas crear el componente (por ejemplo, src/app).
