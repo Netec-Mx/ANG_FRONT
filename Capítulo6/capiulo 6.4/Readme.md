@@ -1,10 +1,10 @@
-## Taller Práctico: Uso de ViewChild y Referencias Locales en Angular
+## Práctica 11. Uso de ViewChild y Referencias Locales en Angular
 
-## Objetivo del Taller
+## Objetivo
 
 - Aprender a utilizar ViewChild y referencias locales en Angular para interactuar con elementos del DOM y componentes desde la lógica de un componente.
 
-## Pasos a Seguir
+## Tarea 1.
 
 1. Configurar el Proyecto
 
