@@ -1,41 +1,254 @@
-# Nombre del laboratorio 
+## Implementación de Arquitectura Limpia en Angular
 
-## Objetivo de la práctica:
-Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
+## Estructura de Carpetas
 
-## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
+- Una implementación típica de Arquitectura Limpia en Angular podría tener la siguiente estructura de carpetas:
 
-![diagrama1](../images/img1.png)
+```arduino
 
-## Duración aproximada:
-- xx minutos.
+src/
+├── app/
+│   ├── core/               // Servicios, modelos y lógica de negocio
+│   ├── features/           // Módulos de características específicas
+│   ├── shared/             // Componentes y servicios reutilizables
+│   ├── layout/             // Componentes de diseño y estructura
+│   └── app.module.ts       // Módulo principal de la aplicación
+└── assets/                 // Recursos estáticos (imágenes, etc.)
 
-## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
-| --- | --- | ---|
-| Netec2024 | edgardo@netec.com | 123abc |
+```
 
-## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+## Capas en la Arquitectura Limpia
 
-Paso 2. <!-- Añadir instrucción -->
+1. Capa de Entidades:
 
-Paso 3. <!-- Añadir instrucción -->
+Define los modelos y las reglas de negocio. Por ejemplo, podrías tener clases que representen las entidades de tu aplicación, como Usuario, Producto, etc.
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+```typescript
 
-Paso 2. <!-- Añadir instrucción -->
+export class Usuario {
+  constructor(public id: number, public nombre: string) {}
+}
+```
 
-Paso 3. <!-- Añadir instrucción -->
+2. Capa de Casos de Uso:
 
-### Resultado esperado
-En esta sección, se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+Contiene la lógica específica de la aplicación, como operaciones de creación, lectura, actualización y eliminación (CRUD). Aquí es donde se implementan los casos de uso.
+
+```typescript
+
+import { Injectable } from '@angular/core';
+import { Usuario } from '../models/usuario.model';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class UsuarioService {
+  private usuarios: Usuario[] = [];
+
+  agregarUsuario(usuario: Usuario) {
+    this.usuarios.push(usuario);
+  }
+
+  obtenerUsuarios(): Usuario[] {
+    return this.usuarios;
+  }
+}
+```
+
+3. Capa de Interfaces:
+
+Se encarga de manejar la interacción con el usuario y la comunicación con el servicio. Aquí se implementan componentes y módulos de Angular.
+
+```typescript
+
+import { Component } from '@angular/core';
+import { UsuarioService } from '../core/usuario.service';
+import { Usuario } from '../models/usuario.model';
+
+@Component({
+  selector: 'app-usuario-lista',
+  templateUrl: './usuario-lista.component.html',
+})
+export class UsuarioListaComponent {
+  usuarios: Usuario[];
+
+  constructor(private usuarioService: UsuarioService) {
+    this.usuarios = this.usuarioService.obtenerUsuarios();
+  }
+}
+```
+
+4. Capa de Infraestructura:
+
+Maneja la persistencia de datos (por ejemplo, servicios HTTP para interactuar con APIs). Esta capa se conecta a las capas internas pero no debe afectar la lógica de negocio.
+
+```typescript
+
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class ApiService {
+  constructor(private http: HttpClient) {}
+
+  obtenerDatos() {
+    return this.http.get('https://api.example.com/usuarios');
+  }
+}
+```
+
+
+## Ejercicio: Aplicación de Gestión de Tareas
+
+Objetivos del Ejercicio
+- Implementar la Arquitectura Limpia en Angular.
+- Crear un sistema que permita añadir, listar y eliminar tareas.
+- Mantener una separación clara entre las capas de entidades, casos de uso, interfaces e infraestructura.
+
+## Estructura del Proyecto
+
+1. Crea la estructura de carpetas:
+```plaintext
+Copy code
+src/
+├── app/
+│   ├── core/
+│   │   ├── models/
+│   │   ├── services/
+│   ├── features/
+│   │   └── tasks/
+│   ├── shared/
+│   ├── layout/
+│   └── app.module.ts
+
+```
+
+2. Paso 1: Definir la Entidad
+- Crea el modelo de tarea en src/app/core/models/task.model.ts:
+
+```typescript
+Copy code
+export class Task {
+  constructor(public id: number, public title: string, public completed: boolean = false) {}
+}
+
+```
+
+3. Paso 2: Crear el Servicio (Capa de Casos de Uso)
+
+- Crea un servicio para gestionar las tareas en src/app/core/services/task.service.ts:
+
+```typescript
+Copy code
+import { Injectable } from '@angular/core';
+import { Task } from '../models/task.model';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class TaskService {
+  private tasks: Task[] = [];
+  private nextId: number = 1;
+
+  addTask(title: string): Task {
+    const newTask = new Task(this.nextId++, title);
+    this.tasks.push(newTask);
+    return newTask;
+  }
+
+  getTasks(): Task[] {
+    return this.tasks;
+  }
+
+  deleteTask(id: number): void {
+    this.tasks = this.tasks.filter(task => task.id !== id);
+  }
+}
+```
+
+4. Paso 3: Crear Componentes (Capa de Interfaces)
+
+- Crea un componente para gestionar las tareas en src/app/features/tasks/task-list.component.ts:
+
+```typescript
+Copy code
+import { Component, OnInit } from '@angular/core';
+import { TaskService } from '../../core/services/task.service';
+import { Task } from '../../core/models/task.model';
+
+@Component({
+  selector: 'app-task-list',
+  template: `
+    <h2>Task List</h2>
+    <input [(ngModel)]="taskTitle" placeholder="New task" />
+    <button (click)="addTask()">Add Task</button>
+    <ul>
+      <li *ngFor="let task of tasks">
+        {{ task.title }}
+        <button (click)="deleteTask(task.id)">Delete</button>
+      </li>
+    </ul>
+  `,
+})
+export class TaskListComponent implements OnInit {
+  tasks: Task[] = [];
+  taskTitle: string = '';
+
+  constructor(private taskService: TaskService) {}
+
+  ngOnInit(): void {
+    this.loadTasks();
+  }
+
+  loadTasks(): void {
+    this.tasks = this.taskService.getTasks();
+  }
+
+  addTask(): void {
+    if (this.taskTitle) {
+      this.taskService.addTask(this.taskTitle);
+      this.taskTitle = '';
+      this.loadTasks();
+    }
+  }
+
+  deleteTask(id: number): void {
+    this.taskService.deleteTask(id);
+    this.loadTasks();
+  }
+}
+```
+
+5. Paso 4: Integrar el Componente en la Aplicación
+- Agrega el componente al módulo principal en src/app/app.module.ts:
+
+```typescript
+Copy code
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { AppComponent } from './app.component';
+import { TaskListComponent } from './features/tasks/task-list.component';
+import { TaskService } from './core/services/task.service';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    TaskListComponent,
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+  ],
+  providers: [TaskService],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+
+6. Paso 5: Probar la Aplicación
+
+- Ejecuta la aplicación con ng serve.
+- Accede a http://localhost:4200 y prueba añadir, listar y eliminar tareas.
