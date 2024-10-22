@@ -10,11 +10,11 @@ Si quieres mejorar tus habilidades de desarrollo web y convertirte en un desarro
 
 1. Guiar al estudiante en la instalación de Node.js.
 
-## Abrir una terminal o el cmd de windows
+## Tarea 1. Abrir una terminal o el cmd de windows
 
 1. Entrar en [Node.js](https://nodejs.org/es/download/) y descargar el instalador de Node.js en el sistema operativo deseado. Podemos elegir entre Windows, Mac y Linux.
 
-2. Ejecutar el archivo .exe que se descargo
+2. Ejecutar el archivo .exe que se descargo.
 
 ![cmd](../../images/Captura%20de%20pantalla%202024-09-22%20170137.png)
 
