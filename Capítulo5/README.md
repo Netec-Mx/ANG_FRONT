@@ -1,11 +1,12 @@
-## Ejercicio Práctico Usando Directivas Sin Personalizadas
+## Práctica 9. Usando Directivas Sin Personalizadas
 
 ## Objetivo
-1. Crear una pequeña aplicación Angular que muestre una lista de tareas con funcionalidad para agregar, marcar como completadas y eliminar tareas. Utilizaremos las directivas   
+
+- Crear una pequeña aplicación Angular que muestre una lista de tareas con funcionalidad para agregar, marcar como completadas y eliminar tareas. Utilizaremos las directivas   
 
 - *ngFor, *ngIf, *ngClass, y *ngModel.
 
-1. Paso 1: Configuración del Proyecto
+Tarea. 1. Configuración del Proyecto
 
  - Crea un nuevo proyecto Angular:
 
@@ -15,9 +16,9 @@ cd tareas-app
 ng serve
 ```
 
- - Abre el proyecto en tu editor de código.
+ - Abrir Tel proyecto en tu editor de código.
 
-2. Paso 2: Crear el Componente
+## Tarea 2. Crear el Componente
 
 - Genera un nuevo componente para las tareas:
 
@@ -26,8 +27,8 @@ ng generate component tareas
 
 ```
 
-3. Paso 3: Implementar la Lógica en el Componente
-- Abre tareas.component.ts y agrega la siguiente lógica:
+## Tarea 3. Implementar la Lógica en el Componente
+- Abrir tareas.component.ts y agregar la siguiente lógica:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -41,7 +42,7 @@ export class TareasComponent {
   nuevaTarea: string = '';
   tareas: { nombre: string, completada: boolean }[] = [];
 
-  agregarTarea() {
+  AgregarTarea() {
     if (this.nuevaTarea.trim()) {
       this.tareas.push({ nombre: this.nuevaTarea, completada: false });
       this.nuevaTarea = '';
@@ -55,9 +56,9 @@ export class TareasComponent {
 
 ```
 
-4. Paso 4: Crear la Plantilla HTML
+## Tarea 4. Crear la Plantilla HTML
 
-- Abre tareas.component.html y agrega el siguiente código:
+- Abrir tareas.component.html y agregar el siguiente código:
 
 ```html
 <h2>Lista de Tareas</h2>
@@ -77,7 +78,7 @@ export class TareasComponent {
 <p *ngIf="tareas.length === 0">No hay tareas en la lista.</p>
 ```
 
-5. Paso 5: Estilos CSS (Opcional)
+## Tarea5. Estilos CSS (Opcional)
 
 - Abre tareas.component.css y agrega algo de estilo:
 
@@ -88,7 +89,7 @@ export class TareasComponent {
 }
 ```
 
-6. Paso 6: Integrar el Componente en la Aplicación
+## Tarea 6. Integrar el Componente en la Aplicación
 
 - Asegúrate de que tu componente tareas se incluya en el app.component.html:
 
@@ -97,7 +98,7 @@ Copy code
 <app-tareas></app-tareas>
 ```
 
-7. Paso 7: Probar la Aplicación
+## Tarea 7. Probar la Aplicación
 
 - Ejecuta la aplicación si no lo has hecho:
 
