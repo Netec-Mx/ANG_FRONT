@@ -1,5 +1,6 @@
 # Práctica 10. Estructurando aplicaciones Angular: Uso de módulos para la modularidad
 
+
 # Objetivo
 - Crear una aplicación Angular que gestione una lista de tareas dividiendo la funcionalidad en módulos, específicamente utilizando un módulo de tareas y un módulo compartido.
 
