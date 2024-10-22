@@ -1,11 +1,16 @@
-## Práctica 5. Creación de un componente manualmente
+# Práctica 5. Creación de un componente manualmente
 
-## Objetivos 
+## Objetivo de la práctica:
  - Crear un componente en Angular de forma manual.
  - Aprender a definir la estructura y el comportamiento del componente.
  - Integrar el componente a una aplicación existente.
 
-## Tarea 1. Creación del componente
+## Duración apróximada:
+- 30 minutos.
+
+## Instrucciones
+
+## Creación del componente
 1. Crear la Carpeta del Componente:
 
     - Navegar a la carpeta donde deseas crear el componente (por ejemplo, src/app).
@@ -64,7 +69,7 @@
     ````
 
 
-## Tarea 1. Creación de un componente con Angular CLI
+## Creación de un componente con Angular CLI
 
 1. Abrir la Terminal:
 
@@ -103,7 +108,7 @@
     <app-mi-componente></app-mi-componente>
 ````
 
-## Tarea 1. Instalación de Bootstrap con npm
+## Instalación de Bootstrap con npm
 
 1. Abrir la Terminal: Asegúrate de estar en la carpeta raíz de tu proyecto Angular.
 
@@ -111,7 +116,7 @@
 
     - npm install bootstrap
 
-## Tarea 2. Incluir Bootstrap en el Proyecto
+## Incluir Bootstrap en el Proyecto
 
 3. Modificar angular.json: Abrir el archivo angular.json y buscar la sección styles. Añadir la ruta de Bootstrap como sigue:
 
@@ -122,7 +127,7 @@
     ],
 ```
 
-## Tarea 3. Usar Bootstrap en tu Aplicación
+## Usar Bootstrap en tu Aplicación
 
 4. Reiniciar el Servidor: Si el servidor de desarrollo está en ejecución, reinícialo para que los cambios surtan efecto.
 
