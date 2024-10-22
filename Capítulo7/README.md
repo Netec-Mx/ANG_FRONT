@@ -1,4 +1,7 @@
-## Cómo Crear un Servicio
+## Práctica 12. Creación y uso de servicios en Angular
+
+## Objetivos
+- Crear y utlizar servicios en Angular para gestionar la lógica de negocio y el acceso a datos de tu aplicación.
 
 1. Generar un Servicio: Puedes crear un servicio usando Angular CLI:
 
