@@ -5,16 +5,16 @@
  - Aprender a definir la estructura y el comportamiento del componente.
  - Integrar el componente a una aplicación existente.
 
-## Tarea 1
+## Tarea 1. Creación del componente
 1. Crear la Carpeta del Componente:
 
-    - Navega a la carpeta donde deseas crear el componente (por ejemplo, src/app).
-    - Crea una nueva carpeta para tu componente, por ejemplo, mi-componente.
+    - Navegar a la carpeta donde deseas crear el componente (por ejemplo, src/app).
+    - Crear una nueva carpeta para tu componente, por ejemplo, mi-componente.
 
 2. Crear el Archivo TypeScript:
 
-    - Dentro de la carpeta mi-componente, crea un archivo llamado mi-componente.component.ts.
-    - Agrega el siguiente código:
+    - Dentro de la carpeta mi-componente, crear un archivo llamado mi-componente.component.ts.
+    - Agregar el siguiente código:
 
     ````typescript
     import { Component } from '@angular/core';
@@ -30,17 +30,17 @@
     ````
 3. Crear el Archivo de Template:
 
-    - Crea un archivo llamado mi-componente.component.html.
-    - Agrega el contenido HTML que deseas mostrar en tu componente.
+    - Crear un archivo llamado mi-componente.component.html.
+    - Agregar el contenido HTML que deseas mostrar en tu componente.
 
 4. Crear el Archivo de Estilos:
 
-    - Crea un archivo llamado mi-componente.component.css.
-    - Añade los estilos específicos para tu componente.
+    - Crear un archivo llamado mi-componente.component.css.
+    - Añadir los estilos específicos para tu componente.
 
 5. Declarar el Componente en el Módulo:
 
-    - Abre el archivo app.module.ts y añade tu nuevo componente a la sección de declarations:
+    - Abrir el archivo app.module.ts y añadir tu nuevo componente a la sección de declarations:
     
     ````typescript
     import { MiComponenteComponent } from './mi-componente/mi-componente.component';
@@ -57,22 +57,22 @@
 
 6. Usar el Componente:
 
-    - En el template de otro componente (por ejemplo, app.component.html), usa el selector de tu nuevo componente:
+    - En el template de otro componente (por ejemplo, app.component.html), usar el selector de tu nuevo componente:
 
     ````html
     <app-mi-componente></app-mi-componente>
     ````
 
 
-## Creación de un Componente con Angular CLI
+## Tarea 1. Creación de un componente con Angular CLI
 
 1. Abrir la Terminal:
 
-    - Navega a la carpeta raíz de tu proyecto Angular.
+    - Navegar a la carpeta raíz de tu proyecto Angular.
 
 2. Ejecutar el Comando de Generación:
 
-    - Usa el siguiente comando para crear un nuevo componente:
+    - Usar el siguiente comando para crear un nuevo componente:
 
 ``
     ng generate component mi-componente
@@ -97,23 +97,23 @@
 
 4. Usar el Componente:
 
-    - Abre el archivo app.component.html o el template donde desees utilizar el nuevo componente y añade:
+    - Abrir el archivo app.component.html o el template donde desees utilizar el nuevo componente y añade:
 
 ````html
     <app-mi-componente></app-mi-componente>
 ````
 
-## Instalación de Bootstrap con npm
+## Tarea 1. Instalación de Bootstrap con npm
 
 1. Abrir la Terminal: Asegúrate de estar en la carpeta raíz de tu proyecto Angular.
 
-2. Instalar Bootstrap: Ejecuta el siguiente comando en la terminal:
+2. Instalar Bootstrap: Ejecutar el siguiente comando en la terminal:
 
     - npm install bootstrap
 
-## Incluir Bootstrap en el Proyecto
+## Tarea 2. Incluir Bootstrap en el Proyecto
 
-3. Modificar angular.json: Abre el archivo angular.json y busca la sección styles. Añade la ruta de Bootstrap como sigue:
+3. Modificar angular.json: Abrir el archivo angular.json y buscar la sección styles. Añadir la ruta de Bootstrap como sigue:
 
 ```json
     "styles": [
@@ -122,7 +122,7 @@
     ],
 ```
 
-## Usar Bootstrap en tu Aplicación
+## Tarea 3. Usar Bootstrap en tu Aplicación
 
 4. Reiniciar el Servidor: Si el servidor de desarrollo está en ejecución, reinícialo para que los cambios surtan efecto.
 
