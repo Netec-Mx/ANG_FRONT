@@ -1,5 +1,11 @@
-## Tarea: Implementación de Angular Router y Pipes
+# Práctica 7. Implementación de Angular Router y Pipes
 
+## Objetivo de la práctica:
+
+## Duración aproximada:
+
+
+## Instrucciones
 
 1. Configuración del Proyecto
 
