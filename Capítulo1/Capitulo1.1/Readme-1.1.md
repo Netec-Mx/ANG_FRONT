@@ -1,4 +1,4 @@
-## Práctica 1. Instalación de NodeJS
+# Práctica 1. Instalación de NodeJS
 
 Node.js llegó como una bendición para los desarrolladores de JavaScript de todo el mundo que luchan por cambiar entre múltiples lenguajes y marcos para ampliar su código en un entorno de desarrollo sostenible.
 
@@ -10,11 +10,11 @@ Si quieres mejorar tus habilidades de desarrollo web y convertirte en un desarro
 
 1. Guiar al estudiante en la instalación de Node.js.
 
-# Duración aproximada:
+## Duración aproximada:
 
 - 10 minutos.
 
-# Instrucciones
+## Instrucciones
 
 ## Tarea 1. Abrir una terminal o el cmd de windows
 
