@@ -16,7 +16,7 @@ Si quieres mejorar tus habilidades de desarrollo web y convertirte en un desarro
 
 ## Instrucciones
 
-## Tarea 1. Abrir una terminal o el cmd de windows
+## Abrir una terminal o el cmd de windows
 
 1. Entrar en [Node.js](https://nodejs.org/es/download/) y descargar el instalador de Node.js en el sistema operativo deseado. Podemos elegir entre Windows, Mac y Linux.
 
