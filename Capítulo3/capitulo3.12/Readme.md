@@ -1,4 +1,4 @@
-# Práctica 3.2 Creación de Pipes personalizados en Angular
+# Práctica 3.2. Creación de Pipes personalizados en Angular
 
 ## Objetivos
 - Crear y utlizar Pipes personalizados en Angular.
