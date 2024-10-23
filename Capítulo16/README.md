@@ -1,8 +1,15 @@
-## Proyecto practica API rick and morty
+# Práctica 16. Proyecto práctica API rick and morty
 
-- La idea de este proyecto es poder ver los personajes y realizar una pequena busqueda o poder filtrar en el servicio el nombre que deseo buscar
+## Objetivo de la práctica
 
-- Pagina donde se encuentra la api
+- Ver los personajes y realizar una pequeña búsqueda o poder filtrar en el servicio el nombre que deseo buscar
+
+## Duración aproximada
+- 115 minutos.
+
+## Instrucciones
+
+- Pagina donde se encuentra la API
 - [Link](https://rickandmortyapi.com/documentation/#get-all-characters)
 
 Ejemplo
