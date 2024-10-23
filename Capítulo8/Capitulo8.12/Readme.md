@@ -1,4 +1,4 @@
-## Método DELETE para Eliminar un Registro en Angular
+## 8.12. Método DELETE para Eliminar un registro en Angular
 
 - *Configuración Inicial*
 
