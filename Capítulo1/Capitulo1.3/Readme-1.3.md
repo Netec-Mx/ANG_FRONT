@@ -1,6 +1,14 @@
-## Instalar Angular CLI
+# Práctica 1.3. Instalando Extensiones de IDE para Angular
 
-1. Una vez que tengas Node.js, abre una terminal (o el símbolo del sistema) y ejecuta el siguiente comando para instalar Angular CLI globalmente:
+## Objetivo de la práctica
+
+- Enseñar al estudiante a instalar y configurar extensiones en su entorno de desarrollo integrado (IDE) que mejoren la productividad y faciliten el desarrollo de aplicaciones Angular.
+
+## Duración aproximada
+- 30 minutos.
+
+## Instrucciones
+1. Una vez que tengas Node.js, abrir una terminal (o el símbolo del sistema) y ejecutar el siguiente comando para instalar Angular CLI globalmente:
 
     ```
     npm install -g @angular/cli
@@ -8,7 +16,7 @@
 
     ![img](../../images/img-1.png)
 
-2. Verifica si quedo bien instalado angular
+2. Verificar si quedo bien instalado Angular
 
     Ejecuta en el cmd
 
@@ -20,22 +28,21 @@
 
 3. Crear una nueva aplicación
 
-    Usa Angular CLI para generar una nueva aplicación. En la terminal, navega a la carpeta donde deseas crear tu proyecto y ejecuta:
+- Usa Angular CLI para generar una nueva aplicación. En la terminal, navega a la carpeta donde deseas crear tu proyecto y ejecuta:
 
     ![img](../../images/img-2.png)
 
-    Reemplaza nombre-de-tu-aplicacion on el nombre que desees. Durante la creación, 
-    Angular CLI te preguntará si deseas incluir ciertas características (como el enrutamiento). Responde según tus preferencias.
+- Reemplazar nombre-de-tu-aplicacion on el nombre que desees. Durante la creación, Angular CLI te preguntará si deseas incluir ciertas características (como el enrutamiento). Responder según tus preferencias.
 
 4. Navegar al directorio de la aplicación
 
-    Después de que Angular CLI haya creado tu proyecto, navega a la carpeta del proyecto:
+- Después de que Angular CLI haya creado tu proyecto, navega a la carpeta del proyecto:
 
     ![img](../../images/img-3.png)
 
 5. Iniciar el servidor de desarrollo
 
-    Ahora, inicia el servidor de desarrollo para ver tu aplicación en acción:
+    Ahora, iniciar el servidor de desarrollo para ver tu aplicación en acción:
 
     ![img](../../images/img-4.png)
 
@@ -43,7 +50,7 @@
 
     [LocalHost](http://localhost:4200/)
 
-    Abre esa dirección en tu navegador y deberías ver la página de inicio de tu nueva aplicación Angular.
+- Abrir esa dirección en tu navegador y deberías ver la página de inicio de tu nueva aplicación Angular.
 
 6. Para pausar el servidor le das clic encima de la terminal y oprimes Crontol + c
 
