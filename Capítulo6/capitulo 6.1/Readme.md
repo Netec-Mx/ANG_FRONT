@@ -1,11 +1,10 @@
-# Práctica 10. Estructurando aplicaciones Angular: Uso de módulos para la modularidad
-
+# Práctica 6.1 Estructurando aplicaciones Angular: Uso de módulos para la modularidad
 
 ## Objetivo de la práctica:
 - Crear una aplicación Angular que gestione una lista de tareas dividiendo la funcionalidad en módulos, específicamente utilizando un módulo de tareas y un módulo compartido.
 
 ## Duración  aproximada:
-
+- 30 minutos.
 
 ## Instrucciones:
 
