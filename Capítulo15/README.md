@@ -1,4 +1,15 @@
-## Despliegue de la Aplicación 
+# Práctica 15. Despliegue y configuración de aplicaciones Angular: Preparación para producción 
+
+## Objetivo de la práctica
+
+- Desplegar una aplicación Angular de manera efectiva y configurar entornos adecuados para el desarrollo, pruebas y producción.
+- Aprender sobre las opciones de compilación de Angular, cómo ajustar la configuración para diferentes entornos y la importancia de herramientas como Angular DevTools para optimizar el rendimiento y la depuración de tu aplicación.
+- Garantizar que tu aplicación funcione correctamente en diversas configuraciones y que esté lista para el uso en producción.
+
+## Duración aproximada
+- 40 minutos.
+
+## Instrucciones
 
 1. Construcción de la Aplicación
 -  Antes de desplegar tu aplicación, necesitas crear una versión optimizada para producción. Angular ofrece un comando para esto:
