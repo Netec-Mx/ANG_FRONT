@@ -1,6 +1,13 @@
-## Routing en Angular
+# Routing en Angular
 
-- *Instalación del Módulo de Enrutamiento*
+## Objetivo de la práctica
+
+
+## Duración aproximada
+- 20 minutos.
+
+## Instrucciones
+- *Instalación del módulo de enrutamiento*
 
 - Para utilizar el enrutamiento en tu aplicación Angular, asegúrate de que el módulo de enrutamiento esté importado. Si creaste tu proyecto usando Angular CLI, este paso ya debería estar configurado. Si no, puedes instalarlo de la siguiente manera:
 
@@ -9,11 +16,11 @@
 ng add @angular/router
 ```
 
-- *Configuración Básica de Rutas*
+- *Configuración básica de rutas*
 
-1. Importar el Módulo de Rutas:
+1. Importar el módulo de rutas:
     
-`- En tu archivo principal app.module.ts, importa RouterModule y Routes:
+`- En tu archivo principal app.module.ts, importar RouterModule y Routes:
 
 ```typescript
 
@@ -40,7 +47,7 @@ const routes: Routes = [
 export class AppModule { }
 ```
 
-2. Creación de Componentes:
+2. Creación de componentes:
 
 - Asegúrate de tener los componentes que deseas en las rutas. Por ejemplo, HomeComponent y AboutComponent.
 
@@ -50,9 +57,9 @@ ng generate component home
 ng generate component about 
 ```
 
-3. Uso del Router Outlet:
+3. Uso del router outlet:
 
-- En tu app.component.html, agrega el <router-outlet> donde deseas que se carguen los componentes de las rutas:
+- En tu app.component.html, agregar el <router-outlet> donde deseas que se carguen los componentes de las rutas:
 
 ```html
 
@@ -65,7 +72,7 @@ ng generate component about
 
 - *Navegación Programática*
 
-- Para navegar programáticamente entre rutas, utiliza el Router de Angular. Aquí hay un ejemplo de cómo hacerlo en un componente:
+- Para navegar programáticamente entre rutas, utilizar el router de Angular. Aquí hay un ejemplo de cómo hacerlo en un componente:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -145,14 +152,14 @@ const routes: Routes = [
 
 - *Protección de Rutas*
 
-- Para proteger rutas que requieren autenticación, puedes usar guardias de rutas. Crea una guardia con el siguiente comando:
+- Para proteger rutas que requieren autenticación, puedes usar guardias de rutas. Crear una guardia con el siguiente comando:
 
 ```bash
 
 ng generate guard auth
 ```
 
-- En el archivo de la guardia, implementa la lógica de protección:
+- En el archivo de la guardia, implementar la lógica de protección:
 
 ```typescript
 
