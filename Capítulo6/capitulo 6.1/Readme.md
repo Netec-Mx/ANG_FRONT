@@ -1,10 +1,14 @@
 # Práctica 10. Estructurando aplicaciones Angular: Uso de módulos para la modularidad
 
 
-# Objetivo
+## Objetivo de la práctica:
 - Crear una aplicación Angular que gestione una lista de tareas dividiendo la funcionalidad en módulos, específicamente utilizando un módulo de tareas y un módulo compartido.
 
-  
+## Duración  aproximada:
+
+
+## Instrucciones:
+
 1. Módulo Raíz
 
 AppModule: Es el módulo principal de una aplicación Angular, definido en app.module.ts. Aquí se declaran todos los componentes, directivas y servicios que se usarán en la aplicación. Se importa el BrowserModule, que es necesario para ejecutar aplicaciones en el navegador.
@@ -59,7 +63,7 @@ export class AppModule { }
 ## Pasos a seguir
 1. Configurar el Proyecto:
 
-- Crea un nuevo proyecto Angular:
+- Crear un nuevo proyecto Angular:
 ```bash
 
 ng new lista-tareas
@@ -69,41 +73,41 @@ cd lista-tareas
 ng serve
 ```
 
-2. Generar Módulo de Tareas:
+2. Generar módulo de tareas:
 
-- Crea un módulo para gestionar las tareas:
+- Crear un módulo para gestionar las tareas:
 ```bash
 
 ng generate module tareas
 ```
 
-3. Generar el Componente de Tareas:
+3. Generar el componente de tareas:
 
-- Dentro del módulo de tareas, genera un componente:
+- Dentro del módulo de tareas, generar un componente:
 ```bash
 
 ng generate component tareas/tarea
 ```
 
-4. Generar Módulo Compartido:
+4. Generar módulo compartido:
 
-- Crea un módulo compartido para reutilizar componentes y directivas:
+- Crear un módulo compartido para reutilizar componentes y directivas:
 ```bash
 
 ng generate module shared
 ```
 
-5. Agregar un Componente en el Módulo Compartido:
+5. Agregar un componente en el módulo compartido:
 
-- Genera un componente que se usará en ambos módulos, como un componente de entrada para agregar tareas:
+- Generar un componente que se usará en ambos módulos, como un componente de entrada para agregar tareas:
 ```bash
 
 ng generate component shared/tarea-input
 ```
 
-6. Implementar el Componente de Entrada de Tarea:
+6. Implementar el componente de entrada de tarea:
 
-- Abre tarea-input.component.ts y añade la lógica:
+- Abrir tarea-input.component.ts y añadir la lógica:
 
 ```typescript
 
@@ -130,9 +134,9 @@ export class TareaInputComponent {
 
 ```
 
-7. Implementar el Componente de Tarea:
+7. Implementar el componente de tarea:
 
-- Abre tarea.component.ts y agrega la lógica para gestionar la lista de tareas:
+- Abrir tarea.component.ts y agregar la lógica para gestionar la lista de tareas:
 ```typescript
 
 import { Component } from '@angular/core';
@@ -162,7 +166,7 @@ export class TareaComponent {
   }
 }
 ```
-8. Configurar los Módulos:
+8. Configurar los módulos:
 
 - Tareas Module (tareas.module.ts):
 ```typescript
@@ -190,9 +194,9 @@ export class TareasModule { }
 
 - Shared Module (shared.module.ts): Asegúrate de que contenga el componente de entrada, que ya lo hemos añadido en el módulo de tareas.
 
-9. Integrar el Módulo de Tareas en el Módulo Principal:
+9. Integrar el módulo de tareas en el módulo principal:
 
-- Abre app.module.ts y añade el TareasModule:
+- Abrir app.module.ts y añadir el TareasModule:
 ```typescript
 
 import { NgModule } from '@angular/core';
@@ -214,14 +218,14 @@ import { TareasModule } from './tareas/tareas.module';
 export class AppModule { }
 ```
 
-10. Modificar el Componente Raíz:
+10. Modificar el componente raíz:
 
-- Abre app.component.html y agrega el componente de tareas:
+- Abrir app.component.html y agregar el componente de tareas:
 ```html
 
 <app-tarea></app-tarea>
 ```
 
-11. Probar la Aplicación:
+11. Probar la aplicación:
 
 - Asegúrate de que todo esté guardado y vuelve a cargar la aplicación en http://localhost:4200.
