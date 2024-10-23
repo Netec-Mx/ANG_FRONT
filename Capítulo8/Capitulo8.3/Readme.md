@@ -1,13 +1,5 @@
-# RoutingModule y router-outlet en Angular
+# 8.3 RoutingModule y router-outlet en Angular
 
-## Objetivo de la práctica
-
--
-
-## Duración aproximada
-- minutos
-
-## Instrucciones
 1. *Creación del RoutingModule*
 
 - Para crear un RoutingModule en Angular, sigue estos pasos:
