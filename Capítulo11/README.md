@@ -1,5 +1,14 @@
-## Funciones Asincrónicas y Diferencias con Funciones Síncronas
+## Práctica 11. Funciones asincrónicas y diferencias con funciones síncronas
 
+## Objetivo de la práctica
+
+- Comprender y utilizar funciones asincrónicas en JavaScript y Angular, diferenciándolas de las funciones síncronas.
+- Aprender a trabajar con promesas, async/await y los conceptos de eventos y callbacks, lo que te permitirá manejar operaciones que requieren tiempo, como peticiones HTTP, de manera eficiente y sin bloquear el hilo principal de ejecución. - Crear aplicaciones más responsivas y a gestionar mejor la concurrencia en tu código.
+
+## Duración aproximada
+- 30 minutos.
+
+## Instrucciones
 
 1. Función Síncrona
 ``` javascript
@@ -221,7 +230,7 @@ promesaConError
 2. Implementación del Patrón Observer en JavaScript
 
     1. Paso 1: Definir el Sujeto
-    - Primero, creamos la clase Subject, que gestiona la lista de observadores y proporciona métodos para añadir, eliminar y notificar observadores.
+    - Primero, crear la clase Subject, que gestiona la lista de observadores y proporciona métodos para añadir, eliminar y notificar observadores.
 
 ```javascript
 
@@ -245,7 +254,7 @@ class Subject {
 ```
 
    2. Paso 2: Definir los Observadores
-    - A continuación, definimos la clase Observer, que se encargará de manejar las actualizaciones.
+    - A continuación, definir la clase Observer, que se encargará de manejar las actualizaciones.
 
 ```javascript
 
@@ -257,7 +266,7 @@ class Observer {
 ```
 
    3. Paso 3: Implementar el Sujeto Concreto
-    - Creamos una clase ConcreteSubject que extiende a Subject y añade funcionalidad para gestionar su estado.
+    - Crear una clase ConcreteSubject que extiende a Subject y añade funcionalidad para gestionar su estado.
 
 ```javascript
 
@@ -279,7 +288,7 @@ class ConcreteSubject extends Subject {
 ```
 
    4. Paso 4: Implementar Observadores Concretos
-    - Definimos una clase ConcreteObserver que implementa la lógica de reacción al cambio de estado.
+    - Definir una clase ConcreteObserver que implementa la lógica de reacción al cambio de estado.
 
 ```javascript
 
@@ -399,7 +408,7 @@ numerosObservable.subscribe(console.log); // Salida: 2, 4, 6
 ```
 
 2. filter
-- Filtra los datos emitidos según una condición.
+- Filtrar los datos emitidos según una condición.
 
 ```javascript
 
@@ -413,7 +422,7 @@ numerosFiltrados.subscribe(console.log); // Salida: 2, 3
 ```
 
 3. combineLatest
-- Combina múltiples observables y emite el último valor de cada uno.
+- Combinar múltiples observables y emitir el último valor de cada uno.
 
 ```javascript
 
@@ -465,7 +474,7 @@ import { from } from 'rxjs';
 const array$ = from([10, 20, 30]);
 ```
 
-- *interval*: Crea un observable que emite un número secuencial cada cierto tiempo.
+- *interval*: Crear un observable que emite un número secuencial cada cierto tiempo.
 
 ```javascript
 
@@ -557,7 +566,7 @@ ng serve
 
 - Primero, crearemos un servicio que simule la búsqueda de datos. Este servicio se encargará de hacer "búsquedas" en un conjunto de datos estáticos.
 
-- Crea un servicio llamado api.service.ts:
+- Crear un servicio llamado api.service.ts:
 
 ```typescript
 
