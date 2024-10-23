@@ -1,4 +1,13 @@
-## Reorganización de Componentes en Angular
+# Reorganización de Componentes en Angular
+
+## Objetivo de la práctica
+
+-
+
+## Duración aproximada
+- minutos
+
+## Instrucciones
 
 - *Estructura de Proyecto Angular*
 
