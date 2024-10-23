@@ -1,11 +1,11 @@
-# Práctica 11. Uso de ViewChild y referencias locales en Angular
+# Práctica 6.2 Uso de ViewChild y referencias locales en Angular
 
 ## Objetivo de la práctica
 
 - Aprender a utilizar ViewChild y referencias locales en Angular para interactuar con elementos del DOM y componentes desde la lógica de un componente.
 
 ## Duración aproximada:
-
+- 30 minutos
 
 ## Instrucciones
 
