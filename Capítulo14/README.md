@@ -1,4 +1,15 @@
-## Formularios Basados en Plantillas en Angular
+# Práctica 14. Gestión de formularios en Angular: De plantillas a reactivos
+
+## Objetivo de la práctica
+
+- Implementar y gestionar formularios en Angular utilizando tanto enfoques basados en plantillas como reactivos.
+- Aprender a crear y validar formularios, aplicando validaciones a los campos de entrada y gestionando el estado del formulario de manera efectiva.
+- Realizar un ejercicio práctico en el que crearás un formulario de registro completo, aplicando los conceptos aprendidos y asegurando que tu aplicación maneje la entrada de datos de forma robusta y segura.
+
+## Duración aproximada
+- 40 minutos.
+
+## Instrucciones
 
 1. ¿Qué son los Formularios Basados en Plantillas?
 
