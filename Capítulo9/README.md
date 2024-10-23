@@ -1,5 +1,15 @@
-## Implementación de Arquitectura Limpia en Angular
+# Práctica 9. Implementación de Arquitectura Limpia en Angular
 
+## Objetivo de la práctica
+
+- Implementar la arquitectura limpia en una aplicación Angular. 
+- Aprender a estructurar tu proyecto en capas, separando las preocupaciones y promoviendo una organización modular del código.
+- Crear aplicaciones más escalables, mantenibles y fáciles de probar, siguiendo los principios de la arquitectura limpia y asegurando que tu lógica de negocio esté desacoplada.
+
+## Duración aproximada
+- 30 minutos.
+
+## Instrucciones
 ## Estructura de Carpetas
 
 - Una implementación típica de Arquitectura Limpia en Angular podría tener la siguiente estructura de carpetas:
