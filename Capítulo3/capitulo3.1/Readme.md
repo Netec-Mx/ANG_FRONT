@@ -1,4 +1,4 @@
-# Práctica 6. Binding con Angular
+# Práctica 3.1. Binding con Angular
 
 ## Objetivos de la práctica:
 - Implementar diferentes tipos de binding en Angular.
