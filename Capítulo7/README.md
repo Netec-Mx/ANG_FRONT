@@ -1,9 +1,12 @@
-## Práctica 12. Creación y uso de servicios en Angular
+# Práctica 12. Creación y uso de servicios en Angular
 
-## Objetivos
+## Objetivos de la práctica
 - Crear y utlizar servicios en Angular para gestionar la lógica de negocio y el acceso a datos de tu aplicación.
 
-1. Generar un Servicio: Puedes crear un servicio usando Angular CLI:
+## Duración aproximada:
+
+## Instrucciones
+1. Generar un servicio: Puedes crear un servicio usando Angular CLI:
 
 ```bash
 
@@ -13,7 +16,7 @@ ng generate service nombre-del-servicio
 
 - Esto creará un archivo con un decorador @Injectable().
 
-2. Definir el Servicio: Un servicio típico puede verse así:
+2. Definir el servicio: Un servicio típico puede verse así:
 
 ```typescript
 
@@ -32,7 +35,7 @@ export class MiServicio {
 
 ```
 
-3. Usar el Servicio en un Componente: Para usar un servicio, debes inyectarlo en el constructor de tu componente:
+3. Usar el servicio en un componente: Para usar un servicio, debes inyectarlo en el constructor de tu componente:
 
 ```typescript
 
@@ -57,7 +60,7 @@ export class MiComponente {
 
 ```
 
-## Cómo Crear un Data Service
+## Cómo crear un Data Service
 
 1. Generar un Data Service: Usa Angular CLI para crear un servicio:\
 
@@ -125,9 +128,9 @@ export class DatosComponent implements OnInit {
 ```
 
 
-## Cómo Inyectar un Servicio en Otro Servicio
+## Cómo inyectar un servicio en otro servicio
 
-1. Crear el Primer Servicio: Supongamos que tienes un servicio que maneja operaciones de autenticación:
+1. Crear el primer servicio: Supongamos que tienes un servicio que maneja operaciones de autenticación:
 
 ```typescript
 
@@ -149,7 +152,7 @@ export class AuthService {
 }
 ```
 
-2. Crear el Segundo Servicio: Ahora, vamos a crear un servicio que necesite acceder al (AuthService):
+2. Crear el segundo servicio: Ahora, vamos a crear un servicio que necesite acceder al (AuthService):
 
 ```typescript
 
@@ -168,7 +171,7 @@ export class UserService {
 }
 ```
 
-3. Usar el Servicio Inyectado: Ahora puedes utilizar (UserService), que a su vez utiliza (AuthService) para obtener el estado del usuario:
+3. Usar el servicio inyectado: Ahora puedes utilizar (UserService), que a su vez utiliza (AuthService) para obtener el estado del usuario:
 
 ```typescript
 
@@ -190,9 +193,9 @@ export class UserStatusComponent {
 }
 ```
 
-## Cómo Implementar la Comunicación a Través de un Servicio
+## Cómo implementar la comunicación a través de un servicio
 
-1. Crear un Servicio: Comienza creando un servicio que manejará los datos compartidos y la comunicación entre los componentes.
+1. Crear un servicio: Comienza creando un servicio que manejará los datos compartidos y la comunicación entre los componentes.
 
 ```typescript
 
@@ -212,7 +215,7 @@ export class DataService {
 }
 ```
 
-2. Usar el Servicio en el Primer Componente: En este componente, puedes cambiar el mensaje a través del servicio.
+2. Usar el servicio en el primer componente: En este componente, puedes cambiar el mensaje a través del servicio.
 
 ```typescript
 
@@ -237,7 +240,7 @@ export class Componente1 {
 }
 ```
 
-3. Usar el Servicio en el Segundo Componente: Este componente escucha los cambios en el mensaje.
+3. Usar el servicio en el segundo componente: Este componente escucha los cambios en el mensaje.
 
 ```typescript
 
