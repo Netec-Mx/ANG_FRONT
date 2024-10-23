@@ -1,9 +1,10 @@
-# Práctica 12. Creación y uso de servicios en Angular
+# Práctica 7. Creación y uso de servicios en Angular
 
 ## Objetivos de la práctica
 - Crear y utlizar servicios en Angular para gestionar la lógica de negocio y el acceso a datos de tu aplicación.
 
 ## Duración aproximada:
+- 30 minutos.
 
 ## Instrucciones
 1. Generar un servicio: Puedes crear un servicio usando Angular CLI:
