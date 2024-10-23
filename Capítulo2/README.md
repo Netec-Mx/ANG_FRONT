@@ -1,4 +1,4 @@
-# Práctica 5. Creación de un componente manualmente
+# Práctica 2. Creación de un componente manualmente
 
 ## Objetivo de la práctica:
  - Crear un componente en Angular de forma manual.
@@ -6,7 +6,7 @@
  - Integrar el componente a una aplicación existente.
 
 ## Duración apróximada:
-- 30 minutos.
+- 25 minutos.
 
 ## Instrucciones
 
