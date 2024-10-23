@@ -1,8 +1,13 @@
-## Práctica 7. Creación de Pipes personalizados en Angular
+# Práctica 3.2 Creación de Pipes personalizados en Angular
 
 ## Objetivos
 - Crear y utlizar Pipes personalizados en Angular.
 - Aprender a transformar datos en tu aplicación de manera eficiente.
+
+## Duración aproximada
+- 30 minutos.
+
+## Instrucciones
 
 ## Tipos de Data Binding
 
