@@ -1,11 +1,11 @@
-# Práctica 9. Usando directivas sin personalizadas
+# Práctica 5. Mejorando la funcionalidad y presentación: Uso de directivas en Angular
 
 ## Objetivo de la práctica:
 
 - Crear una pequeña aplicación Angular que muestre una lista de tareas con funcionalidad para agregar, marcar como completadas y eliminar tareas. Utilizaremos las directivas
 
 ## Duración aproximada
-
+- 30 minutos.
 
 ## Instrucciones
 
