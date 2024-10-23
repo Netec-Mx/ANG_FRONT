@@ -1,14 +1,19 @@
-## Práctica 9. Usando Directivas Sin Personalizadas
+# Práctica 9. Usando directivas sin personalizadas
 
-## Objetivo
+## Objetivo de la práctica:
 
-- Crear una pequeña aplicación Angular que muestre una lista de tareas con funcionalidad para agregar, marcar como completadas y eliminar tareas. Utilizaremos las directivas   
+- Crear una pequeña aplicación Angular que muestre una lista de tareas con funcionalidad para agregar, marcar como completadas y eliminar tareas. Utilizaremos las directivas
+
+## Duración aproximada
+
+
+## Instrucciones
 
 - *ngFor, *ngIf, *ngClass, y *ngModel.
 
-Tarea. 1. Configuración del Proyecto
+1. Configuración del Proyecto
 
- - Crea un nuevo proyecto Angular:
+ - Crear un nuevo proyecto Angular:
 
 ```bash
 ng new tareas-app
@@ -18,7 +23,7 @@ ng serve
 
  - Abrir Tel proyecto en tu editor de código.
 
-## Tarea 2. Crear el Componente
+2. Crear el Componente
 
 - Genera un nuevo componente para las tareas:
 
@@ -27,7 +32,7 @@ ng generate component tareas
 
 ```
 
-## Tarea 3. Implementar la Lógica en el Componente
+3. Implementar la lógica en el Componente
 - Abrir tareas.component.ts y agregar la siguiente lógica:
 
 ```typescript
@@ -56,7 +61,7 @@ export class TareasComponent {
 
 ```
 
-## Tarea 4. Crear la Plantilla HTML
+4. Crear la plantilla HTML
 
 - Abrir tareas.component.html y agregar el siguiente código:
 
@@ -78,7 +83,7 @@ export class TareasComponent {
 <p *ngIf="tareas.length === 0">No hay tareas en la lista.</p>
 ```
 
-## Tarea5. Estilos CSS (Opcional)
+5. Estilos CSS (Opcional)
 
 - Abre tareas.component.css y agrega algo de estilo:
 
@@ -89,18 +94,18 @@ export class TareasComponent {
 }
 ```
 
-## Tarea 6. Integrar el Componente en la Aplicación
+6. Integrar el Componente en la aplicación
 
-- Asegúrate de que tu componente tareas se incluya en el app.component.html:
+- Asegúrate de que tu Componente tareas se incluya en el app.component.html:
 
 ```html
 Copy code
 <app-tareas></app-tareas>
 ```
 
-## Tarea 7. Probar la Aplicación
+7. Probar la aplicación
 
-- Ejecuta la aplicación si no lo has hecho:
+- Ejecutar la aplicación si no lo has hecho:
 
 ```bash
 Copy code
@@ -108,11 +113,11 @@ ng serve
 
 ```
 
-## Ejercicio Independiente: Crear Directivas Personalizadas
+## Ejercicio independiente: crear directivas personalizadas
 
-- Ejercicio: Directiva de Resaltado de Texto
+- Ejercicio: Directiva de resaltado de texto
 
-1. Genera la Directiva:
+1. Generar la directiva:
 
 - Usa Angular CLI para generar una directiva llamada resaltado.
 
@@ -121,9 +126,9 @@ Copy code
 ng generate directive resaltado
 ```
 
-2. Implementa la Lógica:
+2. Implementar la lógica:
 
-- Abre resaltado.directive.ts y agrega la siguiente lógica para cambiar el color del texto al pasar el ratón:
+- Abrir resaltado.directive.ts y agregar la siguiente lógica para cambiar el color del texto al pasar el ratón:
 
 ```typescript
 Copy code
@@ -146,7 +151,7 @@ export class ResaltadoDirective {
 
 ```
 
-3. Usa la Directiva:
+3. Usar la directiva:
 
 - En cualquier componente de tu aplicación, aplica la directiva:
 
@@ -155,6 +160,6 @@ Copy code
 <p appResaltado>Este texto se resaltará al pasar el ratón.</p>
 ```
 
-4. Probar la Directiva:
+4. Probar la directiva:
 
-- Ejecuta la aplicación y verifica que el texto se resalte al pasar el ratón.
+- Ejecutar la aplicación y verificar que el texto se resalte al pasar el ratón.
