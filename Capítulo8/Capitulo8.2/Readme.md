@@ -1,13 +1,4 @@
-# Reorganización de Componentes en Angular
-
-## Objetivo de la práctica
-
--
-
-## Duración aproximada
-- minutos
-
-## Instrucciones
+# 8.2 Reorganización de componentes en Angular
 
 - *Estructura de Proyecto Angular*
 
