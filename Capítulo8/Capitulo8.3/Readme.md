@@ -1,12 +1,20 @@
-## RoutingModule y router-outlet en Angular
+# RoutingModule y router-outlet en Angular
 
+## Objetivo de la práctica
+
+-
+
+## Duración aproximada
+- minutos
+
+## Instrucciones
 1. *Creación del RoutingModule*
 
 - Para crear un RoutingModule en Angular, sigue estos pasos:
 
  *Importar el RouterModule y Routes:*
 
-- En un nuevo archivo llamado app-routing.module.ts, importa RouterModule y Routes desde @angular/router.
+- En un nuevo archivo llamado app-routing.module.ts, importar RouterModule y Routes desde @angular/router.
 
 ```typescript
 
@@ -57,7 +65,7 @@ export class AppModule { }
 
 - *Agregar router-outlet en la plantilla:*
 
-- En tu app.component.html, coloca el router-outlet donde quieras que aparezcan los componentes de las rutas:
+- En tu app.component.html, colocar el router-outlet donde quieras que aparezcan los componentes de las rutas:
 
 ```html
 
