@@ -1,11 +1,11 @@
-# Práctica 8. Instalación de PrimeNG y PrimeIcons
+# Práctica 4. Instalación de PrimeNG y PrimeIcons
 
 ## Objetivos de la práctica:
 - Instalar y configurar PrimeNG y Primelcons en tu proyecto Angular.
 - Aprender a integrar los conjuntos de estos componentes y estilos en tu aplicación.
 
 ## Duración aproximada:
-
+- 20 minutos.
 
 ## Instrucciones:
 
