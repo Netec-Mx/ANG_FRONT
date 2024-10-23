@@ -1,4 +1,4 @@
-## Método GET para Recuperar Información en Angular
+## 8.11. Método GET para recuperar información en Angular
 
 - *Configuración Inicial*
 
