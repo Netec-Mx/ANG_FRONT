@@ -1,8 +1,13 @@
-## Práctica 8. Instalación de PrimeNG y PrimeIcons
+# Práctica 8. Instalación de PrimeNG y PrimeIcons
 
-## Objetivos
+## Objetivos de la práctica:
 - Instalar y configurar PrimeNG y Primelcons en tu proyecto Angular.
 - Aprender a integrar los conjuntos de estos componentes y estilos en tu aplicación.
+
+## Duración aproximada:
+
+
+## Instrucciones:
 
 1. Primero, asegúrate de tener PrimeNG y PrimeIcons instalados en tu proyecto. Si aún no lo has hecho, ejecutar:
 
@@ -51,7 +56,7 @@ export class AppModule {}
 
 4. Usar Componentes en las Plantillas
 
-- Ahora puedes empezar a usar los componentes de PrimeNG en tus archivos de plantilla. Por ejemplo, en app.component.html:
+- Ahora puedes empezar a usar los Componentes de PrimeNG en tus archivos de plantilla. Por ejemplo, en app.component.html:
 
 ````html
 <div class="p-fluid">
@@ -81,7 +86,7 @@ export class AppComponent {
 }
 ````
 
-6. Ejecución de la Aplicación
+6. Ejecución de la aplicación
 
 - Finalmente, ejecutar tu aplicación con:
 
@@ -92,7 +97,7 @@ ng serve
 
 - Visita http://localhost:4200 y deberías ver tu formulario con los componentes de PrimeNG.
 
-## Ejemplo de Otros Componentes
+## Ejemplo de otros Componentes
 
 - Puedes integrar otros componentes de PrimeNG siguiendo un patrón similar. Solo importa el módulo correspondiente en tu app.module.ts y utilizar su etiqueta en tus plantillas. 
 
