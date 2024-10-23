@@ -1,4 +1,13 @@
-## Caso Práctico: Routing en Angular
+## Práctica 8.1. Routing en Angular
+
+## Objetivo de la práctica
+
+- Aprender a implementar el enrutamiento en una aplicación Angular.
+  
+## Duración aproximada
+- 20 minutos.
+
+## Instrucciones
 
 - *Escenario*
 
