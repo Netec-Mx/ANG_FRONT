@@ -1,4 +1,4 @@
-## Componente de Error en Angular
+## 8.7. Componente de Error en Angular
 
 - *Creación de un Componente de Error*
 
