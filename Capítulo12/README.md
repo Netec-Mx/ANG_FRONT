@@ -1,5 +1,15 @@
-## Seguridad en Angular
+# Práctica 12. Protegiendo tu aplicación de amenazas comunes: Seguridad en Angular
 
+## Objetivo de la práctica
+
+- Implementar prácticas de seguridad en aplicaciones Angular. 
+- Aprender sobre los principales riesgos de seguridad, como la inyección de código (XSS), la falsificación de solicitudes (CSRF) y el manejo seguro de datos.
+- Entenderás cómo utilizar herramientas y técnicas como la sanitización de entradas, la autenticación y autorización, y el manejo de tokens, para proteger tu aplicación y los datos de los usuarios de amenazas comunes.
+
+## Duración aproximada
+- 30 minutos.
+
+## Instrucciones
 1. Principales Amenazas de Seguridad
 
 - Antes de explorar las características de seguridad de Angular, es importante entender algunas de las amenazas comunes que pueden afectar a las aplicaciones web:
