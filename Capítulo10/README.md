@@ -1,7 +1,17 @@
-## Creacion de un componente Login
+## Práctica 10. Creacion de un componente Login
 
-- Creamos un proyecto nuevo
-- y creamos un componente nuevo que lo llamaras login, usando el comando CLI para crear componentes
+## Objetivo de la práctica
+
+- Crear un componente de inicio de sesión (Login) en Angular.
+- Aprender a definir la estructura del componente, gestionar el formulario de autenticación, implementar la validación de datos y manejar la interacción con un servicio de autenticación.
+- Entender cómo gestionar la entrada del usuario y autenticarlo de manera efectiva en tu aplicación.
+
+## Duración aproximada
+- 40 minutos.
+
+## Instrucciones
+- Crear un proyecto nuevo
+- y crear un componente nuevo que lo llamaras login, usando el comando CLI para crear componentes
 
 ```bash
 ng g component login
@@ -156,20 +166,20 @@ button:disabled {
 
     1. Ir a Firebase Console:
 
-    - Visita Firebase Console.
-    - Inicia sesión con tu cuenta de Google.
+    - Visitar Firebase Console.
+    - Iniciar sesión con tu cuenta de Google.
 
     2. Crear un nuevo proyecto:
 
-    - Haz clic en "Agregar proyecto" y sigue las instrucciones.
+    - Hacer clic en "Agregar proyecto" y seguir las instrucciones.
     - Puedes optar por habilitar Google Analytics o dejarlo desactivado según tus preferencias.
 
 2. Registrar tu Aplicación Web
 
     1. Añadir una Aplicación Web:
 
-    - Una vez que tu proyecto esté creado, en el panel de control, haz clic en el icono de la web (</>).
-    - Introduce un nombre para tu aplicación y haz clic en "Registrar aplicación".
+    - Una vez que tu proyecto esté creado, en el panel de control, hacer clic en el icono de la web (</>).
+    - Introducir un nombre para tu aplicación y hacer clic en "Registrar aplicación".
 
     2. Obtener Configuración de Firebase:
 
@@ -177,7 +187,7 @@ button:disabled {
 
 3. Instalar Firebase y AngularFire
 
-- Abre tu terminal en el directorio de tu proyecto Angular y ejecuta:
+- Abrir tu terminal en el directorio de tu proyecto Angular y ejecutar:
 
 ```bash
 
@@ -219,7 +229,7 @@ export class AppModule { }
 ```
 
    2. Agregar la Configuración en environment.ts
-   - Abre src/environments/environment.ts y añade tu configuración de Firebase:
+   - Abrir src/environments/environment.ts y añadir tu configuración de Firebase:
 
 ```typescript
 
@@ -236,25 +246,25 @@ export const environment = {
 };
 
 ```
-  - Reemplaza los valores con los que obtuviste de la configuración de Firebase
+  - Reemplazar los valores con los que obtuviste de la configuración de Firebase
 
 5. Habilitar Métodos de Autenticación
     1. Ir a la sección de Autenticación:
 
-    - En la consola de Firebase, selecciona "Authentication" en el menú de la izquierda.
+    - En la consola de Firebase, seleccionar "Authentication" en el menú de la izquierda.
 
     2. Configurar Métodos de inicio de sesión:
 
-    - Haz clic en "Método de inicio de sesión".
-    - Habilita los métodos que quieras usar (por ejemplo, "Correo electrónico/contraseña", "Google", etc.) y guarda los cambios.
+    - Hacer clic en "Método de inicio de sesión".
+    - Habilitar los métodos que quieras usar (por ejemplo, "Correo electrónico/contraseña", "Google", etc.) y guardar los cambios.
 
 6. Crear un Servicio de Autenticación
     
-    - Crea un nuevo servicio para manejar la autenticación.
+    - Crear un nuevo servicio para manejar la autenticación.
 
     1.  Crear el Servicio
     
-    - Ejecuta en la terminal:
+    - Ejecutar en la terminal:
 
 ````bash
 
@@ -263,7 +273,7 @@ ng generate service auth
 ````
 
    2.  Implementar el Servicio
-    -  Abre src/app/auth.service.ts y añade el siguiente código:
+    -  Abrir src/app/auth.service.ts y añadir el siguiente código:
 
 ```typescript
 
@@ -447,7 +457,7 @@ this.httpClient.get('https://api.example.com/secure-data', { headers }).subscrib
 
 2. Servicio de Autenticación:
 
-- Crea un servicio que gestione la autenticación y la obtención del token. Este servicio utilizará la biblioteca de AngularFire para interactuar con Firebase.
+- Crear un servicio que gestione la autenticación y la obtención del token. Este servicio utilizará la biblioteca de AngularFire para interactuar con Firebase.
 
 - Ejemplo de Servicio de Autenticación
 
@@ -688,7 +698,7 @@ export class SecureDataComponent implements OnInit {
 
     1. Generar el Componente
 
-    - Ejecuta el siguiente comando en la terminal:
+    - Ejecutar el siguiente comando en la terminal:
 
 ```bash
 
@@ -739,7 +749,7 @@ export class LoginComponent {
 ```
 
 2. Paso 2: Crear el HTML del Componente de Login
-- Ahora, crea la interfaz del componente en login.component.html:
+- Ahora, crear la interfaz del componente en login.component.html:
 
 ```html
 
@@ -861,7 +871,7 @@ export class AppRoutingModule { }
 - Para ilustrar cómo utilizar un guardián, vamos a crear un AuthGuard que proteja rutas que requieren autenticación.
 
     1. Generar el Guardián
-    - Ejecuta el siguiente comando en la terminal:
+    - Ejecutar el siguiente comando en la terminal:
 
 ```bash
 Copiar código
@@ -871,7 +881,7 @@ ng generate guard auth
    - Esto generará un nuevo guardián llamado AuthGuard.
 
     2. Implementar la Lógica del Guardián
-    - Abre auth.guard.ts y añade la lógica para verificar si el usuario está autenticado:
+    - Abrir auth.guard.ts y añadir la lógica para verificar si el usuario está autenticado:
 
 ```typescript
 Copiar código
@@ -906,7 +916,7 @@ export class AuthGuard implements CanActivate {
 - Ahora que has creado el guardián, debes aplicarlo a las rutas que deseas proteger.
 
     1. Actualizar app-routing.module.ts
-    - Abre app-routing.module.ts y aplica el AuthGuard a las rutas necesarias:
+    - Abrir app-routing.module.ts y aplicar el AuthGuard a las rutas necesarias:
 
 ```typescript
 Copiar código
@@ -934,4 +944,4 @@ export class AppRoutingModule { }
 - Ahora puedes probar la funcionalidad del guardián:
 
 - Intenta acceder a la ruta protegida /secure sin iniciar sesión. Deberías ser redirigido a la página de login.
-- Inicia sesión y accede nuevamente a la ruta /secure. Deberías poder acceder sin problemas.
+- Iniciar sesión y acceder nuevamente a la ruta /secure. Deberías poder acceder sin problemas.
