@@ -1,4 +1,4 @@
-# Práctica 1. Instalación de NodeJS
+# Práctica 1.1. Instalación de NodeJS
 
 Node.js llegó como una bendición para los desarrolladores de JavaScript de todo el mundo que luchan por cambiar entre múltiples lenguajes y marcos para ampliar su código en un entorno de desarrollo sostenible.
 
