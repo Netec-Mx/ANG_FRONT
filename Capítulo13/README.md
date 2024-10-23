@@ -1,4 +1,15 @@
-## Test de Métodos Públicos y Privados en Angular
+## Pruebas unitarias en Angular: Asegurando la calidad del código
+
+## Objetivo de la práctica
+
+- Realizar pruebas efectivas en Angular, cubriendo métodos públicos y privados, suscripciones a observables, Pipes y servicios que interactúan con APIs. 
+- Aprender a implementar pruebas unitarias utilizando herramientas como Jasmine y Karma
+- Aprender a simular (mockear) servicios para aislar componentes en las pruebas y a asegurar que tu aplicación funcione correctamente y cumpla con los requisitos de calidad y robustez. 
+
+## Duración aproximada
+- 30 minutos.
+
+## Instrucciones
 
 1. Métodos Públicos
 
