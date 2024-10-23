@@ -1,13 +1,5 @@
-# Práctica 8.1 Routing en Angular
+# 8.1. Routing en Angular
 
-## Objetivo de la práctica
-
-- Aprender a implementar el enrutamiento en una aplicación Angular.
-  
-## Duración aproximada
-- 20 minutos.
-
-## Instrucciones
 - *Instalación del módulo de enrutamiento*
 
 - Para utilizar el enrutamiento en tu aplicación Angular, asegúrate de que el módulo de enrutamiento esté importado. Si creaste tu proyecto usando Angular CLI, este paso ya debería estar configurado. Si no, puedes instalarlo de la siguiente manera:
