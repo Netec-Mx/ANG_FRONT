@@ -2,7 +2,7 @@
 
 ## Objetivo de la práctica
 
-- Ver los personajes y realizar una pequeña búsqueda o poder filtrar en el servicio el nombre que deseo buscar
+- Ver a los personajes realizar una pequeña búsqueda o poder filtrar en el servicio el nombre que deseo buscar.
 
 ## Duración aproximada
 - 115 minutos.
@@ -22,13 +22,13 @@ Nodejs v14
 Angular v12.0.5
 
 
-## instalar nvm y la instalacion del Nodejs y la ver
+## Instalar nvm y la instalacion del Nodejs y la ver
 
 1. Paso 1: Desinstalar Node.js (si ya está instalado)
 
 - Si tienes una versión diferente de Node.js instalada, desinstálala primero. La forma de hacerlo dependerá de tu sistema operativo:
 
-- Windows: Ve al Panel de Control > Programas > Desinstalar un programa, y busca Node.js.
+- Windows: Ir al Panel de Control > Programas > Desinstalar un programa, y buscar Node.js.
 
 - macOS: Puedes usar Homebrew para desinstalarlo:
 
@@ -37,9 +37,9 @@ Angular v12.0.5
 brew uninstall node
 ```
 
-Linux: Usa el gestor de paquetes correspondiente (como apt, yum, etc.) para desinstalar Node.js.
+Linux: Usar el gestor de paquetes correspondiente (como apt, yum, etc.) para desinstalar Node.js.
 
-2. Paso 2: Instalar Node.js versión 14
+2. Paso 2: Instalar Node.js versión 14.
 
 - *Usar Node Version Manager (NVM)*:
 
@@ -52,7 +52,7 @@ Linux: Usa el gestor de paquetes correspondiente (como apt, yum, etc.) para desi
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
 ```
 
-- Luego, cierra y vuelve a abrir tu terminal, o ejecuta:
+-  Cerrar y volver a abrir la terminal, o ejecutar:
 
 ```bash
 
@@ -82,11 +82,11 @@ node -v
 
 Deberías ver algo como v14.x.x.
 
-- *Instalación Manual:*
+- *Instalación manual:*
 
 - Si prefieres no usar NVM, puedes descargar el instalador de Node.js versión 14 directamente desde nodejs.org y seguir las instrucciones de instalación según tu sistema operativo.
 
-3. Paso 3: Verificar la Instalación de Angular
+3. Paso 3: Verificar la instalación de Angular.
 - Una vez que hayas instalado Node.js versión 14, puedes verificar o instalar Angular CLI:
 
 ```bash
@@ -94,7 +94,7 @@ Deberías ver algo como v14.x.x.
 npm install -g @angular/cli@12.0.5
 ```
 
-4. Paso 4: Crear un Nuevo Proyecto
+4. Paso 4: Crear un nuevo proyecto
 - Ahora puedes crear un nuevo proyecto Angular con la versión deseada:
 
 ```bash
@@ -201,7 +201,7 @@ npm install ngx-infinite-scroll
 
 ```
 
-Paso 1: Configurar el Proyecto
+Paso 1: Configurar el proyecto.
 - Configurar angular.json
 
 - Agrega Bootstrap y jQuery en la sección de estilos y scripts:
@@ -220,23 +220,23 @@ Paso 1: Configurar el Proyecto
 
 ## commands Line para crear Componentes, servicios, module y archivo routing
 
-- Paso 1: Crear un Componente
+- Paso 1: Crear un componente.
 
-- Ejemplo de como podriamos crear el componente en la estructura que tenemos con el archivo routing
+- Ejemplo de como podriamos crear el componente en la estructura que tenemos con el archivo routing:
 
 ```bash
 
 ng generate component app/components/pages/characters/character-list -routing
 ```
 
-- Paso 2: Crear un Módulo
+- Paso 2: Crear un módulo.
 
 ```bash
 
 ng generate module app/components/pages/characters/characters
 ```
 
-- Paso 3: Crear un Servicio
+- Paso 3: Crear un servicio.
 
 ```bash
 
