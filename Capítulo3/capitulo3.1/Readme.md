@@ -10,7 +10,7 @@
 
 ## Interpolación
 
-1. Definir una Propiedad en el Componente: En tu Componente TypeScript (por ejemplo, app.component.ts), define una propiedad:
+1. Definir una propiedad en el componente: En tu componente TypeScript (por ejemplo, app.component.ts), definir una propiedad:
 
 ````typescript
 
@@ -26,7 +26,7 @@
     }
 
 ````
-2. Usar Interpolación en el Template: En el archivo HTML correspondiente (por ejemplo, app.component.html), usar la interpolación para mostrar la propiedad: 
+2. Usar interpolación en el template: En el archivo HTML correspondiente (por ejemplo, app.component.html), usar la interpolación para mostrar la propiedad: 
 
 ````html
 
@@ -36,7 +36,7 @@
 
 ## Template Reference Variables
 
-1. Definir una Template Reference Variable
+1. Definir una template reference variable.
 
 ```html
 
@@ -46,7 +46,7 @@
 
 ```
 
-2. Componente TypeScript
+2. Componente TypeScript.
 
     - En el archivo del componente (por ejemplo, app.component.ts):
 
@@ -71,7 +71,7 @@
 
 ## Property Binding en Angular
 
-1. Definir una Propiedad en el Componente: En tu componente TypeScript (por ejemplo, app.component.ts), define una propiedad:
+1. Definir una propiedad en el componente: En tu componente TypeScript (por ejemplo, app.component.ts), define una propiedad:
 
 ```typescript
 
@@ -88,7 +88,7 @@ export class AppComponent {
 
 ```
 
-2. Usar Property Binding en el Template: En el archivo HTML correspondiente (por ejemplo, app.component.html), utilizar property binding para enlazar la propiedad:
+2. Usar property binding en el template: En el archivo HTML correspondiente (por ejemplo, app.component.html), utilizar property binding para enlazar la propiedad:
 
 ``` html
 
@@ -98,7 +98,7 @@ export class AppComponent {
 
 ## Event Binding en Angular
 
-1. Definir un Método en el Componente: En tu Componente TypeScript (por ejemplo, app.component.ts), define un método:
+1. Definir un método en el componente: En tu componente typeScript (por ejemplo, app.component.ts), define un método:
 
 ```typescript
 
@@ -119,7 +119,7 @@ export class AppComponent {
 
 ```
 
-2. Usar Event Binding en el Template: En el archivo HTML correspondiente (por ejemplo, app.component.html), usa event binding:
+2. Usar Event binding en el template: En el archivo HTML correspondiente (por ejemplo, app.component.html), usar event binding:
 
 ```html
 
@@ -146,7 +146,7 @@ export class AppComponent {
 
 ```
 
-2. Definir una Propiedad en el Componente: En tu componente TypeScript (por ejemplo, app.component.ts), definir una propiedad:
+2. Definir una propiedad en el componente: En tu componente typeScript (por ejemplo, app.component.ts), definir una propiedad:
 
 ```typescript
 
@@ -163,7 +163,7 @@ export class AppComponent {
 
 ```
 
-3. Usar Two-Way Binding en el Template: En el archivo HTML correspondiente (por ejemplo, app.component.html), utilizar ngModel para enlazar la propiedad:
+3. Usar Two-Way binding en el template: En el archivo HTML correspondiente (por ejemplo, app.component.html), utilizar ngModel para enlazar la propiedad:
 
 ```html
 
@@ -172,9 +172,9 @@ export class AppComponent {
 
 ```
 
-## Property Binding entre Componentes en Angular
+## Property binding entre componentes en Angular
 
-1. Crear el Componente Hijo: Primero, crear un Componente que recibirá los datos. Por ejemplo, hijo.component.ts:
+1. Crear el componente Hijo: Primero, crear un componente que recibirá los datos. Por ejemplo, hijo.component.ts:
 
 ```typescript
 
@@ -190,7 +190,7 @@ export class HijoComponent {
 
 ```
 
-2. Crear el Componente Padre: Ahora, crear un Componente Padre que pasará datos al Componente Hijo. Por ejemplo, padre.component.ts:
+2. Crear el componente Padre: Ahora, crear un componente Padre que pasará datos al componente Hijo. Por ejemplo, padre.component.ts:
 
 
 ```typescript
@@ -210,7 +210,7 @@ export class HijoComponent {
 
 ```
 
-3. Incluir el Componente Hijo en el Padre: Asegúrate de que el Componente Hijo esté declarado en el mismo módulo que el componente padre (usualmente app.module.ts):
+3. Incluir el componente Hijo en el Padre: Asegurarse de que el componente Hijo esté declarado en el mismo módulo que el componente padre (usualmente app.module.ts):
 
 ``` typescript
 
@@ -233,7 +233,7 @@ export class AppModule {}
 
 ```
 
-4. Usar el Componente Padre en la aplicación: Finalmente, utilizar el Componente Padre en tu aplicación, por ejemplo, en app.component.html:
+4. Usar el componente Padre en la aplicación: Finalmente, utilizar el componente Padre en tu aplicación, por ejemplo, en app.component.html:
 
 ```html
 
@@ -241,9 +241,9 @@ export class AppModule {}
 
 ```
 
-## Event Biding entre Componentes en Angular
+## Event binding entre componentes en Angular
 
-1. Crear el Componente Hijo: Primero, definir un componente hijo que emitirá un evento. Por ejemplo, hijo.component.ts:
+1. Crear el componente Hijo: Primero, definir un componente hijo que emitirá un evento. Por ejemplo, hijo.component.ts:
 
 `````typescript
 import { Component, EventEmitter, Output } from '@angular/core';
@@ -261,7 +261,7 @@ export class HijoComponent {
 }
 `````
 
-2. Crear el Componente Padre: Ahora, crear un componente padre que escuchará el evento del componente hijo. Por ejemplo, padre.component.ts:
+2. Crear el componente Padre: Ahora, crear un componente padre que escuchará el evento del componente hijo. Por ejemplo, padre.component.ts:
 
 `````typescript
 
@@ -285,7 +285,7 @@ export class PadreComponent {
 
 `````
 
-3. Incluir el Componente Hijo en el Padre: Asegúrate de que el componente hijo esté declarado en el mismo módulo que el componente padre (usualmente en app.module.ts):
+3. Incluir el componente Hijo en el Padre: Asegurarse de que el componente Hijo esté declarado en el mismo módulo que el componente Padre (usualmente en app.module.ts):
 
 `````typescript
 
@@ -308,7 +308,7 @@ export class AppModule {}
 
 `````
 
-4. Usar el Componente Padre en la Aplicación: Finalmente, utilizar el componente padre en tu aplicación, por ejemplo, en app.component.html:
+4. Usar el componente Padre en la aplicación: Finalmente, utilizar el componente padre en tu aplicación, por ejemplo, en app.component.html:
 
 `````html
 
