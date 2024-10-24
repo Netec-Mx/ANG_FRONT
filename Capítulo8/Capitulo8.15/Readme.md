@@ -1,4 +1,4 @@
-# 8.15. Uso de Interceptores en Angular
+# Capítulo 8.15. Uso de Interceptores en Angular
 
 - *¿Qué es un Interceptor?*
 
