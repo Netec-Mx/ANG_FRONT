@@ -1,16 +1,16 @@
-## 8.12. Método DELETE para Eliminar un registro en Angular
+## Capítulo 8.12. Método DELETE para Eliminar un registro en Angular
 
-- *Configuración Inicial*
+- *Configuración inicial*
 
-- Antes de comenzar, asegúrate de tener un servicio que maneje las peticiones HTTP y que esté configurado el módulo HttpClientModule. Si necesitas repasar estos pasos, consulta el contenido anterior sobre Peticiones HTTP en Angular (REST).
+- Antes de comenzar, asegurarse de tener un servicio que maneje las peticiones HTTP y que esté configurado el módulo HttpClientModule. Si necesitas repasar estos pasos, consulta el contenido anterior sobre Peticiones HTTP en Angular (REST).
 
-- *Creación de un Servicio para Manejar DELETE*
+- *Creación de un servicio para manejar DELETE*
 
 - Vamos a extender nuestro servicio product.service.ts para incluir un método que permita eliminar un producto utilizando el método DELETE.
 
-1. Paso 1: Implementar el Método DELETE
+1. Paso 1: Implementar el método DELETE.
 
-- Agrega el método deleteProduct al servicio:
+- Agregar el método deleteProduct al servicio:
 
 ```typescript
 
@@ -56,13 +56,13 @@ export class ProductService {
 }
 ```
 
-- *Uso del Método DELETE en Componentes*
+- *Uso del método DELETE en componentes*
 
-- Ahora que tenemos el método DELETE implementado en nuestro servicio, veamos cómo utilizarlo en un componente para permitir la eliminación de productos.
+- Ahora que tenemos el método DELETE implementado en el servicio, veamos cómo utilizarlo en un componente para permitir la eliminación de productos.
 
-1. Paso 1: Actualizar el Componente de Lista de Productos
+1. Paso 1: Actualizar el componente de lista de productos.
 
-- Modificaremos el componente product-list.component.ts para incluir un botón que permita eliminar productos.
+- Modificar el componente product-list.component.ts para incluir un botón que permita eliminar productos.
 
 ```typescript
 
@@ -121,7 +121,7 @@ export class ProductListComponent implements OnInit {
 }
 ```
 
-- *Explicación del Método DELETE*
+- *Explicación del método DELETE*
 
 - *Confirmación*: Al hacer clic en el botón "Eliminar", se muestra un cuadro de diálogo de confirmación. Esto ayuda a prevenir eliminaciones accidentales.
 
