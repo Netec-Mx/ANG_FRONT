@@ -1,4 +1,4 @@
-## Capítulo 8.10. Métodos POST y PUT en Angular
+# Capítulo 8.10. Métodos POST y PUT en Angular
 
 - *Configuración inicial*
 
