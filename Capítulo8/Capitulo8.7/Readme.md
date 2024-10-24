@@ -1,17 +1,17 @@
-## 8.7. Componente de Error en Angular
+## Capítulo 8.7. Componente de Error en Angular
 
-- *Creación de un Componente de Error*
+- *Creación de un componente de error*
 
-1. Generar el Componente:
+1. Generar el componente:
 
-- Utiliza Angular CLI para generar un nuevo componente llamado ErrorComponent.
+- Utilizar Angular CLI para generar un nuevo componente llamado ErrorComponent.
 
 ```bash
 
 ng generate component error
 ```
 
-2. Definir la Plantilla del Componente:
+2. Definir la plantilla del componente:
 
 - En el archivo error.component.html, define la plantilla que se mostrará cuando ocurra un error. Puedes incluir un mensaje amigable y, opcionalmente, un botón para volver a la página anterior o a la página principal.
 
@@ -24,7 +24,7 @@ ng generate component error
 </div>
 ```
 
-3. Estilo del Componente:
+3. Estilo del componente:
 
 -  Agrega estilos en error.component.css para mejorar la presentación.
 
@@ -37,11 +37,11 @@ ng generate component error
 }
 ```
 
-- *Manejo de Errores en la Aplicación*
+- *Manejo de errores en la aplicación*
 
-1. Manejo de Errores de Navegación
+1. Manejo de errores de navegación.
 
-- Para manejar errores de navegación, puedes configurar un catch-all route en el archivo de rutas. Esto redirigirá a los usuarios a tu ErrorComponent si intentan acceder a una ruta que no existe.
+- Para manejar errores de navegación, configurar un catch-all route en el archivo de rutas. Esto redirigirá a los usuarios a tu ErrorComponent si intentan acceder a una ruta que no existe.
 
 ```typescript
 
@@ -51,11 +51,11 @@ const routes: Routes = [
 ];
 ```
 
-2. Manejo de Errores en Servicios
+2. Manejo de errores en servicios.
 
 - Si estás realizando solicitudes HTTP y necesitas manejar errores, puedes implementar un HttpInterceptor o manejar errores directamente en el servicio.
 
-- *Ejemplo de Manejo de Errores en un Servicio:*
+- *Ejemplo de manejo de errores en un servicio:*
 
 ```typescript
 
@@ -85,11 +85,11 @@ export class DataService {
 }
 ```
 
-3. Redirigir a Componente de Error en Caso de Error
+3. Redirigir a componente de error en caso de error.
 
-- Si deseas redirigir al usuario a tu componente de error desde un servicio o componente en caso de que ocurra un error, puedes utilizar el Router.
+- Si deseas redirigir al usuario al componente de error desde un servicio o componente en caso de que ocurra un error, puedes utilizar el Router.
 
-- *Ejemplo de Redirección:*
+- *Ejemplo de redirección:*
 
 ```typescript
 
@@ -109,12 +109,12 @@ someMethod() {
 }
 ```
 
-- *Mejoras Adicionales*
+- *Mejoras adicionales*
 
-1. Interacción con el Usuario
+1. Interacción con el usuario.
 
 - Puedes mejorar el componente de error permitiendo que los usuarios informen sobre el error, proporcionando un formulario sencillo que capture detalles adicionales.
 
-2. Registro de Errores
+2. Registro de errores.
 
 - Es recomendable implementar un sistema de registro de errores, ya sea en el cliente o enviando los errores a un servidor para su análisis. Puedes usar servicios como Sentry o Rollbar para rastrear y gestionar errores en producción.
