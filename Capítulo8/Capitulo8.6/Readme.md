@@ -1,11 +1,11 @@
 ## 8.6. Child Routes en Angular
 
-- *Estructura de Rutas Hijas*
+- *Estructura de rutas hijas*
 
 - Al definir rutas hijas, puedes anidar rutas dentro de otras rutas. Esto es especialmente útil cuando tienes un componente que actúa como contenedor y necesitas cargar diferentes componentes en función de la navegación del usuario.
 
 
-- *Ejemplo de Configuración de Rutas Hijas*
+- *Ejemplo de configuración de rutas hijas*
 
 - Supongamos que tienes un módulo de Admin donde quieres incluir rutas para gestionar usuarios y productos. Aquí tienes cómo puedes definir estas rutas:
 
@@ -38,7 +38,7 @@ export class AppRoutingModule { }
 
 - Para que las rutas hijas se rendericen correctamente, debes usar un <router-outlet> dentro del componente contenedor (en este caso, AdminComponent).
 
-- *Ejemplo de Componente Contenedor*
+- *Ejemplo de componente contenedor*
 
 ```html
 <!-- admin.component.html -->
@@ -50,11 +50,11 @@ export class AppRoutingModule { }
 <router-outlet></router-outlet>
 ```
 
-- *Navegación a Rutas Hijas*
+- *Navegación a rutas Hijas*
 
-- Para navegar a rutas hijas, puedes utilizar el objeto Router. La navegación se realiza especificando la ruta del componente contenedor y luego la ruta hija.
+- Para navegar a rutas hijas, utilizar el objeto Router. La navegación se realiza especificando la ruta del componente contenedor y luego la ruta hija.
 
-- *Ejemplo de Navegación*
+- *Ejemplo de navegación*
 
 ```typescript
 import { Component } from '@angular/core';
@@ -73,7 +73,7 @@ export class DashboardComponent {
 }
 ```
 
-- *Parámetros de Ruta en Rutas Hijas*
+- *Parámetros de ruta en rutas hijas*
 - Las rutas hijas también pueden tener parámetros. Por ejemplo, si deseas gestionar un usuario específico, puedes definir una ruta hija que incluya un parámetro de ID:
 
 ```typescript
@@ -86,7 +86,7 @@ export class DashboardComponent {
 this.router.navigate(['admin', 'users', userId]);
 ```
 
-- *Protección de Rutas Hijas*
+- *Protección de rutas hijas*
 
 - Al igual que las rutas principales, puedes aplicar guardias a las rutas hijas para proteger el acceso a componentes específicos.
 
