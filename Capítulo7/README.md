@@ -36,7 +36,7 @@ export class MiServicio {
 
 ```
 
-3. Usar el servicio en un componente: Para usar un servicio, debes inyectarlo en el constructor de tu componente:
+3. Usar el servicio en un componente: Para usar un servicio, debes inyectarlo en el constructor del componente:
 
 ```typescript
 
@@ -63,7 +63,7 @@ export class MiComponente {
 
 ## Cómo crear un Data Service
 
-1. Generar un Data Service: Usa Angular CLI para crear un servicio:\
+1. Generar un Data Service: Usa Angular CLI para crear un servicio:
 
 ```bash
 
@@ -100,7 +100,7 @@ export class DataService {
 }
 ```
 
-3. Usar el Data Service en un Componente: Ahora puedes inyectar y utilizar el Data Service en tus componentes:
+3. Usar el Data Service en un componente: Ahora puedes inyectar y utilizar el Data Service en los componentes:
 
 ```typescript
 
@@ -172,7 +172,7 @@ export class UserService {
 }
 ```
 
-3. Usar el servicio inyectado: Ahora puedes utilizar (UserService), que a su vez utiliza (AuthService) para obtener el estado del usuario:
+3. Usar el servicio inyectado: Utilizar (UserService), que a su vez utiliza (AuthService) para obtener el estado del usuario:
 
 ```typescript
 
@@ -196,7 +196,7 @@ export class UserStatusComponent {
 
 ## Cómo implementar la comunicación a través de un servicio
 
-1. Crear un servicio: Comienza creando un servicio que manejará los datos compartidos y la comunicación entre los componentes.
+1. Crear un servicio: Comienza por crear un servicio que manejará los datos compartidos y la comunicación entre los componentes.
 
 ```typescript
 
