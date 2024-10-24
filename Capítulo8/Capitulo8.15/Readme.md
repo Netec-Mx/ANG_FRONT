@@ -1,23 +1,23 @@
-## 8.15. Uso de Interceptores en Angular
+# 8.15. Uso de Interceptores en Angular
 
 - *¿Qué es un Interceptor?*
 
 - Un interceptor es un servicio que implementa la interfaz HttpInterceptor y que se registra en el módulo AppModule. Cada vez que se realiza una solicitud HTTP, Angular pasa esa solicitud a través de todos los interceptores registrados en la aplicación. Esto permite realizar acciones antes de que la solicitud llegue al servidor y después de recibir la respuesta.
 
-- *Creación de un Interceptor*
+- *Creación de un interceptor*
 
-1. Paso 1: Generar un Interceptor
+1. Paso 1: Generar un interceptor.
 
-- Utiliza Angular CLI para generar un interceptor. Por ejemplo, podemos crear un interceptor de autenticación.
+- Utilizar Angular CLI para generar un interceptor. Por ejemplo, podemos crear un interceptor de autenticación.
 
 ```bash
 
 ng generate interceptor services/auth
 ```
 
-2. Paso 2: Implementar el Interceptor
+2. Paso 2: Implementar el interceptor.
 
-- En el archivo auth.interceptor.ts, implementa el interceptor para agregar un token de autenticación a las solicitudes HTTP.
+- En el archivo auth.interceptor.ts, implementar el interceptor para agregar un token de autenticación a las solicitudes HTTP.
 
 ```typescript
 
@@ -43,7 +43,7 @@ export class AuthInterceptor implements HttpInterceptor {
 }
 ```
 
-3. Paso 3: Registrar el Interceptor
+3. Paso 3: Registrar el interceptor.
 
 - Para que Angular reconozca el interceptor, debes registrarlo en el módulo principal (app.module.ts).
 
@@ -71,22 +71,22 @@ import { AuthInterceptor } from './services/auth.interceptor';
 export class AppModule { }
 ```
 
-- *Uso de Interceptores para Manejo de Errores*
+- *Uso de interceptores para manejo de errores*
 
 - Además de la autenticación, los interceptores son ideales para manejar errores de forma global. Puedes crear un interceptor que capture errores de las respuestas HTTP.
 
-1. Paso 1: Crear un Interceptor de Errores
+1. Paso 1: crear un interceptor de errores.
 
-- Genera un nuevo interceptor:
+- Generar un nuevo interceptor:
 
 ```bash
 
 ng generate interceptor services/error
 ```
 
-2. Paso 2: Implementar el Interceptor de Errores
+2. Paso 2: Implementar el interceptor de errores.
 
-- En error.interceptor.ts, implementa el manejo de errores.
+- En error.interceptor.ts, implementar el manejo de errores.
 
 ```typescript
 
@@ -114,9 +114,9 @@ export class ErrorInterceptor implements HttpInterceptor {
 }
 ```
 
-3. Paso 3: Registrar el Interceptor de Errores
+3. Paso 3: Registrar el interceptor de errores.
 
-- Asegúrate de registrar este interceptor en el mismo lugar que el interceptor de autenticación.
+- Asegurarse de registrar este interceptor en el mismo lugar que el interceptor de autenticación.
 
 ```typescript
 
