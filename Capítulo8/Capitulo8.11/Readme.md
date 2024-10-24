@@ -1,16 +1,16 @@
-## 8.11. Método GET para recuperar información en Angular
+## Capítulo 8.11. Método GET para recuperar información en Angular
 
 - *Configuración Inicial*
 
-- Antes de empezar, asegúrate de que el módulo HttpClientModule esté importado en tu aplicación y que tengas un servicio para interactuar con una API. Si necesitas repasar esta configuración, consulta el contenido anterior sobre Peticiones HTTP en Angular (REST).
+- Antes de empezar, asegurarse de que el módulo HttpClientModule esté importado en la aplicación y que tengas un servicio para interactuar con una API. Si necesitas repasar esta configuración, consulta el contenido anterior sobre Peticiones HTTP en Angular (REST).
 
-- *Creación de un Servicio para Manejar GET*
+- *Creación de un servicio para manejar GET*
 
 - Vamos a crear o extender un servicio que se encargue de las peticiones GET. Si estás trabajando con productos, por ejemplo, podemos llamarlo product.service.ts.
 
-1. Paso 1: Implementar el Método GET
+1. Paso 1: Implementar el método GET.
 
-- En el archivo product.service.ts, implementa el método GET para recuperar todos los productos y un método adicional para obtener un producto específico por ID.
+- En el archivo product.service.ts, implementar el método GET para recuperar todos los productos y un método adicional para obtener un producto específico por ID.
 
 ```typescript
 
@@ -56,22 +56,22 @@ export class ProductService {
 }
 ```
 
-- *Uso del Método GET en Componentes*
+- *Uso del método GET en componentes*
 
-- Ahora que tenemos los métodos para realizar las peticiones GET en nuestro servicio, vamos a implementarlos en un componente para mostrar la lista de productos.
+- Ahora que tenemos los métodos para realizar las peticiones GET en el servicio, vamos a implementarlos en un componente para mostrar la lista de productos.
 
-1. Paso 1: Crear un Componente para Listar Productos
+1. Paso 1: Crear un componente para listar productos.
 
-- Genera un nuevo componente llamado product-list.
+- Generar un nuevo componente llamado product-list.
 
 ```bash
 
 ng generate component components/product-lis
 ```
 
-2. Paso 2: Implementar la Lógica del Componente
+2. Paso 2: Implementar la lógica del componente.
 
-- En product-list.component.ts, inyecta el servicio y utiliza el método getProducts() para recuperar la lista de productos.
+- En product-list.component.ts, inyectar el servicio y utilizar el método getProducts() para recuperar la lista de productos.
 
 ```typescript
 
@@ -116,7 +116,7 @@ export class ProductListComponent implements OnInit {
 }
 ```
 
-- *Manejo de Errores*
+- *Manejo de errores*
 
 - El manejo de errores es crucial para proporcionar una buena experiencia al usuario. En el ejemplo anterior, si ocurre un error al recuperar la lista de productos, se mostrará un mensaje de error en el componente.
 
