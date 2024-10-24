@@ -10,7 +10,7 @@
 
 ## Interpolación
 
-1. Definir una propiedad en el componente: En tu componente TypeScript (por ejemplo, app.component.ts), definir una propiedad:
+1. Definir una propiedad en el componente: En el componente TypeScript (por ejemplo, app.component.ts), definir una propiedad:
 
 ````typescript
 
@@ -98,7 +98,7 @@ export class AppComponent {
 
 ## Event Binding en Angular
 
-1. Definir un método en el componente: En tu componente typeScript (por ejemplo, app.component.ts), define un método:
+1. Definir un método en el componente: En el componente typeScript (por ejemplo, app.component.ts), define un método:
 
 ```typescript
 
@@ -130,7 +130,7 @@ export class AppComponent {
 
 ## Two way binding con Angular
 
-1. Importar FormsModule: Asegúrate de que FormsModule esté importado en tu módulo. Abrir app.module.ts y añadir la importación:
+1. Importar FormsModule: Asegúrate de que FormsModule esté importado en el módulo. Abrir app.module.ts y añadir la importación:
 
 ```typescript
 
@@ -146,7 +146,7 @@ export class AppComponent {
 
 ```
 
-2. Definir una propiedad en el componente: En tu componente typeScript (por ejemplo, app.component.ts), definir una propiedad:
+2. Definir una propiedad en el componente: En el componente typeScript (por ejemplo, app.component.ts), definir una propiedad:
 
 ```typescript
 
@@ -233,7 +233,7 @@ export class AppModule {}
 
 ```
 
-4. Usar el componente Padre en la aplicación: Finalmente, utilizar el componente Padre en tu aplicación, por ejemplo, en app.component.html:
+4. Usar el componente Padre en la aplicación: Finalmente, utilizar el componente Padre en la aplicación, por ejemplo, en app.component.html:
 
 ```html
 
@@ -308,7 +308,7 @@ export class AppModule {}
 
 `````
 
-4. Usar el componente Padre en la aplicación: Finalmente, utilizar el componente padre en tu aplicación, por ejemplo, en app.component.html:
+4. Usar el componente Padre en la aplicación: Finalmente, utilizar el componente padre en la aplicación, por ejemplo, en app.component.html:
 
 `````html
 
