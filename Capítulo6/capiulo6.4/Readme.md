@@ -1,4 +1,4 @@
-# Práctica 6.2 Uso de ViewChild y referencias locales en Angular
+# Práctica 6.2. Uso de ViewChild y referencias locales en Angular
 
 ## Objetivo de la práctica
 
@@ -9,7 +9,7 @@
 
 ## Instrucciones
 
-1. Configurar el proyecto
+1. Configurar el proyecto.
 
 - Crear un nuevo proyecto Angular:
 
@@ -23,16 +23,16 @@ cd taller-viewchild
 ng serve
 ```
 
-2. Crear un componente para el taller
+2. Crear un componente para el taller.
 
-- Generar un nuevo componente llamado contador
+- Generar un nuevo componente llamado contador.
 
 ```bash
 
 ng generate component contador
 ```
 
-3. Implementar el componente de contador
+3. Implementar el componente de contador.
 
 - Abrir contador.component.ts y añadir la lógica para un contador simple que se pueda incrementar y restar:
 
@@ -59,7 +59,7 @@ export class ContadorComponent {
 }
 ```
 
-4. Crear la plantilla del componente de contador
+4. Crear la plantilla del componente de contador.
 
 - Abrir contador.component.html y construir la interfaz para el contador:
 
@@ -72,7 +72,7 @@ export class ContadorComponent {
 
 ```
 
-5. Modificar el componente principal
+5. Modificar el componente principal.
 
 - Abrir app.component.html y añadir el componente de contador:
 
@@ -85,7 +85,7 @@ export class ContadorComponent {
 
 6. Probar la aplicación
 
-- Asegúrate de que todo esté guardado y vuelve a cargar la aplicación en http://localhost:4200.
+- Asegurarse de que todo esté guardado y volver a cargar la aplicación en http://localhost:4200.
 
 ## Resultado Esperado
 - Una aplicación que permite a los usuarios:
