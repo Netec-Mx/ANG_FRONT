@@ -11,9 +11,9 @@
 - 30 minutos.
 
 ## Instrucciones
-1. Actualizar Angular CLI y Angular Core
+1. Actualizar Angular CLI y Angular Core.
 
-- Primero, necesitas actualizar tanto el Angular CLI como el core de Angular en tu proyecto. Puedes hacerlo utilizando el siguiente comando:
+- Primero, actualizar tanto el Angular CLI como el core de Angular en tu proyecto. Puedes hacerlo utilizando el siguiente comando:
 
     ```
         ng update @angular/core @angular/cli
@@ -25,7 +25,7 @@
         npm install -g @angular/cli@latest
     ```
 
-2. Verificar y resolver las dependencias de terceros
+2. Verificar y resolver las dependencias de terceros.
 
 Muchas veces las dependencias externas, como bibliotecas o componentes de terceros, podrían no ser compatibles con la nueva versión de Angular. Para identificar problemas, utiliza el comando:
 
@@ -35,13 +35,13 @@ Muchas veces las dependencias externas, como bibliotecas o componentes de tercer
 
 Esto te mostrará las dependencias que necesitan actualización. Es recomendable buscar versiones compatibles o actualizadas de estas dependencias, o buscar alternativas en caso de que ya no sean compatibles.
 
-3.  Realizar cambios requeridos por migraciones automáticas
+3.  Realizar cambios requeridos por migraciones automáticas.
 
 - Angular proporciona un conjunto de migraciones automáticas que ajustan tu código a los cambios importantes entre versiones. Durante el proceso de actualización, el comando ng update puede mostrarte pasos adicionales que debes realizar manualmente o cambios automáticos en tu código.'
 
 - Puedes ver detalles específicos de cada migración en la [Angular Update Guide](https://angular.dev/update-guide), la cual te indica los pasos recomendados según la versión de Angular de la que estás migrando.
 
-4. Actualizar TypeScript
+4. Actualizar TypeScript.
 
 - Las nuevas versiones de Angular generalmente requieren versiones actualizadas de TypeScript. Asegúrate de tener la versión recomendada:
 
@@ -55,13 +55,13 @@ Esto te mostrará las dependencias que necesitan actualización. Es recomendable
 
 - Angular puede descontinuar el soporte para ciertos navegadores (como IE11 en versiones más recientes). Asegúrate de revisar y limpiar configuraciones o polyfills que ya no sean necesarios:
 
-- Elimina polyfills de IE si ya no se requieren en tu proyecto (src/polyfills.ts).
+- Eliminar polyfills de IE si ya no se requieren en tu proyecto (src/polyfills.ts).
         
 - Verificar configuraciones específicas de navegadores en el archivo browserslist.
 
 6. Revisar y actualizar el código obsoleto
 
-    Algunas API pueden haber sido descontinuadas o cambiadas en versiones recientes de Angular. Revisa el código utilizando los siguientes pasos:
+    Algunas API pueden haber sido descontinuadas o cambiadas en versiones recientes de Angular. Revisar el código utilizando los siguientes pasos:
 
 - Utilizar ng lint para identificar problemas en el código.
         
