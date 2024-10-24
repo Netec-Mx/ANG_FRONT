@@ -13,8 +13,8 @@
 ## Creación del componente
 1. Crear la carpeta del componente:
 
-    - Navegar a la carpeta donde deseas crear el componente (por ejemplo, src/app).
-    - Crear una nueva carpeta para tu componente, por ejemplo, mi-componente.
+    - Navegar a la carpeta donde se desea crear el componente (por ejemplo, src/app).
+    - Crear una nueva carpeta para el componente, por ejemplo, mi-componente.
 
 2. Crear el archivo TypeScript:
 
@@ -36,16 +36,16 @@
 3. Crear el archivo de template:
 
     - Crear un archivo llamado mi-componente.component.html.
-    - Agregar el contenido HTML que deseas mostrar en tu componente.
+    - Agregar el contenido HTML que deseas mostrar en el componente.
 
 4. Crear el archivo de estilos:
 
     - Crear un archivo llamado mi-componente.component.css.
-    - Añadir los estilos específicos para tu componente.
+    - Añadir los estilos específicos para el componente.
 
 5. Declarar el componente en el módulo:
 
-    - Abrir el archivo app.module.ts y añadir tu nuevo componente a la sección de declarations:
+    - Abrir el archivo app.module.ts y añadir el nuevo componente a la sección de declarations:
     
     ````typescript
     import { MiComponenteComponent } from './mi-componente/mi-componente.component';
@@ -62,7 +62,7 @@
 
 6. Usar el componente:
 
-    - En el template de otro componente (por ejemplo, app.component.html), usar el selector de tu nuevo componente:
+    - En el template de otro componente (por ejemplo, app.component.html), usar el selector del nuevo componente:
 
     ````html
     <app-mi-componente></app-mi-componente>
@@ -73,7 +73,7 @@
 
 1. Abrir la Terminal:
 
-    - Navegar a la carpeta raíz de tu proyecto Angular.
+    - Navegar a la carpeta raíz del proyecto Angular.
 
 2. Ejecutar el comando de generación:
 
