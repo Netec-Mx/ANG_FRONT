@@ -2,9 +2,9 @@
 
 ## Objetivo de la práctica
 
-- Implementar la arquitectura limpia en una aplicación Angular. 
-- Aprender a estructurar tu proyecto en capas, separando las preocupaciones y promoviendo una organización modular del código.
-- Crear aplicaciones más escalables, mantenibles y fáciles de probar, siguiendo los principios de la arquitectura limpia y asegurando que tu lógica de negocio esté desacoplada.
+- Implementar la Arquitectura Limpia en Angular.
+- Crear un sistema que permita añadir, listar y eliminar tareas.
+- Mantener una separación clara entre las capas de entidades, casos de uso, interfaces e infraestructura.
 
 ## Duración aproximada
 - 30 minutos.
@@ -112,14 +112,9 @@ export class ApiService {
 
 ## Ejercicio: Aplicación de Gestión de Tareas
 
-Objetivos del Ejercicio
-- Implementar la Arquitectura Limpia en Angular.
-- Crear un sistema que permita añadir, listar y eliminar tareas.
-- Mantener una separación clara entre las capas de entidades, casos de uso, interfaces e infraestructura.
-
 ## Estructura del Proyecto
 
-1. Crea la estructura de carpetas:
+1. Crear la estructura de carpetas:
 ```plaintext
 Copy code
 src/
@@ -135,8 +130,8 @@ src/
 
 ```
 
-2. Paso 1: Definir la Entidad
-- Crea el modelo de tarea en src/app/core/models/task.model.ts:
+2. Paso 1: Definir la entidad.
+- Crear el modelo de tarea en src/app/core/models/task.model.ts:
 
 ```typescript
 Copy code
@@ -146,9 +141,9 @@ export class Task {
 
 ```
 
-3. Paso 2: Crear el Servicio (Capa de Casos de Uso)
+3. Paso 2: Crear el servicio (Capa de casos de uso).
 
-- Crea un servicio para gestionar las tareas en src/app/core/services/task.service.ts:
+- Crear un servicio para gestionar las tareas en src/app/core/services/task.service.ts:
 
 ```typescript
 Copy code
@@ -178,9 +173,9 @@ export class TaskService {
 }
 ```
 
-4. Paso 3: Crear Componentes (Capa de Interfaces)
+4. Paso 3: Crear componentes (Capa de interfaces).
 
-- Crea un componente para gestionar las tareas en src/app/features/tasks/task-list.component.ts:
+- Crear un componente para gestionar las tareas en src/app/features/tasks/task-list.component.ts:
 
 ```typescript
 Copy code
@@ -231,8 +226,8 @@ export class TaskListComponent implements OnInit {
 }
 ```
 
-5. Paso 4: Integrar el Componente en la Aplicación
-- Agrega el componente al módulo principal en src/app/app.module.ts:
+5. Paso 4: Integrar el componente en la aplicación.
+- Agregar el componente al módulo principal en src/app/app.module.ts:
 
 ```typescript
 Copy code
@@ -258,7 +253,7 @@ import { TaskService } from './core/services/task.service';
 export class AppModule {}
 ```
 
-6. Paso 5: Probar la Aplicación
+6. Paso 5: Probar la aplicación.
 
-- Ejecuta la aplicación con ng serve.
-- Accede a http://localhost:4200 y prueba añadir, listar y eliminar tareas.
+- Ejecutar la aplicación con ng serve.
+- Acceder a http://localhost:4200 y probar añadir, listar y eliminar tareas.
