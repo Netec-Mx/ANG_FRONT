@@ -11,11 +11,11 @@
 
 ## Instrucciones
 
-1. ¿Qué son los Formularios Basados en Plantillas?
+1. ¿Qué son los formularios basados en plantillas?
 
 - Los formularios basados en plantillas se construyen utilizando la estructura de plantillas de Angular y aprovechan el sistema de detección de cambios de Angular para gestionar los estados del formulario. En este enfoque, se utiliza la directiva ngModel para vincular los elementos del formulario a propiedades en el componente, permitiendo la comunicación bidireccional entre la vista y el modelo.
 
-- *Ejemplo de un Formulario Básico*
+- *Ejemplo de un formulario básico*
 
 ```html
 
@@ -37,20 +37,20 @@ En este ejemplo:
 - El botón de envío está deshabilitado hasta que el formulario sea válido.
 
 
-2. Ventajas de los Formularios Basados en Plantillas
+2. Ventajas de los formularios basados en plantillas.
 
 - *Simplicidad*: La sintaxis es más directa y fácil de entender para formularios sencillos.
 
-- *Menos Código*: Requiere menos configuración en comparación con los formularios reactivos, ya que gran parte de la lógica se maneja en la plantilla.
+- *Menos código*: Requiere menos configuración en comparación con los formularios reactivos, ya que gran parte de la lógica se maneja en la plantilla.
 
-- *Ideal para Formulario Simples*: Perfecto para formularios que no requieren validaciones complejas o un manejo avanzado de estados.
+- *Ideal para formulario simples*: Perfecto para formularios que no requieren validaciones complejas o un manejo avanzado de estados.
 
 
-3. Validaciones en Formularios Basados en Plantillas
+3. Validaciones en formularios basados en plantillas
 
 - Angular ofrece varias directivas para realizar validaciones de forma sencilla. Las validaciones pueden ser de varios tipos, incluyendo requeridas, patrones o longitudes.
 
-- *Ejemplo de Validaciones*
+- *Ejemplo de validaciones*
 
 ```html
 
@@ -61,11 +61,11 @@ En este ejemplo:
 </div>
 ```
 
-4. Manejo de Eventos
+4. Manejo de eventos.
 
 - El manejo de eventos en formularios basados en plantillas es sencillo. Se puede utilizar la directiva (ngSubmit) para manejar el evento de envío del formulario.
 
-- *Ejemplo de Manejo de Eventos*
+- *Ejemplo de manejo de eventos*
 
 ```typescript
 
@@ -74,26 +74,26 @@ onSubmit(form: NgForm) {
 }
 ```
 
-5. Acceso a los Valores del Formulario
+5. Acceso a los valores del formulario.
 
 - Los valores del formulario se pueden acceder a través de la propiedad value del objeto del formulario. Esto permite capturar toda la información ingresada por el usuario.
 
-6. Buenas Prácticas
+6. Buenas prácticas.
 
-- *Usar Validaciones*: Siempre que sea posible, agrega validaciones para mejorar la experiencia del usuario y garantizar la calidad de los datos.
+- *Usar validaciones*: Siempre que sea posible, agregar validaciones para mejorar la experiencia del usuario y garantizar la calidad de los datos.
 
-- *Manejar el Estado del Formulario*: Utiliza las propiedades de estado (touched, dirty, valid, invalid) para mejorar la interacción del usuario.
+- *Manejar el estado del formulario*: Utilizar las propiedades de estado (touched, dirty, valid, invalid) para mejorar la interacción del usuario.
 
-- *Evitar Lógica Compleja en la Plantilla*: Mantén la lógica en el componente siempre que sea posible para que la plantilla sea más limpia y fácil de entender.
+- *Evitar lógica compleja en la plantilla*: Mantener la lógica en el componente siempre que sea posible para que la plantilla sea más limpia y fácil de entender.
 
 
-## Formularios Reactivos en Angular
+## Formularios reactivos en Angular
 
-1. ¿Qué son los Formularios Reactivos?
+1. ¿Qué son los formularios reactivos?
 
 - Los formularios reactivos se construyen utilizando el módulo ReactiveFormsModule, que permite crear formularios utilizando una API programática. En lugar de vincular la plantilla directamente a los modelos a través de ngModel, se utiliza la clase FormGroup para representar el estado del formulario y FormControl para cada campo de entrada.
 
-- *Ejemplo de un Formulario Reactivo*
+- *Ejemplo de un formulario reactivo*
 
 ```typescript
 
@@ -129,17 +129,17 @@ export class MiFormularioComponent {
 }
 ```
 
-2. Ventajas de los Formularios Reactivos
+2. Ventajas de los formularios reactivos.
 
-- *Control Total*: Proporciona un mayor control sobre el estado del formulario y la validación, permitiendo una lógica más compleja.
+- *Control total*: Proporciona un mayor control sobre el estado del formulario y la validación, permitiendo una lógica más compleja.
 
 - *Escalabilidad*: Facilita la creación de formularios complejos y dinámicos, ideales para aplicaciones grandes.
 
-- *Pruebas Sencillas*: La estructura basada en clases permite realizar pruebas unitarias más efectivas y fáciles de entender.
+- *Pruebas sencillas*: La estructura basada en clases permite realizar pruebas unitarias más efectivas y fáciles de entender.
 
-- *Cambio de Datos*: Soporta la programación reactiva, lo que significa que los cambios en los datos pueden ser escuchados y gestionados fácilmente.
+- *Cambio de datos*: Soporta la programación reactiva, lo que significa que los cambios en los datos pueden ser escuchados y gestionados fácilmente.
 
-3. Estructura de un Formulario Reactivo
+3. Estructura de un formulario reactivo.
 
 - Un formulario reactivo está compuesto por varios elementos clave:
 
@@ -149,11 +149,11 @@ export class MiFormularioComponent {
 
 - *FormArray*: Representa un conjunto de controles en un array, útil para formularios que requieren listas dinámicas.
 
-4. Validaciones en Formularios Reactivos
+4. Validaciones en formularios reactivos
 
 - Las validaciones se pueden definir directamente en los controles o como un conjunto de validaciones en el grupo. Angular proporciona varios validadores integrados, y también se pueden crear validadores personalizados.
 
-- *Ejemplo de Validaciones*
+- *Ejemplo de validaciones*
 
 ```typescript
 
@@ -164,11 +164,11 @@ this.miFormulario = this.fb.group({
 
 ```
 
-5. Manejo de Eventos
+5. Manejo de eventos
 
 - El manejo de eventos en formularios reactivos se realiza a través de métodos en el componente. Por ejemplo, se pueden usar observables para reaccionar a los cambios en los valores del formulario.
 
-- *Ejemplo de Manejo de Eventos*
+- *Ejemplo de manejo de eventos*
 
 ```typescript
 
@@ -177,28 +177,28 @@ this.miFormulario.get('nombre').valueChanges.subscribe(value => {
 });
 
 ```
-6. Buenas Prácticas
+6. Buenas prácticas
 
 - *Usar FormBuilder*: Facilita la creación de grupos y controles de formulario, haciendo el código más limpio.
-- *Separar la Lógica*: Mantén la lógica del formulario en el componente para que la plantilla permanezca sencilla y enfocada en la presentación.
+- *Separar la lógica*: Mantén la lógica del formulario en el componente para que la plantilla permanezca sencilla y enfocada en la presentación.
 - *Pruebas Unitarias*: Aprovecha la estructura de los formularios reactivos para implementar pruebas unitarias efectivas.
 
 
 ## Validaciones de Form Input en Angular
 
-1. Tipos de Validaciones
+1. Tipos de validaciones.
 
 -  Angular ofrece varios tipos de validaciones, que se pueden clasificar en:
 
-- *Validaciones Requeridas*: Aseguran que un campo no esté vacío.
+- *Validaciones requeridas*: Aseguran que un campo no esté vacío.
 
-- *Validaciones de Formato*: Verifican que el valor ingresado cumpla con un formato específico (como correos electrónicos o números).
+- *Validaciones de formato*: Verifican que el valor ingresado cumpla con un formato específico (como correos electrónicos o números).
 
-- *Validaciones de Longitud*: Comprobar que la longitud del texto esté dentro de un rango especificado.
+- *Validaciones de longitud*: Comprobar que la longitud del texto esté dentro de un rango especificado.
 
-- *Validaciones Personalizadas*: Permiten crear reglas de validación a medida según las necesidades de la aplicación.
+- *Validaciones personalizadas*: Permiten crear reglas de validación a medida según las necesidades de la aplicación.
 
-2. Validaciones en Formularios Basados en Plantillas
+2. Validaciones en formularios basados en plantillas.
 
 - En formularios basados en plantillas, las validaciones se configuran directamente en el HTML utilizando directivas. Por ejemplo:
 
@@ -218,11 +218,11 @@ this.miFormulario.get('nombre').valueChanges.subscribe(value => {
 
 - En este ejemplo, el campo de email tiene dos validaciones: una requerida y una de formato.
 
-3. Validaciones en Formularios Reactivos
+3. Validaciones en formularios reactivos.
 
 - En formularios reactivos, las validaciones se definen en el componente usando la clase FormBuilder para crear un FormGroup con validadores asociados a cada FormControl.
 
-- *Ejemplo de Validaciones en Formularios Reactivos*
+- *Ejemplo de validaciones en formularios reactivos*
 
 ```typescript
 
@@ -259,11 +259,11 @@ export class MiFormularioComponent {
 }
 ```
 
-4. Validaciones Personalizadas
+4. Validaciones personalizadas.
 
 - Angular permite la creación de validaciones personalizadas, lo que brinda mayor flexibilidad. Estas validaciones se implementan como funciones que devuelven un objeto de error si la validación falla.
 
-- *Ejemplo de Validación Personalizada*
+- *Ejemplo de validación personalizada*
 
 ```typescript
 
@@ -285,11 +285,11 @@ this.miFormulario = this.fb.group({
 
 ```
 
-5. Manejo de Errores y Mensajes
+5. Manejo de errores y mensajes.
 
 - Es importante proporcionar retroalimentación al usuario en caso de errores. Angular permite mostrar mensajes de error de manera condicional, basándose en el estado de validación de cada control.
 
-- *Ejemplo de Mensajes de Error*
+- *Ejemplo de mensajes de error*
 
 ```html
 
@@ -299,22 +299,22 @@ this.miFormulario = this.fb.group({
 </div>
 ```
 
-6. Buenas Prácticas
+6. Buenas prácticas.
 
-- *Validaciones Visuales*: Proporcionar mensajes claros y visibles para ayudar a los usuarios a corregir errores.
+- *Validaciones visuales*: Proporcionar mensajes claros y visibles para ayudar a los usuarios a corregir errores.
 
-- *Uso de Validaciones*: Utilizar tanto validaciones integradas como personalizadas para cubrir diferentes casos de uso.
+- *Uso de validaciones*: Utilizar tanto validaciones integradas como personalizadas para cubrir diferentes casos de uso.
 
-- *Manejo de Estados*: Usar estados como touched y dirty para mostrar errores solo después de que el usuario ha interactuado con el campo.
+- *Manejo de estados*: Usar estados como touched y dirty para mostrar errores solo después de que el usuario ha interactuado con el campo.
 
 
-## Ejercicio Práctico: Creación de un Formulario de Registro en Angular
+## Ejercicio Práctico: Creación de un formulario de registro en Angular
 
 - *Objetivo*
 
 - Desarrollar un formulario de registro que incluya campos para nombre, email y contraseña, utilizando tanto formularios basados en plantillas como formularios reactivos.
 
-1. Paso 1: Crear el Proyecto Angular
+1. Paso 1: Crear el Proyecto Angular.
 
 - Instalar Angular CLI (si aún no lo tienes instalado):
 
@@ -344,7 +344,7 @@ cd formulario-registro
 npm install @angular/forms
 ```
 
-2. Paso 2: Estructura del Proyecto
+2. Paso 2: Estructura del proyecto.
 
 - Tu proyecto debe tener la siguiente estructura básica:
 
@@ -375,7 +375,7 @@ formulario-registro/
 ```
 
 
-3. Paso 3: Crear Componentes
+3. Paso 3: Crear componentes.
 
 - Crear el componente para el formulario reactivo:
 
@@ -391,7 +391,7 @@ ng generate component registro-reactivo
 ng generate component registro-plantilla
 ```
 
-4. Paso 4: Implementar el Formulario Reactivo
+4. Paso 4: Implementar el formulario reactivo.
 
 - En registro-reactivo.component.ts:
 
@@ -452,7 +452,7 @@ export class RegistroReactivoComponent {
 
 ```
 
-5. Paso 5: Implementar el Formulario Basado en Plantillas
+5. Paso 5: Implementar el formulario basado en plantillas.
 
 - En registro-plantilla.component.ts:
 
@@ -501,9 +501,9 @@ export class RegistroPlantillaComponent {
 </form>
 ```
 
-6. Paso 6: Modificar el Módulo Principal
+6. Paso 6: Modificar el módulo principal
 
-- En app.module.ts, asegúrate de importar los módulos necesarios:
+- En app.module.ts, asegurarse de importar los módulos necesarios:
 
 ```typescript
 
@@ -533,9 +533,9 @@ export class AppModule { }
 
 ```
 
-7. Paso 7: Integrar en la Aplicación
+7. Paso 7: Integrar en la aplicación.
 
-- En app.component.html, agrega ambos componentes para probarlos:
+- En app.component.html, agregar ambos componentes para probarlos:
 
 ```html
 
@@ -548,9 +548,9 @@ export class AppModule { }
 <app-registro-plantilla></app-registro-plantilla>
 
 ```
-8. Paso 8: Ejecutar la Aplicación
+8. Paso 8: Ejecutar la aplicación.
 
-- Finalmente, ejecuta tu aplicación para ver ambos formularios en acción:
+- Finalmente, ejecuta la aplicación para ver ambos formularios en acción:
 
 ```bash
 
