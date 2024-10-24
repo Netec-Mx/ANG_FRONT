@@ -1,4 +1,4 @@
-# 8.6. Child Routes en Angular
+# Capítulo 8.6. Child Routes en Angular
 
 - *Estructura de rutas hijas*
 
