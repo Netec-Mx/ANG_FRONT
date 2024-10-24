@@ -30,7 +30,7 @@ export class AppRoutingModule { }
 
 2. *Incluir el RoutingModule en el AppModule:*
 
-- Asegúrate de importar AppRoutingModule en tu app.module.ts.
+- Asegurarse de importar AppRoutingModule en la app.module.ts.
 
 ```typescript
 
@@ -51,13 +51,13 @@ export class AppModule { }
 
 - *router-outlet*
 
-- El router-outlet es una directiva que actúa como un marcador de posición en la plantilla de tu aplicación donde se renderizarán los componentes asociados a las rutas definidas en el RoutingModule. Cada vez que se navega a una ruta específica, Angular reemplaza el contenido del router-outlet con el componente correspondiente.
+- El router-outlet es una directiva que actúa como un marcador de posición en la plantilla de la aplicación donde se renderizarán los componentes asociados a las rutas definidas en el RoutingModule. Cada vez que se navega a una ruta específica, Angular reemplaza el contenido del router-outlet con el componente correspondiente.
 
-1. Uso de router-outlet
+1. Uso de router-outlet.
 
 - *Agregar router-outlet en la plantilla:*
 
-- En tu app.component.html, colocar el router-outlet donde quieras que aparezcan los componentes de las rutas:
+- En la app.component.html, colocar el router-outlet donde quieras que aparezcan los componentes de las rutas:
 
 ```html
 
@@ -68,7 +68,7 @@ export class AppModule { }
 <router-outlet></router-outlet>
 ```
 
-2. Navegación entre Rutas:
+2. Navegación entre rutas:
 
 - Cuando el usuario hace clic en los enlaces del menú, Angular actualizará automáticamente el contenido dentro del router-outlet con el componente correspondiente, sin recargar la página.
 
