@@ -111,7 +111,7 @@
 
 ````
 
-2. Creación de un Pipe Personalizado: Para crear un Pipe que invierte una cadena de texto, seguir estos pasos:
+2. Creación de un Pipe personalizado: Para crear un Pipe que invierte una cadena de texto, seguir estos pasos:
 
  - Generar el Pipe:
 
@@ -121,7 +121,7 @@ ng generate pipe invertirTexto
 
 ````
 
- - Implementar el pipe:
+ - Implementar el Pipe:
 
 ````typescript
 
@@ -174,7 +174,7 @@ export class NombreDelPipe implements PipeTransform {
 
 ````
 
-3. Usar el Pipe en el Template: Una vez creado, puedes usar tu Pipe en las plantillas de Angular:
+3. Usar el Pipe en el Template: Una vez creado, puedes usar el Pipe en las plantillas de Angular:
 
 ````html
 
