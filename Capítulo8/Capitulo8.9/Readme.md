@@ -1,4 +1,4 @@
-## Capítulo 8.9. Peticiones HTTP en Angular (REST)
+# Capítulo 8.9. Peticiones HTTP en Angular (REST)
 
 - *Instalación de HttpClientModule*
 
