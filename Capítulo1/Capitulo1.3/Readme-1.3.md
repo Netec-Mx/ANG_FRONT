@@ -40,7 +40,7 @@
 
     ![img](../../images/img-3.png)
 
-5. Iniciar el servidor de desarrollo
+5. Iniciar el servidor de desarrollo.
 
     Ahora, iniciar el servidor de desarrollo para ver tu aplicación en acción:
 
@@ -52,7 +52,7 @@
 
 - Abrir esa dirección en tu navegador. Deberías ver la página de inicio de tu nueva aplicación Angular.
 
-6. Para pausar el servidor, dar clic encima de la terminal y oprimir Crontol + c
+6. Para pausar el servidor, dar clic encima de la terminal y oprimir Crontol + c.
 
 
 
