@@ -1,8 +1,8 @@
-## 8.9. Peticiones HTTP en Angular (REST)
+## Capítulo 8.9. Peticiones HTTP en Angular (REST)
 
 - *Instalación de HttpClientModule*
 
-- Antes de comenzar, asegúrate de que el módulo HttpClientModule esté importado en tu aplicación. Esto se hace generalmente en el archivo app.module.ts.
+- Antes de comenzar, asegurarse de que el módulo HttpClientModule esté importado en la aplicación. Esto se hace generalmente en el archivo app.module.ts.
 
 ```typescript
 
@@ -25,22 +25,22 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-- *Creación de un Servicio HTTP*
+- *Creación de un servicio HTTP*
 
 - Para manejar las peticiones HTTP, es recomendable crear un servicio Angular. Los servicios permiten mantener la lógica de negocio separada de los componentes.
 
-1. *Paso 1: Generar un Servicio*
+1. *Paso 1: Generar un servicio*
 
-- Utiliza Angular CLI para crear un servicio. Por ejemplo, si queremos interactuar con una API de productos, podemos crear un servicio llamado product.service.ts.
+- Utilizar Angular CLI para crear un servicio. Por ejemplo, si queremos interactuar con una API de productos, podemos crear un servicio llamado product.service.ts.
 
 ```bash
 
 ng generate service services/product
 ```
 
-2. *Paso 2: Implementar el Servicio*
+2. *Paso 2: Implementar el servicio*
 
-- En product.service.ts, inyecta el HttpClient y define métodos para realizar las peticiones.
+- En product.service.ts, inyecta el HttpClient y definir métodos para realizar las peticiones.
 
 ```typescript
 
@@ -87,7 +87,7 @@ export class ProductService {
 }
 ```
 
-- *Definición de la Interfaz de Producto*
+- *Definición de la interfaz de producto*
 
 - Es útil definir una interfaz para los productos para tener una estructura clara.
 
@@ -105,18 +105,18 @@ export interface Product {
 
 - Ahora que tenemos el servicio, podemos inyectarlo en un componente para realizar las peticiones.
 
-1. Paso 1: Generar un Componente
+1. Paso 1: Generar un componente.
 
-- Crea un componente que muestre los productos.
+- Crear un componente que muestre los productos.
 
 ```bash
 
 ng generate component components/product-list
 ```
 
-2. Paso 2: Implementar la Lógica en el Componente
+2. Paso 2: Implementar la lógica en el componente.
 
-- Inyecta el servicio en el constructor del componente y utiliza el método getProducts() para obtener la lista de productos.
+- Inyectar el servicio en el constructor del componente y utilizar el método getProducts() para obtener la lista de productos.
 
 ```typescript
 
@@ -157,9 +157,9 @@ export class ProductListComponent implements OnInit {
 
 - El manejo de errores es crucial para ofrecer una buena experiencia de usuario. En el método handleError() del servicio, se pueden realizar acciones como mostrar mensajes en la interfaz o registrar errores en un sistema externo.
 
-- *Ejemplo de Manejo de Errores en el Componente*
+- *Ejemplo de manejo de errores en el componente*
 
-- Puedes mostrar un mensaje de error en el componente si la petición falla.
+- Se puede mostrar un mensaje de error en el componente si la petición falla.
 
 ```typescript
 
