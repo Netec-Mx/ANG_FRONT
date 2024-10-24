@@ -2,7 +2,7 @@
 
 ## Objetivo de la práctica:
 
-- Crear una pequeña aplicación Angular que muestre una lista de tareas con funcionalidad para agregar, marcar como completadas y eliminar tareas. Utilizaremos las directivas
+- Crear una pequeña aplicación Angular que muestre una lista de tareas con funcionalidad para agregar, marcar como completadas y eliminar tareas. 
 
 ## Duración aproximada
 - 30 minutos.
@@ -11,7 +11,7 @@
 
 - *ngFor, *ngIf, *ngClass, y *ngModel.
 
-1. Configuración del Proyecto
+1. Configuración del proyecto.
 
  - Crear un nuevo proyecto Angular:
 
@@ -21,18 +21,18 @@ cd tareas-app
 ng serve
 ```
 
- - Abrir Tel proyecto en tu editor de código.
+ - Abrir Tel proyecto en el editor de código.
 
-2. Crear el Componente
+2. Crear el Componente.
 
-- Genera un nuevo componente para las tareas:
+- Generar un nuevo componente para las tareas:
 
 ```bash
 ng generate component tareas
 
 ```
 
-3. Implementar la lógica en el Componente
+3. Implementar la lógica en el componente.
 - Abrir tareas.component.ts y agregar la siguiente lógica:
 
 ```typescript
@@ -61,7 +61,7 @@ export class TareasComponent {
 
 ```
 
-4. Crear la plantilla HTML
+4. Crear la plantilla HTML.
 
 - Abrir tareas.component.html y agregar el siguiente código:
 
@@ -83,9 +83,9 @@ export class TareasComponent {
 <p *ngIf="tareas.length === 0">No hay tareas en la lista.</p>
 ```
 
-5. Estilos CSS (Opcional)
+5. Estilos CSS (Opcional).
 
-- Abre tareas.component.css y agrega algo de estilo:
+- Abrir tareas.component.css y agregar algo de estilo:
 
 ```css
 .completada {
@@ -94,16 +94,16 @@ export class TareasComponent {
 }
 ```
 
-6. Integrar el Componente en la aplicación
+6. Integrar el componente en la aplicación.
 
-- Asegúrate de que tu Componente tareas se incluya en el app.component.html:
+- Asegúrate de que el componente tareas se incluya en el app.component.html:
 
 ```html
 Copy code
 <app-tareas></app-tareas>
 ```
 
-7. Probar la aplicación
+7. Probar la aplicación.
 
 - Ejecutar la aplicación si no lo has hecho:
 
@@ -113,13 +113,13 @@ ng serve
 
 ```
 
-## Ejercicio independiente: crear directivas personalizadas
+## Ejercicio independiente: Crear directivas personalizadas
 
 - Ejercicio: Directiva de resaltado de texto
 
 1. Generar la directiva:
 
-- Usa Angular CLI para generar una directiva llamada resaltado.
+- Usar Angular CLI para generar una directiva llamada resaltado.
 
 ```bash
 Copy code
