@@ -1,4 +1,4 @@
-# 8.3 RoutingModule y router-outlet en Angular
+# Capítulo 8.3. RoutingModule y router-outlet en Angular
 
 1. *Creación del RoutingModule*
 
