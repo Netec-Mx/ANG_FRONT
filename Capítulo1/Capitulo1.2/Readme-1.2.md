@@ -2,7 +2,7 @@
 
 ## Objetivo de la práctica
 
--Guiar al estudiante en la instalación de VS Code en su entorno de desarrollo.
+- Guiar al estudiante en la instalación de VS Code en su entorno de desarrollo.
 
 ## Duración aproximada
 - 30 minutos
@@ -11,7 +11,7 @@
 
 1. Descargar Visual Studio Code:
 
-    Dirígete a la página oficial de Visual Studio Code: [Link](https://code.visualstudio.com/)
+    Dirigirse a la página oficial de Visual Studio Code: [Link](https://code.visualstudio.com/)
 
 - Seleccionar la versión compatible con tu sistema operativo (Windows, macOS, o Linux).
 
@@ -21,7 +21,7 @@
 
 3. Configuración básica:
 
-- Abrir Visual Studio Code y configurar tu entorno preferido. Puedes ajustar el tema (claro u oscuro) y personalizar la interfaz según tus necesidades.
+- Abrir Visual Studio Code y configurar el entorno preferido. Puedes ajustar el tema (claro u oscuro) y personalizar la interfaz según tus necesidades.
 
 - Instalar las extensiones necesarias para Angular, como Angular Essentials o Angular Snippets, para facilitar el desarrollo.
 
