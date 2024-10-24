@@ -3,7 +3,7 @@
 ## Objetivo de la práctica
 
 - Realizar pruebas efectivas en Angular, cubriendo métodos públicos y privados, suscripciones a observables, Pipes y servicios que interactúan con APIs. 
-- Aprender a implementar pruebas unitarias utilizando herramientas como Jasmine y Karma
+- Aprender a implementar pruebas unitarias utilizando herramientas como Jasmine y Karma.
 - Aprender a simular (mockear) servicios para aislar componentes en las pruebas y a asegurar que tu aplicación funcione correctamente y cumpla con los requisitos de calidad y robustez. 
 
 ## Duración aproximada
@@ -11,11 +11,11 @@
 
 ## Instrucciones
 
-1. Métodos Públicos
+1. Métodos públicos.
 
 - Los métodos públicos son accesibles desde fuera de la clase, lo que los convierte en los candidatos ideales para las pruebas unitarias. Se pueden invocar directamente en las pruebas y verificar sus resultados.
 
-- *Ejemplo de Método Público*
+- *Ejemplo de método público*
 
 - Supongamos que tenemos un componente llamado Calculadora con un método público llamado sumar.
 
@@ -27,7 +27,7 @@ export class Calculadora {
   }
 }
 ```
-- *Prueba de un Método Público*
+- *Prueba de un método público*
 
 - Para probar el método sumar, podemos escribir un test unitario de la siguiente manera:
 
@@ -50,11 +50,11 @@ describe('Calculadora', () => {
 
 ```
 
-2. Métodos Privados
+2. Métodos privados.
 
 - Los métodos privados no son accesibles directamente desde fuera de la clase. Sin embargo, se pueden probar indirectamente al invocar métodos públicos que dependen de ellos. En general, es recomendable que las pruebas se centren en el comportamiento observable y no en la implementación interna.
 
-- *Ejemplo de Método Privado*
+- *Ejemplo de método privado*
 
 - Supongamos que el componente Calculadora tiene un método privado llamado validarNumeros.
 
@@ -74,7 +74,7 @@ export class Calculadora {
 }
 ```
 
-- *Prueba de un Método Privado*
+- *Prueba de un método privado*
 
 - En este caso, no se probará directamente el método validarNumeros. En cambio, se puede verificar su efecto al llamar al método público sumar.
 
@@ -94,11 +94,11 @@ describe('Calculadora', () => {
 
 ```
 
-3. Métodos Sin Valor de Retorno
+3. Métodos sin valor de retorno.
 
 - Los métodos sin valor de retorno (void) generalmente realizan alguna acción o efecto colateral, como actualizar el estado del componente o realizar una operación externa. Se pueden probar verificando el estado del componente o el efecto esperado después de la invocación.
 
-- *Ejemplo de Método Sin Retorno*
+- *Ejemplo de método sin retorno*
 
 ```typescript
 
@@ -115,7 +115,7 @@ export class Contador {
 }
 ```
 
-- *Prueba de un Método Sin Retorno*
+- *Prueba de un método sin retorno*
 
 ```typescript
 
@@ -133,16 +133,16 @@ describe('Contador', () => {
 });
 ```
 
-4. Buenas Prácticas para Probar Métodos
+4. Buenas prácticas para probar métodos.
 
-- Prueba Indirectamente Métodos Privados: En lugar de intentar acceder a métodos privados directamente, verifica su funcionalidad a través de métodos públicos que los utilicen.
+- Probar indirectamente métodos privados: En lugar de intentar acceder a métodos privados directamente, verificar su funcionalidad a través de métodos públicos que los utilicen.
 
-- Céntrate en el Comportamiento: Es más útil probar el comportamiento observable de los métodos en lugar de su implementación interna.
+- Centrarse en el comportamiento: Es más útil probar el comportamiento observable de los métodos en lugar de su implementación interna.
 
-- Utiliza Espías y Mocks: Para métodos que dependen de otros servicios o funciones externas, considera el uso de espías y mocks para controlar el entorno de prueba.
+- Utilizar espías y mocks: Para métodos que dependen de otros servicios o funciones externas, considerar el uso de espías y mocks para controlar el entorno de prueba.
 
 
-## Test de Suscripciones (subscribe-observable) en Angular
+## Test de suscripciones (subscribe-observable) en Angular
 
 1. ¿Qué son los Observables?
 
@@ -161,11 +161,11 @@ const miObservable = new Observable(observer => {
 });
 ```
 
-2. La Función subscribe
+2. La Función subscribe.
 
 - La función subscribe permite a los componentes recibir notificaciones de un Observable. Al subscribirse, se pueden definir funciones que manejen los valores emitidos, los errores y la finalización del flujo.
 
-- *Ejemplo de Uso de subscribe*
+- *Ejemplo de uso de subscribe*
 
 ```typescript
 
@@ -176,13 +176,13 @@ miObservable.subscribe(
 );
 ```
 
-3. Test de Suscripciones en Componentes
+3. Test de suscripciones en componentes.
 
 - Al realizar pruebas unitarias en componentes de Angular que utilizan Observables, es esencial verificar que las suscripciones manejen correctamente los datos emitidos. Generalmente, esto implica usar TestBed para configurar el entorno de prueba y fakeAsync o async para manejar la asincronía.
 
 - *Ejemplo de Componente con Observable*
 
-- Supongamos que tenemos un servicio que devuelve un Observable y un componente que se suscribe a él.
+- Supongamos que hay un servicio que devuelve un Observable y un componente que se suscribe a él.
 
 ```typescript
 
@@ -206,11 +206,11 @@ export class MiComponente implements OnInit {
 }
 ```
 
-4. Prueba del Componente con Suscripción
+4. Prueba del componente con suscripción.
 
 - Para probar el comportamiento de este componente al recibir datos del servicio, configuramos el entorno de prueba utilizando TestBed.
 
-- *Ejemplo de Prueba*
+- *Ejemplo de prueba*
 
 ```typescript
 
@@ -252,22 +252,22 @@ describe('MiComponente', () => {
 
 ```
 
-5. Buenas Prácticas para Probar Suscripciones
+5. Buenas prácticas para probar suscripciones.
 
-- Usar Spies y Mocks: Utiliza espías para simular el comportamiento de los servicios y controlar los datos que emiten.
+- Usar Spies y Mocks: Utilizar espías para simular el comportamiento de los servicios y controlar los datos que emiten.
 
-- Manejar la Asincronía: Utiliza async o fakeAsync para manejar correctamente las operaciones asincrónicas en las pruebas.
+- Manejar la Asincronía: Utilizar async o fakeAsync para manejar correctamente las operaciones asincrónicas en las pruebas.
 
-- Verificar Efectos Colaterales: Asegúrate de comprobar que los efectos colaterales de las suscripciones (como la actualización de propiedades) se realicen como se espera.
+- Verificar efectos colaterales: Asegurarse de comprobar que los efectos colaterales de las suscripciones (como la actualización de propiedades) se realicen como se espera.
 
 
 ## Test de Pipes en Angular
 
 1. ¿Qué son los Pipes?
 
-- Los pipes son funciones que se utilizan para transformar datos en las plantillas de Angular. Por ejemplo, un pipe puede formatear una fecha, convertir texto a mayúsculas, o filtrar una lista.
+- Los Pipes son funciones que se utilizan para transformar datos en las plantillas de Angular. Por ejemplo, un Pipe puede formatear una fecha, convertir texto a mayúsculas, o filtrar una lista.
 
-- *Ejemplo de un Pipe Personalizado*
+- *Ejemplo de un Pipe personalizado*
 
 ```typescript
 
@@ -283,15 +283,15 @@ export class CapitalizarPipe implements PipeTransform {
 }
 ```
 
-En este ejemplo, el pipe CapitalizarPipe transforma la primera letra de un texto a mayúscula.
+En este ejemplo, el Pipe CapitalizarPipe transforma la primera letra de un texto a mayúscula.
 
-2. Pruebas de Pipes
+2. Pruebas de Pipes.
 
 - Las pruebas de pipes son simples, ya que se centran en verificar que el método transform del pipe devuelva el resultado esperado para diferentes entradas. Al ser funciones puras, los pipes son fáciles de testear.
 
-- *Ejemplo de Prueba para un Pipe*
+- *Ejemplo de prueba para un Pipe*
 
-- Para probar el pipe CapitalizarPipe, podemos escribir pruebas unitarias que verifiquen su comportamiento con diferentes cadenas de texto.
+- Para probar el Pipe CapitalizarPipe, se pueden escribir pruebas unitarias que verifiquen su comportamiento con diferentes cadenas de texto.
 
 ```typescript
 
@@ -322,33 +322,33 @@ describe('CapitalizarPipe', () => {
 });
 ```
 
-3. Buenas Prácticas al Probar Pipes
+3. Buenas prácticas al probar Pipes.
 
-*Verificar Diferentes Casos de Entrada*: Asegúrate de probar una variedad de entradas, incluyendo cadenas vacías, nulas y valores especiales.
+*Verificar diferentes casos de entrada*: Asegurarse de probar una variedad de entradas, incluyendo cadenas vacías, nulas y valores especiales.
 
-*Mantener las Pruebas Simples*: Dado que los pipes son funciones puras, las pruebas deben ser simples y centrarse en la entrada y salida del método transform.
+*Mantener las pruebas simples*: Dado que los Pipes son funciones puras, las pruebas deben ser simples y centrarse en la entrada y salida del método transform.
 
-*Utilizar Descripciones Claras*: Usa descripciones claras en las pruebas para que sea evidente lo que se está validando en cada caso.
+*Utilizar descripciones claras*: Usar descripciones claras en las pruebas para que sea evidente lo que se está validando en cada caso.
 
-4. Ejecución de Pruebas
+4. Ejecución de pruebas.
 
-- Para ejecutar las pruebas de los pipes, puedes utilizar el comando habitual de Angular:
+- Para ejecutar las pruebas de los Pipes, se puede utilizar el comando habitual de Angular:
 
 ```bash
 
 ng test
 ```
 
-- Esto iniciará el framework de pruebas configurado (generalmente Karma y Jasmine) y ejecutará todas las pruebas, incluyendo las de los pipes.
+- Esto iniciará el framework de pruebas configurado (generalmente Karma y Jasmine) y ejecutará todas las pruebas, incluyendo las de los Pipes.
 
 
-## Test de Servicios (con Peticiones a API) en Angular
+## Test de servicios (con Peticiones a API) en Angular
 
-1. ¿Qué es un Servicio en Angular?
+1. ¿Qué es un servicio en Angular?
 
 - Un servicio en Angular es una clase que se utiliza para encapsular y compartir funcionalidades a lo largo de la aplicación. Esto incluye la gestión de datos, la lógica de negocio y la comunicación con APIs externas. Los servicios se suelen inyectar en componentes o en otros servicios mediante la inyección de dependencias.
 
-- *Ejemplo de un Servicio*
+- *Ejemplo de un servicio*
 
 ```typescript
 
@@ -370,11 +370,11 @@ export class ApiService {
 }
 ```
 
-2. Pruebas de Servicios con Peticiones a API
+2. Pruebas de servicios con peticiones a API.
 
 - Al realizar pruebas en servicios que utilizan HttpClient para realizar peticiones a APIs, se recomienda utilizar HttpClientTestingModule, que proporciona herramientas para simular las solicitudes HTTP y controlar las respuestas.
 
-- *Configuración del Entorno de Pruebas*
+- *Configuración del entorno de pruebas*
 
 - Antes de escribir las pruebas, es necesario importar HttpClientTestingModule y HttpTestingController.
 
@@ -404,11 +404,11 @@ describe('ApiService', () => {
 });
 ```
 
-3. Ejemplo de Pruebas
+3. Ejemplo de pruebas
 
 - A continuación, se muestra cómo se pueden realizar pruebas para el método obtenerDatos del servicio ApiService.
 
-- *Prueba de Éxito en la Petición*
+- *Prueba de éxito en la petición*
 
 ```typescript
 
@@ -425,7 +425,7 @@ it('debería retornar datos al realizar una petición exitosa', () => {
 });
 ```
 
-- *Prueba de Error en la Petición*
+- *Prueba de error en la petición*
 
 ```typescript
 
@@ -445,24 +445,24 @@ it('debería manejar errores al realizar la petición', () => {
 });
 ```
 
-4. Buenas Prácticas al Probar Servicios
+4. Buenas prácticas al probar servicios.
 
 *Utilizar HttpClientTestingModule*: Esto permite realizar pruebas sin necesidad de realizar llamadas reales a la API.
 
 *Verificar que no queden solicitudes pendientes*: Siempre verifica que no haya solicitudes HTTP no respondidas utilizando httpMock.verify().
 
-*Probar Casos Positivos y Negativos*: Asegúrate de probar tanto las respuestas exitosas como los escenarios de error para tener una cobertura completa.
+*Probar casos positivos y negativos*: Asegurarse de probar tanto las respuestas exitosas como los escenarios de error para tener una cobertura completa.
 
-*Utilizar Mocks y Spies*: Para servicios que dependen de otros servicios, utiliza mocks y spies para aislar las pruebas y verificar el comportamiento de los servicios sin depender de su implementación.
+*Utilizar mocks y spies*: Para servicios que dependen de otros servicios, utiliza mocks y spies para aislar las pruebas y verificar el comportamiento de los servicios sin depender de su implementación.
 
 
-## Mock de Servicios en Angular
+## Mock de servicios en Angular
 
 1. ¿Qué es un Servicio en Angular?
 
 Un servicio en Angular es una clase que contiene lógica de negocio y funcionalidades que pueden ser compartidas entre diferentes componentes de la aplicación. Los servicios son una parte esencial de la arquitectura de Angular, ya que permiten organizar y encapsular el código de manera eficiente.
 
-- *Ejemplo de un Servicio*
+- *Ejemplo de un servicio*
 
 ```typescript
 
@@ -496,11 +496,11 @@ export class ApiService {
 
 
 
-3. Cómo crear un Mock de Servicio
+3. Cómo crear un mock de servicio.
 
 -Existen diferentes maneras de crear un mock de servicio en Angular. Una de las más comunes es usar clases simuladas que implementen la misma interfaz que el servicio real.
 
--*Ejemplo de un Mock de Servicio*
+-*Ejemplo de un mock de servicio*
 
 ```typescript
 
@@ -511,11 +511,11 @@ class MockApiService {
 }
 ```
 
-4. Usar el Mock en Pruebas
+4. Usar el mock en pruebas.
 
 - Para utilizar el mock en pruebas unitarias, se inyecta la clase simulada en lugar del servicio real utilizando el TestBed.
 
--  *Ejemplo de Prueba con Mock*
+-  *Ejemplo de prueba con mock*
 
 ```typescript
 
@@ -545,14 +545,14 @@ describe('MiComponente', () => {
 });
 ```
 
-5. Buenas Prácticas al Usar Mocks
+5. Buenas prácticas al usar mocks.
 
-*Aislar Pruebas*: Siempre que sea posible, utiliza mocks para aislar las pruebas de los componentes o servicios de su lógica subyacente.
+*Aislar pruebas*: Siempre que sea posible, utilizar mocks para aislar las pruebas de los componentes o servicios de su lógica subyacente.
 
-*Simular Respuestas Realistas*: Asegúrate de que el comportamiento del mock sea lo más similar posible al servicio real para que las pruebas sean significativas.
+*Simular respuestas realistas*: Asegurarse de que el comportamiento del mock sea lo más similar posible al servicio real para que las pruebas sean significativas.
 
-*Probar Diferentes Escenarios*: Crea diferentes mocks o configura el mismo mock para simular distintos escenarios, como respuestas exitosas o errores.
+*Probar diferentes escenarios*: Crear diferentes mocks o configura el mismo mock para simular distintos escenarios, como respuestas exitosas o errores.
 
-*Limitar Dependencias*: Reduce la complejidad de las pruebas limitando las dependencias a lo estrictamente necesario.
+*Limitar dependencias*: Reducir la complejidad de las pruebas limitando las dependencias a lo estrictamente necesario.
 
 
