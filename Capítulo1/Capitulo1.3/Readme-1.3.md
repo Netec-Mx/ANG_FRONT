@@ -28,7 +28,7 @@
 
 3. Crear una nueva aplicación.
 
-- Usar Angular CLI para generar una nueva aplicación. En la terminal, navegar a la carpeta donde deseas crear tu proyecto y ejecutar:
+- Usar Angular CLI para generar una nueva aplicación. En la terminal, navegar a la carpeta donde deseas crear el proyecto y ejecutar:
 
     ![img](../../images/img-2.png)
 
@@ -36,13 +36,13 @@
 
 4. Navegar al directorio de la aplicación.
 
-- Después de que Angular CLI haya creado tu proyecto, navega a la carpeta del proyecto:
+- Después de que Angular CLI haya creado el proyecto, navega a la carpeta del proyecto:
 
     ![img](../../images/img-3.png)
 
 5. Iniciar el servidor de desarrollo.
 
-    Ahora, iniciar el servidor de desarrollo para ver tu aplicación en acción:
+    Ahora, iniciar el servidor de desarrollo para ver la aplicación en acción:
 
     ![img](../../images/img-4.png)
 
@@ -50,7 +50,7 @@
 
     [LocalHost](http://localhost:4200/)
 
-- Abrir esa dirección en tu navegador. Deberías ver la página de inicio de tu nueva aplicación Angular.
+- Abrir esa dirección en tu navegador. Deberías ver la página de inicio de la nueva aplicación Angular.
 
 6. Para pausar el servidor, dar clic encima de la terminal y oprimir Crontol + c.
 
