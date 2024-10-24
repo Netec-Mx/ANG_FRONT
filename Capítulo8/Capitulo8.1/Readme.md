@@ -1,8 +1,8 @@
-# 8.1. Routing en Angular
+# Capítulo 8.1. Routing en Angular
 
 - *Instalación del módulo de enrutamiento*
 
-- Para utilizar el enrutamiento en tu aplicación Angular, asegúrate de que el módulo de enrutamiento esté importado. Si creaste tu proyecto usando Angular CLI, este paso ya debería estar configurado. Si no, puedes instalarlo de la siguiente manera:
+- Para utilizar el enrutamiento en la aplicación Angular, asegurarse de que el módulo de enrutamiento esté importado. Si creaste el proyecto usando Angular CLI, este paso ya debería estar configurado. Si no, puedes instalarlo de la siguiente manera:
 
 ```bash
 
@@ -13,7 +13,7 @@ ng add @angular/router
 
 1. Importar el módulo de rutas:
     
-`- En tu archivo principal app.module.ts, importar RouterModule y Routes:
+`- En el archivo principal app.module.ts, importar RouterModule y Routes:
 
 ```typescript
 
@@ -42,7 +42,7 @@ export class AppModule { }
 
 2. Creación de componentes:
 
-- Asegúrate de tener los componentes que deseas en las rutas. Por ejemplo, HomeComponent y AboutComponent.
+- Asegurarse de tener los componentes que deseas en las rutas. Por ejemplo, HomeComponent y AboutComponent.
 
 ```bash
 
@@ -52,7 +52,7 @@ ng generate component about
 
 3. Uso del router outlet:
 
-- En tu app.component.html, agregar el <router-outlet> donde deseas que se carguen los componentes de las rutas:
+- En la app.component.html, agregar el <router-outlet> donde deseas que se carguen los componentes de las rutas:
 
 ```html
 
@@ -84,7 +84,7 @@ export class HomeComponent {
 }
 ```
 
-- *Parámetros de Ruta*
+- *Parámetros de ruta*
 
 - Angular permite pasar parámetros a través de las rutas. Por ejemplo:
 
@@ -145,7 +145,7 @@ const routes: Routes = [
 
 - *Protección de Rutas*
 
-- Para proteger rutas que requieren autenticación, puedes usar guardias de rutas. Crear una guardia con el siguiente comando:
+- Para proteger rutas que requieren autenticación, usar guardias de rutas. Crear una guardia con el siguiente comando:
 
 ```bash
 
@@ -179,7 +179,7 @@ export class AuthGuard implements CanActivate {
 }
 ```
 
-- Luego, añade la guardia a la ruta:
+- Luego, añadir la guardia a la ruta:
 
 ```typescript
 
