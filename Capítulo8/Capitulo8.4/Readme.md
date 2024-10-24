@@ -1,8 +1,8 @@
-## 8.4. Navegación con el Objeto Router en Angular
+## Capítulo 8.4. Navegación con el objeto Router en Angular
 
-- *Inyección del Objeto Router*
+- *Inyección del objeto Router*
 
-- Para utilizar el objeto Router, primero debes inyectarlo en tu componente. Esto se hace a través del constructor del componente.
+- Para utilizar el objeto Router, primero debes inyectarlo en el componente. Esto se hace a través del constructor del componente.
 
 ```typescript
 
@@ -44,7 +44,7 @@ goToUserDetail(userId: number) {
 
 - *Navegación con Query Parameters*
 
-- También puedes añadir parámetros de consulta a tus rutas utilizando un objeto adicional:
+- También puedes añadir parámetros de consulta a las rutas utilizando un objeto adicional:
 
 ```typescript
 
@@ -52,7 +52,7 @@ goToProducts(category: string) {
   this.router.navigate(['/products'], { queryParams: { category } });
 }
 ```
-- *Navegación Condicional*
+- *Navegación condicional*
 
 - El objeto Router también permite implementar lógica de navegación condicional. Por ejemplo, puedes redirigir a los usuarios a diferentes rutas según su estado de autenticación:
 
@@ -65,9 +65,9 @@ if (isAuthenticated) {
 }
 ```
 
-- *Retorno a la Ruta Anterior*
+- *Retorno a la ruta anterior*
 
-- Para regresar a la ruta anterior, puedes utilizar el método navigate() con el valor ['/'] o, si necesitas volver exactamente a la última ruta, puedes usar el servicio Location de Angular:
+- Para regresar a la ruta anterior, utilizar el método navigate() con el valor ['/'] o, si necesitas volver exactamente a la última ruta, usar el servicio Location de Angular:
 
 ```typescript
 
@@ -80,7 +80,7 @@ goBack() {
 }
 ```
 
-- *Navegación en Servicios*
+- *Navegación en servicios*
 
 - Además de los componentes, también puedes usar el objeto Router en servicios para realizar redirecciones. Esto es útil, por ejemplo, para manejar la lógica de autenticación en un servicio de usuario.
 
