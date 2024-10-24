@@ -1,4 +1,4 @@
-# 8.2 Reorganización de componentes en Angular
+# Capítulo 8.2. Reorganización de componentes en Angular
 
 - *Estructura de Proyecto Angular*
 
@@ -31,7 +31,7 @@ src/
 
 - *Componentes*
 
-1. Componentes Reutilizables
+1. Componentes reutilizables.
 
 - Los componentes que se utilizan en múltiples lugares, como encabezados y pies de página, deben estar en una carpeta específica de componentes.
 
@@ -58,7 +58,7 @@ export class HeaderComponent {}
 <app-footer></app-footer>
 ```
 
-2. Componentes de Página
+2. Componentes de página.
 - Los componentes que representan páginas específicas deben agruparse en una carpeta llamada pages. Esto ayuda a distinguir entre componentes de interfaz de usuario y componentes de estructura.
 
 *Ejemplo*: HomeComponent
@@ -75,11 +75,11 @@ import { Component } from '@angular/core';
 export class HomeComponent {}
 ```
 
-- *Uso de Módulos*
+- *Uso de módulos*
 
 - Angular permite la creación de módulos, lo que mejora la organización del código y la carga perezosa. Agrupa componentes relacionados en un módulo específico.
 
-- Ejemplo: Módulo de Productos
+- Ejemplo: Módulo de productos
 
 ```typescript
 
