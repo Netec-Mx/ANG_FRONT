@@ -1,10 +1,10 @@
-## 8.13. Leer APIs REST desde Angular
+# Capítulo 8.13. Leer APIs REST desde Angular
 
-- *Configuración Inicial*
+- *Configuración inicial*
 
-- Antes de empezar, asegúrate de tener un proyecto Angular configurado y de haber importado el módulo HttpClientModule. Esto se hace generalmente en el archivo app.module.ts.
+- Antes de empezar, asegurarse de tener un proyecto Angular configurado y de haber importado el módulo HttpClientModule. Esto se hace generalmente en el archivo app.module.ts.
 
-1. Paso 1: Importar HttpClientModule
+1. Paso 1: Importar HttpClientModule.
 
 ```typescript
 
@@ -27,13 +27,13 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-- *Creación de un Servicio para Leer Datos*
+- *Creación de un servicio para leer datos*
 
 - Para interactuar con una API REST, es recomendable crear un servicio Angular que encapsule la lógica de las peticiones HTTP.
 
-1. Paso 1: Generar un Servicio
+1. Paso 1: Generar un servicio.
 
-- Utiliza Angular CLI para crear un servicio. Por ejemplo, si queremos leer datos de productos, podemos crear un servicio llamado product.service.ts.
+- Utilizar Angular CLI para crear un servicio. Por ejemplo, si queremos leer datos de productos, podemos crear un servicio llamado product.service.ts.
 
 ```bash
 
@@ -82,20 +82,20 @@ export class ProductService {
 
 - *Lectura de Datos en un Componente*
 
-- Ahora que tenemos nuestro servicio configurado, vamos a utilizarlo en un componente para mostrar los datos.
+- Ahora que tenemos el servicio configurado, vamos a utilizarlo en un componente para mostrar los datos.
 
-1. Paso 1: Crear un Componente
+1. Paso 1: Crear un componente.
 
-- Genera un nuevo componente que se encargue de listar los productos.
+- Generar un nuevo componente que se encargue de listar los productos.
 
 ```bash
 
 ng generate component components/product-list
 ```
 
-2. Paso 2: Implementar la Lógica del Componente
+2. Paso 2: Implementar la lógica del componente.
 
-- En product-list.component.ts, inyecta el servicio y utiliza el método getProducts() para recuperar la lista de productos.
+- En product-list.component.ts, inyectar el servicio y utilizar el método getProducts() para recuperar la lista de productos.
 
 ```typescript
 
@@ -134,14 +134,14 @@ export class ProductListComponent implements OnInit {
 }
 ```
 
-- *Explicación del Componente*
+- *Explicación del componente*
 
-- *Inyección de Servicio*: El servicio ProductService se inyecta en el constructor del componente.
+- *Inyección de servicio*: El servicio ProductService se inyecta en el constructor del componente.
 
 - *ngOnInit*: En el método ngOnInit(), se llama al método getProducts() del servicio. Este método devuelve un observable que se suscribe para recibir los datos.
 
-- *Manejo de Datos y Errores*: Si la llamada es exitosa, los datos se asignan a la propiedad products. En caso de error, se captura y muestra un mensaje.
+- *Manejo de datos y errores*: Si la llamada es exitosa, los datos se asignan a la propiedad products. En caso de error, se captura y muestra un mensaje.
 
-- *Visualización de Datos*
+- *Visualización de datos*
 
 - El componente product-list usa *ngFor para iterar sobre el array de productos y mostrar cada producto en una lista.
