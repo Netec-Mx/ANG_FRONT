@@ -1,4 +1,4 @@
-## Capítulo 8.5. Query Params en Angular
+# Capítulo 8.5. Query Params en Angular
 
 - *¿Qué son los Query Params?*
 - Los query params son parte de la URL que se utilizan para enviar datos a un servidor o para definir el estado de la aplicación. Se presentan en la URL después del signo de interrogación (?). Por ejemplo:
