@@ -42,9 +42,9 @@ src/
 
 ```
 
-1. *Paso 1: Crear los Componentes*
+1. *Paso 1: Crear los Componentes*.
 
-- Primero, generaremos los componentes necesarios utilizando Angular CLI:
+- Generar los componentes necesarios utilizando Angular CLI:
 
 ```bash
 
@@ -54,9 +54,9 @@ ng generate component components/product-detail
 ng generate component components/contact
 ```
 
-2. Paso 2: Configurar el AppRoutingModule
+2. Paso 2: Configurar el AppRoutingModule.
 
-- En el archivo app-routing.module.ts, configuraremos las rutas de la aplicación.
+- En el archivo app-routing.module.ts, configurar las rutas de la aplicación.
 
 ```typescript
 
@@ -83,7 +83,7 @@ const routes: Routes = [
 export class AppRoutingModule { }
 ```
 
-- *Detalles de las Rutas*
+- *Detalles de las Rutas*.
 
 - Ruta Vacía (''): Redirige a la página de inicio (/home).
 
@@ -97,7 +97,7 @@ export class AppRoutingModule { }
 
 3. Paso 3: Implementar el Router Outlet
 
-- En el archivo app.component.html, añadiremos un <router-outlet> para que Angular sepa dónde renderizar los componentes según la ruta activa.
+- En el archivo app.component.html, añadir un <router-outlet> para que Angular sepa dónde renderizar los componentes según la ruta activa.
 
 ```html
 
@@ -109,9 +109,9 @@ export class AppRoutingModule { }
 <router-outlet></router-outlet>
 ```
 
-4. Paso 4: Acceso a Parámetros de Ruta
+4. Paso 4: Acceso a parámetros de ruta.
 
-- En el componente ProductDetailComponent, accedemos al parámetro de ruta id para mostrar los detalles del producto.
+- En el componente ProductDetailComponent, acceder al parámetro de ruta id para mostrar los detalles del producto.
 
 ```typescript
 
@@ -138,9 +138,9 @@ export class ProductDetailComponent implements OnInit {
 }
 ```
 
-5. Paso 5: Navegación entre Componentes
+5. Paso 5: Navegación entre componentes.
 
-- En el componente ProductsComponent, podemos añadir enlaces para navegar a los detalles de cada producto. Para este ejemplo, consideraremos un producto con ID 1.
+- En el componente ProductsComponent, podemos añadir enlaces para navegar a los detalles de cada producto. Para este ejemplo, considerar un producto con ID 1.
 
 ```html
 
@@ -151,7 +151,7 @@ export class ProductDetailComponent implements OnInit {
 </ul>
 ```
 
-6. Paso 6: Estilo y Diseño
+6. Paso 6: Estilo y Diseño.
 
-- Agrega estilos en styles.css o en los estilos de cada componente para mejorar la presentación visual de la aplicación.
+- Agregar estilos en styles.css o en los estilos de cada componente para mejorar la presentación visual de la aplicación.
 
