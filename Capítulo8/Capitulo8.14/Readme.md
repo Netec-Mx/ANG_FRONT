@@ -1,6 +1,6 @@
-## 8.14. Manejo de errores en Angular
+# Capítulo 8.14. Manejo de errores en Angular
 
-- *Importancia del Manejo de Errores*
+- *Importancia del manejo de errores*
 
 - Un manejo adecuado de errores permite:
 
@@ -10,13 +10,13 @@
     - Mejorar la seguridad de la aplicación.
 
 
-- *Estrategias para Manejar Errores*
+- *Estrategias para manejar errores*
 
-1. Manejo de Errores en Servicios
+1. Manejo de errores en servicios.
 
 - Al realizar peticiones HTTP, los errores pueden ocurrir debido a problemas de red, respuestas no válidas del servidor, o errores de autenticación. Angular proporciona el objeto HttpErrorResponse para gestionar estos errores.
 
-- *Ejemplo de Manejo de Errores en un Servicio*
+- *Ejemplo de manejo de errores en un servicio*
 
 ```typescript
 
@@ -54,11 +54,11 @@ export class ProductService {
 }
 ```
 
-2. Manejo de Errores en Componentes
+2. Manejo de errores en componentes.
 
 - Los componentes que consumen servicios también deben manejar los errores. Esto se puede hacer suscribiendo a los observables y manejando el error en la suscripción.
 
-- *Ejemplo de Manejo de Errores en un Componente*
+- *Ejemplo de manejo de errores en un componente*
 
 ```typescript
 
@@ -97,13 +97,13 @@ export class ProductListComponent implements OnInit {
 }
 ```
 
-3. Uso de Interceptores para Manejo Global de Errores
+3. Uso de interceptores para manejo global de errores.
 
 - Los interceptores permiten manejar errores de manera centralizada, lo que es útil para implementar lógicas de manejo de errores comunes en toda la aplicación.
 
-- *Ejemplo de un Interceptor de Errores*
+- *Ejemplo de un interceptor de errores*
 
-- Primero, genera un interceptor:
+- Primero, generar un interceptor:
 
 ```bash
 
@@ -111,7 +111,7 @@ ng generate interceptor services/error
 
 ```
 
-- Luego, implementa el interceptor en error.interceptor.ts:
+- Luego, implementar el interceptor en error.interceptor.ts:
 
 ```typescript
 
@@ -139,11 +139,11 @@ export class ErrorInterceptor implements HttpInterceptor {
 }
 ```
 
-4. Registro de Errores
+4. Registro de errores.
 
 - Además de mostrar mensajes de error al usuario, es importante registrar los errores para análisis futuros. Puedes integrar un servicio de logging que envíe los errores a un servidor o sistema de seguimiento de errores.
 
-- *Ejemplo de Servicio de Registro*
+- *Ejemplo de servicio de registro*
 
 ```typescript
 
@@ -158,7 +158,7 @@ export class LoggingService {
 }
 ```
 
-- *Integración del Servicio de Registro*
+- *Integración del servicio de registro*
 
 - Puedes llamar a este servicio en el manejo de errores del servicio o del interceptor:
 
