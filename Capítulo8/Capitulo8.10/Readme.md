@@ -1,14 +1,14 @@
-## 8.10 Métodos POST y PUT en Angular
+## Capítulo 8.10. Métodos POST y PUT en Angular
 
-- *Configuración Inicial*
+- *Configuración inicial*
 
-- Antes de comenzar, asegúrate de haber configurado el HttpClientModule y de tener un servicio para interactuar con tu API. Si no lo has hecho, revisa el contenido anterior sobre Peticiones HTTP en Angular (REST).
+- Antes de comenzar, asegurarse de haber configurado el HttpClientModule y de tener un servicio para interactuar con la API. Si no lo has hecho, revisa el contenido anterior sobre Peticiones HTTP en Angular (REST).
 
-- *Creación de un Servicio para Manejar POST y PUT*
+- *Creación de un servicio para manejar POST y PUT*
 
 - Vamos a extender el servicio que creamos previamente (product.service.ts) para incluir métodos para agregar y actualizar productos.
 
-1. Paso 1: Implementar el Método POST
+1. Paso 1: Implementar el método POST.
 
 - El método POST se utiliza para enviar datos a la API y crear un nuevo recurso.
 
@@ -23,7 +23,7 @@ createProduct(product: Product): Observable<Product> {
 }
 ```
 
-2. Paso 2: Implementar el Método PUT
+2. Paso 2: Implementar el método PUT.
 
 - El método PUT se utiliza para actualizar un recurso existente. Generalmente, se debe especificar el ID del recurso que se va a actualizar.
 
@@ -38,22 +38,22 @@ updateProduct(id: number, product: Product): Observable<Product> {
 }
 ```
 
-- *Uso de POST y PUT en Componentes*
+- *Uso de POST y PUT en componentes*
 
 - Ahora que tenemos los métodos en nuestro servicio, vamos a implementar la lógica para utilizarlos en un componente.
 
-1. Paso 1: Crear un Componente para Agregar Productos
+1. Paso 1: Crear un componente para agregar productos.
 
-- Genera un nuevo componente llamado product-add.
+- Generar un nuevo componente llamado product-add.
 
 ```bash
 
 ng generate component components/product-add
 ```
 
-2. Paso 2: Implementar la Lógica del Componente para el Método POST
+2. Paso 2: Implementar la lógica del componente para el método POST.
 
-- En el componente product-add.component.ts, inyecta el servicio y utiliza el método createProduct para enviar un nuevo producto.
+- En el componente product-add.component.ts, inyectar el servicio y utilizar el método createProduct para enviar un nuevo producto.
 
 ```typescript
 
@@ -98,18 +98,18 @@ export class ProductAddComponent {
 }
 ```
 
-3. Paso 3: Crear un Componente para Actualizar Productos
+3. Paso 3: Crear un componente para actualizar productos.
 
-- Genera un nuevo componente llamado product-edit.
+- Generar un nuevo componente llamado product-edit.
 
 ```bash
 
 ng generate component components/product-edit
 ```
 
-4. Paso 4: Implementar la Lógica del Componente para el Método PUT
+4. Paso 4: Implementar la lógica del componente para el método PUT.
 
-- En el componente product-edit.component.ts, inyecta el servicio y utiliza el método updateProduct para actualizar un producto existente.
+- En el componente product-edit.component.ts, inyectar el servicio y utilizar el método updateProduct para actualizar un producto existente.
 
 ```typescript
 
