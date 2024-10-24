@@ -16,9 +16,9 @@
 
     ![img](../../images/img-1.png)
 
-2. Verificar si quedo bien instalado Angular
+2. Verificar si quedo bien instalado Angular.
 
-    Ejecuta en el cmd
+    Ejecutar en el cmd
 
     ```
     ng version
@@ -26,15 +26,15 @@
 
     ![img](../../images/img-5.png)
 
-3. Crear una nueva aplicación
+3. Crear una nueva aplicación.
 
-- Usa Angular CLI para generar una nueva aplicación. En la terminal, navega a la carpeta donde deseas crear tu proyecto y ejecuta:
+- Usar Angular CLI para generar una nueva aplicación. En la terminal, navegar a la carpeta donde deseas crear tu proyecto y ejecutar:
 
     ![img](../../images/img-2.png)
 
 - Reemplazar nombre-de-tu-aplicacion on el nombre que desees. Durante la creación, Angular CLI te preguntará si deseas incluir ciertas características (como el enrutamiento). Responder según tus preferencias.
 
-4. Navegar al directorio de la aplicación
+4. Navegar al directorio de la aplicación.
 
 - Después de que Angular CLI haya creado tu proyecto, navega a la carpeta del proyecto:
 
@@ -46,13 +46,13 @@
 
     ![img](../../images/img-4.png)
 
-    Por defecto, la aplicación estará disponible en
+    Por defecto, la aplicación estará disponible en:
 
     [LocalHost](http://localhost:4200/)
 
-- Abrir esa dirección en tu navegador y deberías ver la página de inicio de tu nueva aplicación Angular.
+- Abrir esa dirección en tu navegador. Deberías ver la página de inicio de tu nueva aplicación Angular.
 
-6. Para pausar el servidor le das clic encima de la terminal y oprimes Crontol + c
+6. Para pausar el servidor, dar clic encima de la terminal y oprimir Crontol + c
 
 
 
