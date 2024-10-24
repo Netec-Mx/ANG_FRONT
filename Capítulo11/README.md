@@ -3,14 +3,15 @@
 ## Objetivo de la práctica
 
 - Comprender y utilizar funciones asincrónicas en JavaScript y Angular, diferenciándolas de las funciones síncronas.
-- Aprender a trabajar con promesas, async/await y los conceptos de eventos y callbacks, lo que te permitirá manejar operaciones que requieren tiempo, como peticiones HTTP, de manera eficiente y sin bloquear el hilo principal de ejecución. - Crear aplicaciones más responsivas y a gestionar mejor la concurrencia en tu código.
+- Aprender a trabajar con promesas, async/await y los conceptos de eventos y callbacks, lo que te permitirá manejar operaciones que requieren tiempo, como peticiones HTTP, de manera eficiente y sin bloquear el hilo principal de ejecución.
+- Crear aplicaciones más responsivas y a gestionar mejor la concurrencia en tu código.
 
 ## Duración aproximada
 - 30 minutos.
 
 ## Instrucciones
 
-1. Función Síncrona
+1. Función síncrona.
 ``` javascript
 
 function suma(a, b) {
@@ -32,7 +33,7 @@ Inicio
 Fin
 ```
 
-2. Funciones Asincrónicas
+2. Funciones asincrónicas.
 
 Promesa
 ```javascript
@@ -88,8 +89,8 @@ Fin
 
 ## Promesas en JavaScript
 
-1. Creación de una Promesa
-- Puedes crear una promesa utilizando el constructor Promise, que toma una función llamada "executor" con dos argumentos: resolve y reject.
+1. Creación de una promesa.
+- Crear una promesa utilizando el constructor Promise, que toma una función llamada "executor" con dos argumentos: resolve y reject.
 
 ```javascript
 
@@ -105,7 +106,7 @@ const miPromesa = new Promise((resolve, reject) => {
 
 ```
 
-2. Consumiendo Promesas
+2. Consumiendo promesas.
 
 - Para manejar el resultado de una promesa, se utilizan los métodos .then() y .catch().
 
@@ -124,9 +125,9 @@ miPromesa
 
 ```
 
-3. Encadenamiento de Promesas
+3. Encadenamiento de promesas.
 
-- Puedes encadenar múltiples promesas usando then(), lo que permite realizar operaciones consecutivas basadas en el resultado de la promesa anterior.
+- Encadenar múltiples promesas usando then(), lo que permite realizar operaciones consecutivas basadas en el resultado de la promesa anterior.
 
 ```javascript
 
@@ -142,7 +143,7 @@ promesaEncadenada
   });
 ```
 
-4. Promesas Combinadas
+4. Promesas combinadas.
 
 - A veces, es necesario ejecutar múltiples promesas en paralelo. Para esto, se pueden utilizar métodos como Promise.all() y Promise.race().
 
@@ -229,8 +230,8 @@ promesaConError
 
 2. Implementación del Patrón Observer en JavaScript
 
-    1. Paso 1: Definir el Sujeto
-    - Primero, crear la clase Subject, que gestiona la lista de observadores y proporciona métodos para añadir, eliminar y notificar observadores.
+    1. Paso 1: Definir el sujeto.
+    - Crear la clase Subject que gestiona la lista de observadores y proporciona métodos para añadir, eliminar y notificar observadores.
 
 ```javascript
 
@@ -253,8 +254,8 @@ class Subject {
 }
 ```
 
-   2. Paso 2: Definir los Observadores
-    - A continuación, definir la clase Observer, que se encargará de manejar las actualizaciones.
+   2. Paso 2: Definir los observadores.
+    - Definir la clase Observer, que se encargará de manejar las actualizaciones.
 
 ```javascript
 
@@ -265,7 +266,7 @@ class Observer {
 }
 ```
 
-   3. Paso 3: Implementar el Sujeto Concreto
+   3. Paso 3: Implementar el sujeto concreto.
     - Crear una clase ConcreteSubject que extiende a Subject y añade funcionalidad para gestionar su estado.
 
 ```javascript
@@ -287,7 +288,7 @@ class ConcreteSubject extends Subject {
 }
 ```
 
-   4. Paso 4: Implementar Observadores Concretos
+   4. Paso 4: Implementar observadores concretos.
     - Definir una clase ConcreteObserver que implementa la lógica de reacción al cambio de estado.
 
 ```javascript
@@ -306,7 +307,7 @@ class ConcreteObserver extends Observer {
 
 3. Uso del Patrón Observer
 
-- Ahora podemos ver el patrón en acción:
+- Ahora se puede ver el patrón en acción:
 
 ```javascript
 
@@ -327,14 +328,14 @@ subject.setState(2); // Salida: Observer B ha recibido la actualización: 2
 
 ```
 
-4. Ventajas del Patrón Observer
+4. Ventajas del Patrón Observer.
 
 - Desacoplamiento: Los sujetos y observadores están desacoplados, lo que permite una mayor flexibilidad.
 - Escalabilidad: Nuevos observadores pueden ser añadidos o eliminados sin afectar al sujeto.
 - Reactividad: Permite la creación de sistemas reactivos donde las actualizaciones se propagan automáticamente.
 
 
-5. Desventajas del Patrón Observer
+5. Desventajas del Patrón Observer.
 
 - Sobrecarga de Notificaciones: Si hay muchos observadores, el sujeto puede tener que notificar a muchos objetos, lo que puede ser costoso.
 - Complejidad: La gestión de la relación entre sujetos y observadores puede añadir complejidad a la implementación.
@@ -347,7 +348,7 @@ subject.setState(2); // Salida: Observer B ha recibido la actualización: 2
 1. Observable
 - Un observable es la pieza central de la programación reactiva. Permite a los desarrolladores definir flujos de datos que pueden ser observados. En JavaScript, bibliotecas como RxJS ofrecen implementaciones de observables.
 
-- Creación de un Observable
+- Creación de un Observable.
 ```javascript
 
 import { Observable } from 'rxjs';
@@ -373,7 +374,7 @@ Mundo
 Completado
 ```
 
-2. Suscripciones
+2. Suscripciones.
 - Una vez que un observable es creado, se pueden hacer suscripciones para recibir datos.
 
 - Suscripción
@@ -392,7 +393,7 @@ subscription.unsubscribe();
 - RxJS incluye una amplia variedad de operadores que permiten manipular flujos de datos.
 
 1. map
-- Transforma los datos emitidos por un observable.
+- Transformar los datos emitidos por un observable.
 
 ```javascript
 
@@ -453,10 +454,10 @@ const miObservable = new Observable(subscriber => {
 
 ```
 
-2. Usando Métodos de Creación
+2. Usando métodos de creación.
 - RxJS ofrece métodos de creación como of, from, interval, y timer.
 
-- *of*: Crea un observable a partir de valores.
+- *of*: Crear un observable a partir de valores.
 
 ```javascript
 
@@ -465,7 +466,7 @@ import { of } from 'rxjs';
 const numeros$ = of(1, 2, 3, 4, 5);
 ```
 
-- *from*: Convierte una colección iterable (como un array) en un observable.
+- *from*: Convertir una colección iterable (como un array) en un observable.
 
 ```javascript
 
@@ -474,7 +475,7 @@ import { from } from 'rxjs';
 const array$ = from([10, 20, 30]);
 ```
 
-- *interval*: Crear un observable que emite un número secuencial cada cierto tiempo.
+- *interval*: Crear un observable que emita un número secuencial cada cierto tiempo.
 
 ```javascript
 
@@ -483,7 +484,7 @@ import { interval } from 'rxjs';
 const contador$ = interval(1000); // Emite un número cada segundo
 ```
 
-3. Suscripciones
+3. Suscripciones.
 
 - Para recibir datos de un observable, se debe realizar una suscripción. Cuando un observador se suscribe, el observable comienza a emitir datos.
 
@@ -501,7 +502,7 @@ subscription.unsubscribe();
 
 ## Operadores de RxJS
 
-1. Transformación de Datos
+1. Transformación de datos.
 
 - *map*: Transforma los valores emitidos por un observable.
 
@@ -515,7 +516,7 @@ numeros$.pipe(
 
 ```
 
-2. Filtrado de Datos
+2. Filtrado de datos.
 
 - *filter*: Filtra los valores emitidos según una condición.
 
@@ -528,7 +529,7 @@ numeros$.pipe(
 ).subscribe(console.log); // Salida: 3, 4, 5
 ```
 
-3. Combinación de Observables
+3. Combinación de observables
 
 - *merge*: Combina múltiples observables en uno solo.
 
@@ -544,11 +545,11 @@ merge(obs1$, obs2$).subscribe(console.log); // Salida: A, B, C, D
 
 ## Ejercicio practico
 
-- Buscador en Tiempo Real en Angular
+- Buscador en tiempo real en Angular.
 
-1. Configuración del Proyecto
+1. Configuración del proyecto.
 
-- Asumiremos que ya tienes un proyecto Angular creado. Si no, puedes crear uno usando Angular CLI:
+- Se asumira que ya hay un proyecto Angular creado. Si no, puedes crear uno usando Angular CLI:
 
 ```bash
 
@@ -558,13 +559,13 @@ ng serve
 
 ```
 
-2. Instalación de Dependencias
+2. Instalación de dependencias.
 
-- Asegúrate de que tienes RxJS instalado (viene incluido con Angular por defecto).
+- Asegurarse de tener RxJS instalado (viene incluido con Angular por defecto).
 
-3. Creación del Servicio de Búsqueda
+3. Creación del servicio de búsqueda.
 
-- Primero, crearemos un servicio que simule la búsqueda de datos. Este servicio se encargará de hacer "búsquedas" en un conjunto de datos estáticos.
+- Crear un servicio que simule la búsqueda de datos. Este servicio se encargará de hacer "búsquedas" en un conjunto de datos estáticos.
 
 - Crear un servicio llamado api.service.ts:
 
@@ -589,11 +590,11 @@ export class ApiService {
 }
 ```
 
-4. Creación del Componente de Búsqueda
+4. Creación del componente de búsqueda
 
-- Ahora crearemos un componente que utilizará el servicio para buscar resultados a medida que el usuario escribe.
+- Crear un componente que utilizará el servicio para buscar resultados a medida que el usuario escribe.
 
-Crea un componente llamado busqueda.component.ts:
+Crear un componente llamado busqueda.component.ts:
 
 ```typescript
 
@@ -643,9 +644,9 @@ export class BusquedaComponent implements OnInit {
 
 ```
 
-5. Actualización del Módulo
+5. Actualización del módulo.
 
-- Asegúrate de que has importado ReactiveFormsModule en tu módulo principal (app.module.ts):
+- Asegurarse de haber importado importado ReactiveFormsModule en tu módulo principal (app.module.ts):
 
 ```typescript
 
@@ -670,9 +671,9 @@ import { BusquedaComponent } from './busqueda.component'; // Importa el componen
 export class AppModule {}
 ```
 
-6. Integración en la Plantilla Principal
+6. Integración en la plantilla principal.
 
-- Finalmente, integra el componente de búsqueda en tu plantilla principal (app.component.html):
+- Integrar el componente de búsqueda en la plantilla principal (app.component.html):
 
 ```html
 
@@ -680,9 +681,9 @@ export class AppModule {}
 <app-busqueda></app-busqueda>
 ```
 
-7. Ejecución del Proyecto
+7. Ejecución del Proyecto.
 
-- Ahora, puedes ejecutar tu proyecto usando:
+- Ahora, puedes ejecutar el proyecto usando:
 
 ```bash
 
@@ -690,7 +691,7 @@ ng serve
 
 ```
 
-- Abre tu navegador en http://localhost:4200 y deberías ver un campo de búsqueda. A medida que escribes, el componente hará una búsqueda y mostrará los resultados de forma reactiva, actualizándose después de un retraso simulado.
+- Abrir el navegador en http://localhost:4200 y deberías ver un campo de búsqueda. A medida que escribes, el componente hará una búsqueda y mostrará los resultados de forma reactiva, actualizándose después de un retraso simulado.
 
 
 
