@@ -1,4 +1,4 @@
-## Práctica 10. Creacion de un componente Login
+# Práctica 10. Creacion de un componente Login
 
 ## Objetivo de la práctica
 
@@ -10,14 +10,15 @@
 - 40 minutos.
 
 ## Instrucciones
-- Crear un proyecto nuevo
-- y crear un componente nuevo que lo llamaras login, usando el comando CLI para crear componentes
+
+- Crear un proyecto nuevo.
+- Crear un componente nuevo llamado login, usando el comando CLI para crear componentes.
 
 ```bash
 ng g component login
 ```
 
-- Estructura de Carpetas
+- Estructura de carpetas.
 
 ```lua
 
@@ -30,10 +31,10 @@ ng g component login
             |-- login.component.css
 ```
 
-1. Código del Componente de Login
+1. Código del componente de Login
 
 - 1. app.module.ts
-- Asegúrate de importar ReactiveFormsModule para usar formularios reactivos.
+- Asegurarse de importar ReactiveFormsModule para usar formularios reactivos.
 
 ```typescript
 
@@ -59,7 +60,7 @@ import { LoginComponent } from './components/login/login.component';
 export class AppModule { }
 ```
 
-2. Codigo en el archivo login.component.ts
+2. Código en el archivo login.component.ts
 
 ```typescript
 
@@ -91,7 +92,7 @@ export class LoginComponent {
 }
 ```
 
-3. Codigo en el archivo login.component.html
+3. Código en el archivo login.component.html
 ```html
 
 <div class="login-container">
@@ -120,7 +121,7 @@ export class LoginComponent {
 </div>
 ```
 
-4. Codigo en el archivo login.component.css
+4. Código en el archivo login.component.css
 
 ```css
 
@@ -162,7 +163,7 @@ button:disabled {
 ```
 ## Firebase para Autenticación
 
-1. Crear un Proyecto en Firebase
+1. Crear un proyecto en Firebase.
 
     1. Ir a Firebase Console:
 
@@ -174,29 +175,29 @@ button:disabled {
     - Hacer clic en "Agregar proyecto" y seguir las instrucciones.
     - Puedes optar por habilitar Google Analytics o dejarlo desactivado según tus preferencias.
 
-2. Registrar tu Aplicación Web
+2. Registrar la aplicación Web.
 
-    1. Añadir una Aplicación Web:
+    1. Añadir una aplicación Web:
 
-    - Una vez que tu proyecto esté creado, en el panel de control, hacer clic en el icono de la web (</>).
-    - Introducir un nombre para tu aplicación y hacer clic en "Registrar aplicación".
+    - Una vez que el proyecto esté creado, en el panel de control, hacer clic en el icono de la web (</>).
+    - Introducir un nombre para la aplicación y hacer clic en "Registrar aplicación".
 
     2. Obtener Configuración de Firebase:
 
     - Firebase te proporcionará un bloque de código con la configuración de Firebase. Lo necesitarás más adelante.
 
-3. Instalar Firebase y AngularFire
+3. Instalar Firebase y AngularFire.
 
-- Abrir tu terminal en el directorio de tu proyecto Angular y ejecutar:
+- Abrir la terminal en el directorio del proyecto Angular y ejecutar:
 
 ```bash
 
 npm install firebase @angular/fire
 ```
 
-4. Configurar Firebase en Angular
+4. Configurar Firebase en Angular.
 
-    1. Importar los Módulos Necesarios
+    1. Importar los Módulos Necesarios:
 
     - Abre src/app/app.module.ts y configura AngularFire:
 
@@ -228,7 +229,7 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-   2. Agregar la Configuración en environment.ts
+   2. Agregar la configuración en environment.ts
    - Abrir src/environments/environment.ts y añadir tu configuración de Firebase:
 
 ```typescript
@@ -246,23 +247,23 @@ export const environment = {
 };
 
 ```
-  - Reemplazar los valores con los que obtuviste de la configuración de Firebase
+  - Reemplazar los valores con los obtenidos de la configuración de Firebase
 
-5. Habilitar Métodos de Autenticación
+5. Habilitar métodos de Autenticación.
     1. Ir a la sección de Autenticación:
 
     - En la consola de Firebase, seleccionar "Authentication" en el menú de la izquierda.
 
-    2. Configurar Métodos de inicio de sesión:
+    2. Configurar métodos de inicio de sesión:
 
     - Hacer clic en "Método de inicio de sesión".
     - Habilitar los métodos que quieras usar (por ejemplo, "Correo electrónico/contraseña", "Google", etc.) y guardar los cambios.
 
-6. Crear un Servicio de Autenticación
+6. Crear un Servicio de Autenticación.
     
     - Crear un nuevo servicio para manejar la autenticación.
 
-    1.  Crear el Servicio
+    1.  Crear el Servicio.
     
     - Ejecutar en la terminal:
 
@@ -272,7 +273,7 @@ ng generate service auth
 
 ````
 
-   2.  Implementar el Servicio
+   2.  Implementar el Servicio.
     -  Abrir src/app/auth.service.ts y añadir el siguiente código:
 
 ```typescript
@@ -304,13 +305,13 @@ export class AuthService {
 }
 ```
 
-7. Usar el Servicio en un Componente
+7. Usar el servicio en un componente.
     
-    - Ahora puedes usar el servicio de autenticación en tu componente de inicio de sesión.
+    - Puedes usar el servicio de autenticación en el componente de inicio de sesión.
 
-    1. Ejemplo de Componente de Login
+    1. Ejemplo de componente de Login
     
-    - A continuación, te muestro cómo podrías integrar el servicio en tu componente de inicio de sesión:
+    - A continuación, te muestro cómo podrías integrar el servicio en el componente de inicio de sesión:
 
 ```typescript
 
@@ -348,10 +349,10 @@ export class LoginComponent {
 ```
 
 
-## Obtención del Token al hacer Login.
+## Obtención del token al hacer Login.
 
-- Modificación del Servicio de Autenticación
-- Primero, vamos a modificar el servicio de autenticación que creamos anteriormente para que devuelva el token después de iniciar sesión.
+- Modificación del servicio de autenticación.
+- Primero, vamos a modificar el servicio de autenticación creado anteriormente para que devuelva el token después de iniciar sesión.
 
 1. Actualizar auth.service.ts
 - Aquí está el código actualizado para incluir la obtención del token:
@@ -388,9 +389,9 @@ export class AuthService {
 
 ```
 
-2. Uso del Token en el Componente de Login
+2. Uso del token en el componente de Login.
 
-- Ahora puedes usar el token en tu componente de inicio de sesión después de que el usuario se haya autenticado.
+- Ahora puedes usar el token en el componente de inicio de sesión después de que el usuario se haya autenticado.
 
     1. Actualizar login.component.ts
     - Aquí tienes un ejemplo de cómo obtener y usar el token:
@@ -432,8 +433,8 @@ export class LoginComponent {
 }
 ```
 
-3. Uso del Token para Autenticación
-- Puedes utilizar el token almacenado para autenticar solicitudes a tu backend. Cuando realices una llamada a una API, puedes incluir el token en los encabezados de la solicitud:
+3. Uso del Token para Autenticación.
+- Utilizar el token almacenado para autenticar solicitudes al backend. Cuando se realice una llamada a una API, se puede incluir el token en los encabezados de la solicitud:
 
 ```typescript
 
@@ -449,17 +450,17 @@ this.httpClient.get('https://api.example.com/secure-data', { headers }).subscrib
 
 ```
 
-## Obtención del Token de Autenticación en Firebase
+## Obtención del token de autenticación en Firebase
 
-1. Configuración Inicial:
+1. Configuración inicial:
 
-- Asegúrate de tener tu proyecto de Angular configurado con Firebase y de haber habilitado los métodos de autenticación deseados (como correo electrónico/contraseña).
+- Asegurarse de tener el proyecto de Angular configurado con Firebase y haber habilitado los métodos de autenticación deseados (como correo electrónico/contraseña).
 
-2. Servicio de Autenticación:
+2. Servicio de autenticación:
 
 - Crear un servicio que gestione la autenticación y la obtención del token. Este servicio utilizará la biblioteca de AngularFire para interactuar con Firebase.
 
-- Ejemplo de Servicio de Autenticación
+- Ejemplo de servicio de autenticación:
 
 ```typescript
 
@@ -482,10 +483,10 @@ export class AuthService {
 
 ```
 
-3. Implementación en el Componente de Login
-- En tu componente de inicio de sesión, utiliza el servicio para iniciar sesión y obtener el token.
+3. Implementación en el componente de Login.
+- En el componente de inicio de sesión, utilizar el servicio para iniciar sesión y obtener el token.
 
-- Ejemplo de Componente de Login
+- Ejemplo de componente de Login.
 
 ```typescript
 
@@ -523,18 +524,18 @@ export class LoginComponent {
 }
 ```
 
-4. Almacenamiento y Uso del Token
+4. Almacenamiento y uso del token.
 - Una vez que has obtenido el token, puedes almacenarlo en el almacenamiento local del navegador para usarlo en solicitudes futuras.
 
-    1. Almacenamiento del Token
+    1. Almacenamiento del token.
 
 ```typescript
 
 localStorage.setItem('token', token || '');
 ```
 
-   2. Uso del Token para Autenticación de API
-    - Cuando necesites realizar solicitudes a un backend, incluye el token en los encabezados de la solicitud:
+   2. Uso del token para autenticación de API.
+    - Cuando necesites realizar solicitudes a un backend, debes incluir el token en los encabezados de la solicitud:
 
 
 ```typescript
@@ -552,22 +553,22 @@ this.httpClient.get('https://api.example.com/secure-data', { headers }).subscrib
 ```
 
 
-## Enviando Token en cada petición HTTP
+## Enviando token en cada petición HTTP
 
-1. Crear un Interceptor
+1. Crear un interceptor.
 
-    - Primero, crea un interceptor que se encargue de agregar el token a los encabezados de las solicitudes.
+    - Crear un interceptor que se encargue de agregar el token a los encabezados de las solicitudes.
 
-    1. Generar el Interceptor
-    - Ejecuta el siguiente comando en la terminal:
+    1. Generar el interceptor.
+    - Ejecutar el siguiente comando en la terminal:
 
 ```bash
 
 ng generate interceptor auth
 ```
 
-   2. Implementar el Interceptor
-    - Abre el archivo auth.interceptor.ts que se ha creado y añade el siguiente código:
+   2. Implementar el interceptor.
+    - Abrir el archivo auth.interceptor.ts que se ha creado y añadir el siguiente código:
 
 ```typescript
 
@@ -594,11 +595,11 @@ export class AuthInterceptor implements HttpInterceptor {
 }
 ```
 
-2. Registrar el Interceptor
-    - Ahora, debes registrar el interceptor en tu módulo principal para que Angular lo utilice en todas las solicitudes HTTP.
+2. Registrar el interceptor.
+    - Registrar el interceptor en el módulo principal para que Angular lo utilice en todas las solicitudes HTTP.
 
     1. Actualizar app.module.ts
-    - Abre app.module.ts y añade el interceptor en el array de providers:
+    - Abrir app.module.ts y añadir el interceptor en el array de providers:
 
 ```typescript
 
@@ -633,8 +634,8 @@ import { AuthInterceptor } from './auth.interceptor';
 export class AppModule { }
 ```
 
-3. Realizar Peticiones HTTP
-- Ahora, cada vez que realices una solicitud HTTP en tu aplicación, el interceptor añadirá automáticamente el token de autorización.
+3. Realizar peticiones HTTP.
+- Ahora, cada vez que se realice una solicitud HTTP en la aplicación, el interceptor añadirá automáticamente el token de autorización.
 
     1. Ejemplo de Servicio que Hace Solicitudes HTTP
     - Aquí tienes un ejemplo de cómo podrías hacer una solicitud HTTP utilizando el servicio HttpClient:
@@ -659,8 +660,8 @@ export class ApiService {
 }
 ```
 
-4. Uso del Servicio en un Componente
-- Puedes utilizar este servicio en un componente para obtener datos seguros:
+4. Uso del servicio en un componente
+- Utilizar este servicio en un componente para obtener datos seguros:
 
 ```typescript
 
@@ -693,10 +694,10 @@ export class SecureDataComponent implements OnInit {
 
 ## Componente de Login y Logout en Angular
 
-1. Paso 1: Crear el Componente de Login
-- Primero, generemos el componente de Login.
+1. Paso 1: Crear el componente de Login.
+- Generar el componente de Login.
 
-    1. Generar el Componente
+    1. Generar el Componente.
 
     - Ejecutar el siguiente comando en la terminal:
 
@@ -705,9 +706,9 @@ export class SecureDataComponent implements OnInit {
 ng generate component login
 ```
 
-   2. Implementar la Lógica del Componente
+   2. Implementar la lógica del componente.
     
-    - Abre login.component.ts y añade la lógica para manejar el formulario de inicio de sesión.
+    - Abrir login.component.ts y añadir la lógica para manejar el formulario de inicio de sesión.
 
 ```typescript
 
@@ -748,8 +749,8 @@ export class LoginComponent {
 
 ```
 
-2. Paso 2: Crear el HTML del Componente de Login
-- Ahora, crear la interfaz del componente en login.component.html:
+2. Paso 2: Crear el HTML del componente de Login
+- Crear la interfaz del componente en login.component.html:
 
 ```html
 
@@ -778,8 +779,8 @@ export class LoginComponent {
 </div>
 ```
 
-3. Paso 3: Implementar el Servicio de Autenticación
-- Asegúrate de tener un servicio de autenticación que maneje el login y logout. Aquí te dejo un ejemplo simple.
+3. Paso 3: Implementar el servicio de autenticación.
+- Asegurarse de tener un servicio de autenticación que maneje el login y logout. Aquí te dejo un ejemplo simple:
 
 - archivo auth.service.ts
 
@@ -806,11 +807,11 @@ export class AuthService {
 }
 ```
 
-4. Paso 4: Crear el Componente de Logout
-- Ahora, vamos a crear un componente para manejar el cierre de sesión.
+4. Paso 4: Crear el componente de Logout.
+- Crear un componente para manejar el cierre de sesión.
 
-    1. Generar el Componente de Logout
-    -  Ejecuta el siguiente comando:
+    1. Generar el Componente de Logout.
+    -  Ejecutar el siguiente comando:
 
 ```bash
 
@@ -818,8 +819,8 @@ ng generate component logout
 
 ```
 
-   2. Implementar la Lógica del Componente de Logout
-    - Abre logout.component.ts y añade la lógica para cerrar sesión:
+   2. Implementar la lógica del componente de Logout
+    - Abrir logout.component.ts y añadir la lógica para cerrar sesión:
 
 ```typescript
 
@@ -842,8 +843,8 @@ export class LogoutComponent {
 }
 ```
 
-5. Paso 5: Integrar los Componentes en la Aplicación
-- Asegúrate de que los componentes de Login y Logout estén integrados en tu aplicación. Por ejemplo, puedes agregar las rutas en app-routing.module.ts:
+5. Paso 5: Integrar los componentes en la aplicación.
+- Asegúrate de que los componentes de Login y Logout estén integrados en la aplicación. Por ejemplo, puedes agregar las rutas en app-routing.module.ts:
 
 ```typescript
 
@@ -867,10 +868,10 @@ export class AppRoutingModule { }
 ```
 ## Uso de Guardianes en Angular
 
-1. Paso 1: Crear un Guardián
-- Para ilustrar cómo utilizar un guardián, vamos a crear un AuthGuard que proteja rutas que requieren autenticación.
+1. Paso 1: Crear un guardián.
+- Para ilustrar cómo utilizar un guardián, crear un AuthGuard que proteja rutas que requieren autenticación.
 
-    1. Generar el Guardián
+    1. Generar el guardián.
     - Ejecutar el siguiente comando en la terminal:
 
 ```bash
@@ -880,7 +881,7 @@ ng generate guard auth
 
    - Esto generará un nuevo guardián llamado AuthGuard.
 
-    2. Implementar la Lógica del Guardián
+    2. Implementar la lógica del guardián
     - Abrir auth.guard.ts y añadir la lógica para verificar si el usuario está autenticado:
 
 ```typescript
@@ -911,7 +912,7 @@ export class AuthGuard implements CanActivate {
 ```
 
 
-2. Paso 2: Proteger Rutas con el Guardián
+2. Paso 2: Proteger rutas con el guardián.
 
 - Ahora que has creado el guardián, debes aplicarlo a las rutas que deseas proteger.
 
@@ -940,8 +941,8 @@ export class AppRoutingModule { }
 
 ```
 
-3. Paso 3: Probar el Guardián
-- Ahora puedes probar la funcionalidad del guardián:
+3. Paso 3: Probar el guardián
+- Probar la funcionalidad del guardián:
 
-- Intenta acceder a la ruta protegida /secure sin iniciar sesión. Deberías ser redirigido a la página de login.
+- Intentar acceder a la ruta protegida /secure sin iniciar sesión. Deberías ser redirigido a la página de login.
 - Iniciar sesión y acceder nuevamente a la ruta /secure. Deberías poder acceder sin problemas.
