@@ -29,7 +29,7 @@ src/
 
 ## Capas en la Arquitectura Limpia
 
-1. Capa de Entidades:
+1. Capa de entidades:
 
 Define los modelos y las reglas de negocio. Por ejemplo, podrías tener clases que representen las entidades de tu aplicación, como Usuario, Producto, etc.
 
@@ -40,7 +40,7 @@ export class Usuario {
 }
 ```
 
-2. Capa de Casos de Uso:
+2. Capa de casos de uso:
 
 Contiene la lógica específica de la aplicación, como operaciones de creación, lectura, actualización y eliminación (CRUD). Aquí es donde se implementan los casos de uso.
 
@@ -65,7 +65,7 @@ export class UsuarioService {
 }
 ```
 
-3. Capa de Interfaces:
+3. Capa de interfaces:
 
 Se encarga de manejar la interacción con el usuario y la comunicación con el servicio. Aquí se implementan componentes y módulos de Angular.
 
@@ -88,7 +88,7 @@ export class UsuarioListaComponent {
 }
 ```
 
-4. Capa de Infraestructura:
+4. Capa de infraestructura:
 
 Maneja la persistencia de datos (por ejemplo, servicios HTTP para interactuar con APIs). Esta capa se conecta a las capas internas pero no debe afectar la lógica de negocio.
 
