@@ -8,33 +8,33 @@
 
 ## Instrucciones:
 
-1. Módulo Raíz
+1. Módulo Raíz.
 
 AppModule: Es el módulo principal de una aplicación Angular, definido en app.module.ts. Aquí se declaran todos los componentes, directivas y servicios que se usarán en la aplicación. Se importa el BrowserModule, que es necesario para ejecutar aplicaciones en el navegador.
 
-2. Módulos de Funcionalidad
+2. Módulos de funcionalidad.
 
 Feature Modules: Estos son módulos que agrupan funcionalidades específicas de la aplicación. Por ejemplo, puedes tener un módulo para la gestión de usuarios (UserModule) o un módulo para las tareas (TasksModule). Esto mejora la mantenibilidad y la escalabilidad de la aplicación.
 
-3. Módulos Compartidos
+3. Módulos compartidos.
 
 Shared Module: Se utiliza para declarar y exportar componentes, directivas y pipes que se usarán en múltiples módulos de la aplicación. Esto evita la duplicación de código y facilita la reutilización.
 
-4. Módulos de Terceros
+4. Módulos de terceros.
 
 Angular permite importar módulos de bibliotecas de terceros, como Angular Material o PrimeNG, que ofrecen componentes y servicios listos para usar. Estos se integran en la aplicación importando el módulo correspondiente.
 
-5. Lazy Loading (Carga Perezosa)
+5. Lazy Loading (Carga Perezosa).
 
 Angular soporta la carga perezosa de módulos, lo que significa que un módulo solo se carga cuando es necesario, en lugar de cargarlo al inicio. Esto mejora el rendimiento de la aplicación, especialmente en aplicaciones grandes.
 
-6. Declaraciones, Importaciones y Exportaciones
+6. Declaraciones, importaciones y exportaciones.
 
 Declarations: Aquí se declaran los componentes, directivas y pipes que pertenecen al módulo.
 Imports: Se utilizan para importar otros módulos que se requieren en el módulo actual.
 Exports: Permiten que otros módulos accedan a los componentes, directivas y pipes declarados en el módulo.
 
-7. Ejemplo de un Módulo
+7. Ejemplo de un módulo.
 
 ```typescript
 
@@ -57,10 +57,10 @@ import { FeatureComponent } from './feature/feature.component';
 export class AppModule { }
 ```
 
-## Ejercicio Práctico Usando Módulos en Angular
+## Ejercicio práctico usando módulos en Angular
 
 ## Pasos a seguir
-1. Configurar el Proyecto:
+1. Configurar el proyecto:
 
 - Crear un nuevo proyecto Angular:
 ```bash
@@ -227,4 +227,4 @@ export class AppModule { }
 
 11. Probar la aplicación:
 
-- Asegúrate de que todo esté guardado y vuelve a cargar la aplicación en http://localhost:4200.
+- Asegurarse de que todo esté guardado y volver a cargar la aplicación en http://localhost:4200.
