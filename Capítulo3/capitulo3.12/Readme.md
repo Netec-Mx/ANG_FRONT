@@ -13,7 +13,7 @@
 
 1. Interpolación:
 
-    - Utiliza la sintaxis de doble llaves {{ }} para mostrar datos del componente en la vista.
+    - Utilizar la sintaxis de doble llaves {{ }} para mostrar datos del componente en la vista.
 
 ````html
 <h1>{{ titulo }}</h1>
@@ -83,18 +83,18 @@
 
 1. Transformación de Datos:
 
- - Los pipes permiten aplicar transformaciones a datos en tiempo real, mejorando la presentación de la información.
+ - Los Pipes permiten aplicar transformaciones a datos en tiempo real, mejorando la presentación de la información.
 
 2. Pipes Integrados:
 
-- Angular ofrece varios pipes incorporados, como:
+- Angular ofrece varios Pipes incorporados, como:
     - DatePipe: para formatear fechas.
     - CurrencyPipe: para mostrar valores monetarios.
     - DecimalPipe: para formatear números.
     
 3. Pipes Personalizados:
 
- - Puedes crear tus propios pipes personalizados para realizar transformaciones específicas que no están cubiertas por los pipes integrados.
+ - Puedes crear tus propios Pipes personalizados para realizar transformaciones específicas que no están cubiertas por los Pipes integrados.
 
 
 4. Uso en Plantillas:
@@ -111,9 +111,9 @@
 
 ````
 
-2. Creación de un Pipe Personalizado: Para crear un pipe que invierte una cadena de texto, seguir estos pasos:
+2. Creación de un Pipe Personalizado: Para crear un Pipe que invierte una cadena de texto, seguir estos pasos:
 
- - Generar el pipe:
+ - Generar el Pipe:
 
 ````bash
 
@@ -138,7 +138,7 @@ export class InvertirTextoPipe implements PipeTransform {
 
 ````
 
- - Usar el pipe en una plantilla:
+ - Usar el Pipe en una plantilla:
 
 ````html
 
@@ -146,9 +146,9 @@ export class InvertirTextoPipe implements PipeTransform {
 
 ````
 
-## Pasos para Crear un Pipe Personalizado
+## Pasos para crear un Pipe personalizado
 
-1. Generar el Pipe: Usa Angular CLI para generar un nuevo pipe:
+1. Generar el Pipe: Usar Angular CLI para generar un nuevo Pipe:
 
 ````bash
 
@@ -156,7 +156,7 @@ ng generate pipe nombre-del-pipe
 
 ````
 
-2. Implementar el Pipe: Edita el archivo del pipe generado (por ejemplo, nombre-del-pipe.pipe.ts) para implementar la lógica de transformación:
+2. Implementar el Pipe: Editar el archivo del Pipe generado (por ejemplo, nombre-del-pipe.pipe.ts) para implementar la lógica de transformación:
 
 ````typescript
 
@@ -174,7 +174,7 @@ export class NombreDelPipe implements PipeTransform {
 
 ````
 
-3. Usar el Pipe en el Template: Una vez creado, puedes usar tu pipe en las plantillas de Angular:
+3. Usar el Pipe en el Template: Una vez creado, puedes usar tu Pipe en las plantillas de Angular:
 
 ````html
 
@@ -203,7 +203,7 @@ export class AppModule {}
 
 ````
 
-## Ejemplo de un Pipe Personalizado
+## Ejemplo de un Pipe personalizado
  - Supongamos que quieres crear un Pipe que invierte una cadena de texto:
 
 1. Implementación del Pipe:
@@ -267,14 +267,14 @@ export class InvertirTextoPipe implements PipeTransform {
 
 ## Ejemplo de Configuración de Angular Router
 
-1. Instalar el Router: Asegúrate de que tu proyecto tenga Angular Router:
+1. Instalar el Router: Asegurarse de que el proyecto tenga Angular Router:
 
 ````bash
 
 ng add @angular/router
 
 ````
-2. Definir Rutas: CreaR un archivo de enrutamiento (por ejemplo, app-routing.module.ts):
+2. Definir Rutas: Crear un archivo de enrutamiento (por ejemplo, app-routing.module.ts):
 
 ````typescript
 
@@ -296,7 +296,7 @@ export class AppRoutingModule { }
 
 ````
 
-3. Usar el Router Outlet: Añade <router-outlet></router-outlet> en tu plantilla principal (por ejemplo, app.component.html) donde se cargarán los componentes de las rutas:
+3. Usar el Router Outlet: Añadir <router-outlet></router-outlet> en tu plantilla principal (por ejemplo, app.component.html) donde se cargarán los componentes de las rutas:
 
 ````html
 
@@ -307,7 +307,7 @@ export class AppRoutingModule { }
 <router-outlet></router-outlet>
 ````
 
-4. Navegación: Puedes navegar entre las rutas usando los enlaces definidos:
+4. Navegación: Navegar entre las rutas usando los enlaces definidos:
 
 ````html
 
