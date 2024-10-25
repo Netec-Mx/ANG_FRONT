@@ -19,7 +19,7 @@ ng add @angular/router
 
 1. Importar el módulo de rutas:
     
-`- En el archivo principal app.module.ts, importar RouterModule y Routes:
+- En el archivo principal app.module.ts, importar RouterModule y Routes:
 
 ```typescript
 
