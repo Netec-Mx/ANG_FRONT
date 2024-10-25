@@ -16,7 +16,7 @@ Este material sobre Angular Developer es un curso teórico-práctico que present
 - [Práctica 6.1. Uso de módulos para la modularidad.](./Capítulo6/capitulo6.1/Readme.md)
 - [Práctica 6.2. Usando ViewChild y referencias locales en Angular.](./Capítulo6/capiulo6.4/Readme.md)
 - [Práctica 7. Creación y uso de servicios en Angular.](./Capítulo7/README.md)
-- [Práctica 8. Routing y APIs en Angular.]
+- Práctica 8. Routing y APIs en Angular
    - [Capítulo 8.1. Información complementaria.](./Capítulo8/Capitulo8.1/Readme.md)
    - [Capítulo 8.2. Información complementaria.](./Capítulo8/Capitulo8.2/Readme.md)
    - [Capítulo 8.3. Información complementaria.](./Capítulo8/Capitulo8.3/Readme.md)
