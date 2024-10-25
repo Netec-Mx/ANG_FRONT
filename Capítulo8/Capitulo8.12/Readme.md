@@ -1,5 +1,13 @@
 ## Capítulo 8.12. Método DELETE para Eliminar un registro en Angular
 
+## Objetivo de la práctica
+- Crear un servicio para manejar DELETE.
+  
+## Duración aproximada
+- 10 minutos.
+
+## Instrucciones 
+
 - *Configuración inicial*
 
 - Antes de comenzar, asegurarse de tener un servicio que maneje las peticiones HTTP y que esté configurado el módulo HttpClientModule. Si necesitas repasar estos pasos, consulta el contenido anterior sobre Peticiones HTTP en Angular (REST).
