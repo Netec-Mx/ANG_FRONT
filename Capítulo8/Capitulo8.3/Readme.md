@@ -1,5 +1,15 @@
 # Capítulo 8.3. RoutingModule y router-outlet en Angular
 
+## Objetivo de la práctica
+- Aprender a utilizar RoutingModule y router-outlet.
+- Navegar mediante el objeto Router.
+- Gestionar parámetros de consulta.
+  
+## Duración aproximada
+- 10 minutos.
+
+## Instrucciones 
+
 1. *Creación del RoutingModule*
 
 - Para crear un RoutingModule en Angular, sigue estos pasos:
