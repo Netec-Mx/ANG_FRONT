@@ -1,5 +1,13 @@
 # Capítulo 8.9. Peticiones HTTP en Angular (REST)
 
+## Objetivo de la práctica
+- Gestionar peticiones HTTP en Angular
+  
+## Duración aproximada
+- 10 minutos.
+
+## Instrucciones 
+
 - *Instalación de HttpClientModule*
 
 - Antes de comenzar, asegurarse de que el módulo HttpClientModule esté importado en la aplicación. Esto se hace generalmente en el archivo app.module.ts.
