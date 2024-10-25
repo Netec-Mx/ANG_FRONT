@@ -1,5 +1,13 @@
 # Capítulo 8.11. Método GET para recuperar información en Angular
 
+## Objetivo de la práctica
+- Crear un servicio para manejar GET.
+  
+## Duración aproximada
+- 10 minutos.
+
+## Instrucciones 
+
 - *Configuración Inicial*
 
 - Antes de empezar, asegurarse de que el módulo HttpClientModule esté importado en la aplicación y que tengas un servicio para interactuar con una API. Si necesitas repasar esta configuración, consulta el contenido anterior sobre Peticiones HTTP en Angular (REST).
