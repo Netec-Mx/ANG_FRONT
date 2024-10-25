@@ -1,4 +1,4 @@
-# Práctica 8.1. Routing en Angular
+# Capítulo 8.1. Routing en Angular
 
 ## Objetivo de la práctica
 - Instalación del enrutamiento.
