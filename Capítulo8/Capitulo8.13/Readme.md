@@ -41,7 +41,7 @@ ng generate service services/product
 ```
 2. Paso 2: Implementar el Servicio
 
-- En product.service.ts, inyecta el HttpClient y define métodos para realizar las peticiones GET.
+- En product.service.ts, inyectar el HttpClient y definir métodos para realizar las peticiones GET.
 
 ```typescript
 
