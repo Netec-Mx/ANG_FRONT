@@ -1,5 +1,14 @@
 # Capítulo 8.4. Navegación con el objeto Router en Angular
 
+## Objetivo de la práctica
+- Navegar mediante el objeto Router.
+- Gestionar parámetros de consulta.
+  
+## Duración aproximada
+- 10 minutos.
+
+## Instrucciones 
+
 - *Inyección del objeto Router*
 
 - Para utilizar el objeto Router, primero debes inyectarlo en el componente. Esto se hace a través del constructor del componente.
