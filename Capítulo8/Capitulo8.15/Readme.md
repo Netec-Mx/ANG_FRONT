@@ -1,5 +1,13 @@
 # Capítulo 8.15. Uso de Interceptores en Angular
 
+## Objetivo de la práctica
+- Crear un interceptor.
+  
+## Duración aproximada
+- 10 minutos.
+
+## Instrucciones 
+
 - *¿Qué es un Interceptor?*
 
 - Un interceptor es un servicio que implementa la interfaz HttpInterceptor y que se registra en el módulo AppModule. Cada vez que se realiza una solicitud HTTP, Angular pasa esa solicitud a través de todos los interceptores registrados en la aplicación. Esto permite realizar acciones antes de que la solicitud llegue al servidor y después de recibir la respuesta.
