@@ -1,7 +1,12 @@
 # Capítulo 8.7. Componente de Error en Angular
 
-- *Creación de un componente de error*
+## Objetivo de la práctica
+- Crear de un componente error.
+  
+## Duración aproximada
+- 10 minutos.
 
+## Instrucciones 
 1. Generar el componente:
 
 - Utilizar Angular CLI para generar un nuevo componente llamado ErrorComponent.
@@ -26,7 +31,7 @@ ng generate component error
 
 3. Estilo del componente:
 
--  Agrega estilos en error.component.css para mejorar la presentación.
+-  Agregar estilos en error.component.css para mejorar la presentación.
 
 ```css
 
