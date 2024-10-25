@@ -1,7 +1,7 @@
 # Capítulo 8.10. Métodos POST y PUT en Angular
 
 ## Objetivo de la práctica
-- Creación de un servicio para manejar POST y PUT.
+- Crear un servicio para manejar POST y PUT.
   
 ## Duración aproximada
 - 10 minutos.
