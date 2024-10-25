@@ -1,5 +1,4 @@
-# Práctica 8.1. Navegación y comunicación: Routing y APIs en Angular
-
+# Capítulo 8.8. Caso práctico: Routing en Angular
 ## Objetivo de la práctica
 
 - Aprender a implementar el enrutamiento en una aplicación Angular.
