@@ -1,5 +1,13 @@
 # Capítulo 8.13. Leer APIs REST desde Angular
 
+## Objetivo de la práctica
+- Crear un servicio para leer datos.
+  
+## Duración aproximada
+- 10 minutos.
+
+## Instrucciones 
+
 - *Configuración inicial*
 
 - Antes de empezar, asegurarse de tener un proyecto Angular configurado y de haber importado el módulo HttpClientModule. Esto se hace generalmente en el archivo app.module.ts.
