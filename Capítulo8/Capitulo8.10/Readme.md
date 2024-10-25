@@ -1,5 +1,13 @@
 # Capítulo 8.10. Métodos POST y PUT en Angular
 
+## Objetivo de la práctica
+- Creación de un servicio para manejar POST y PUT.
+  
+## Duración aproximada
+- 10 minutos.
+
+## Instrucciones 
+
 - *Configuración inicial*
 
 - Antes de comenzar, asegurarse de haber configurado el HttpClientModule y de tener un servicio para interactuar con la API. Si no lo has hecho, revisa el contenido anterior sobre Peticiones HTTP en Angular (REST).
