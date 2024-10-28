@@ -109,7 +109,7 @@ cd rick-and-morty
 
 rick-and-morty/
 │
-├── e2e/
+|-- e2e/
 │
 ├── node_modules/
 │
