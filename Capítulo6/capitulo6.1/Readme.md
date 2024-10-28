@@ -191,7 +191,7 @@ export class TareasModule { }
 
 ```
 
-- Shared Module (shared.module.ts): Asegúrate de que contenga el componente de entrada, que ya lo hemos añadido en el módulo de tareas.
+- Shared Module (shared.module.ts): Asegurarse de que contenga el componente de entrada, que ya se ha añadido en el módulo de tareas.
 
 9. Integrar el módulo de tareas en el módulo principal:
 
@@ -227,4 +227,4 @@ export class AppModule { }
 
 11. Probar la aplicación:
 
-- Asegurarse de que todo esté guardado y volver a cargar la aplicación en http://localhost:4200.
+- Comprobrar que todo esté guardado y volver a cargar la aplicación en http://localhost:4200.
