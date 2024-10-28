@@ -58,7 +58,7 @@ ng generate component about
 
 3. Uso del router outlet:
 
-- En la app.component.html, agregar el  <router-outlet>  donde deseas que se carguen los componentes de las rutas:
+- En la app.component.html, agregar el router-outlet donde deseas que se carguen los componentes de las rutas:
 
 ```html
 
