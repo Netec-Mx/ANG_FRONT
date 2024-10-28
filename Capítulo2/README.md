@@ -102,7 +102,7 @@
 
 4. Usar el componente:
 
-    - Abrir el archivo app.component.html o el template donde desees utilizar el nuevo componente y añade:
+    - Abrir el archivo app.component.html o el template donde desees utilizar el nuevo componente y añadir:
 
 ````html
     <app-mi-componente></app-mi-componente>
@@ -110,7 +110,7 @@
 
 ## Instalación de Bootstrap con npm
 
-1. Abrir la Terminal: Asegúrate de estar en la carpeta raíz de tu proyecto Angular.
+1. Abrir la Terminal: Asegurarse de estar en la carpeta raíz de el proyecto Angular.
 
 2. Instalar Bootstrap: Ejecutar el siguiente comando en la terminal:
 
@@ -129,9 +129,9 @@
 
 ## Usar Bootstrap en tu aplicación
 
-4. Reiniciar el Servidor: Si el servidor de desarrollo está en ejecución, reinícialo para que los cambios surtan efecto.
+4. Reiniciar el Servidor: Si el servidor de desarrollo está en ejecución, reiniciar para que los cambios surtan efecto.
 
-5. Aplicar clases de Bootstrap: Ahora puedes utilizar las clases de Bootstrap en tus componentes. Por ejemplo, en app.component.html:
+5. Aplicar clases de Bootstrap: Ahora puedes utilizar las clases de Bootstrap en los componentes. Por ejemplo, en app.component.html:
 
 ````html
     <button class="btn btn-primary">Botón Bootstrap</button>
