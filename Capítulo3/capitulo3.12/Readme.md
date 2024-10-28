@@ -29,7 +29,7 @@
 
 3. Event Binding:
 
- - Escucha eventos del DOM y llama a métodos en el componente utilizando paréntesis ( ).
+ - Escuchar eventos del DOM y llamar a métodos en el componente utilizando paréntesis ( ).
 
 ````html
 <button (click)="accion()">Click me</button>
@@ -37,7 +37,7 @@
 
 4. Two-Way Data Binding:
 
- - Sincroniza datos de manera bidireccional entre el componente y la vista, usando ngModel.
+ - Sincronizar datos de manera bidireccional entre el componente y la vista, usando ngModel.
  - Requiere importar FormsModule.
 
 ````html
@@ -48,7 +48,7 @@
 ## Atributos, Clases y Estilos Binding en Angular
 
 1. Atributo Binding
- - El Atributo Binding te permite enlazar propiedades de HTML a las propiedades del componente utilizando corchetes [ ]. Esto es útil para establecer atributos que pueden cambiar dinámicamente.
+ - El Atributo Binding permite enlazar propiedades de HTML a las propiedades del componente utilizando corchetes [ ]. Esto es útil para establecer atributos que pueden cambiar dinámicamente.
 
 
 ````html
@@ -58,7 +58,7 @@
 -  En este caso, imagenUrl y descripcion son propiedades del componente que definen la URL y la descripción de la imagen.
 
 2. Clases Binding
- - El Clases Binding se utiliza para agregar o quitar clases CSS de un elemento de manera dinámica. Puedes usar la directiva ngClass para enlazar clases a condiciones en el componente.
+ - El Clases Binding se utiliza para agregar o quitar clases CSS de un elemento de manera dinámica. Usar la directiva ngClass para enlazar clases a condiciones en el componente.
 
 
 ````html
@@ -182,7 +182,7 @@ export class NombreDelPipe implements PipeTransform {
 
 ````
 
-4. Registrar el Pipe: Asegúrate de que el Pipe esté declarado en el módulo correspondiente (por ejemplo, app.module.ts):
+4. Registrar el Pipe: Asegurarse de que el Pipe esté declarado en el módulo correspondiente (por ejemplo, app.module.ts):
 
 ````typescript
 
