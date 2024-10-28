@@ -96,7 +96,7 @@ export class TareasComponent {
 
 6. Integrar el componente en la aplicación.
 
-- Asegúrate de que el componente tareas se incluya en el app.component.html:
+- Asegurarse de que el componente tareas se incluya en el app.component.html:
 
 ```html
 Copy code
@@ -153,7 +153,7 @@ export class ResaltadoDirective {
 
 3. Usar la directiva:
 
-- En cualquier componente de tu aplicación, aplica la directiva:
+- En cualquier componente de la aplicación, aplica la directiva:
 
 ```html
 Copy code
