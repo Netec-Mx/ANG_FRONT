@@ -32,7 +32,7 @@
 
     ![img](../../images/img-2.png)
 
-- Reemplazar nombre-de-tu-aplicacion on el nombre que desees. Durante la creación, Angular CLI te preguntará si deseas incluir ciertas características (como el enrutamiento). Responder según tus preferencias.
+- Reemplazar nombre-de-tu-aplicacion con el nombre que desees. Durante la creación, Angular CLI te preguntará si deseas incluir ciertas características (como el enrutamiento). Responder según tus preferencias.
 
 4. Navegar al directorio de la aplicación.
 
