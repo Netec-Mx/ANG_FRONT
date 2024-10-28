@@ -414,7 +414,7 @@ ng generate component admin/dashboard
 ng generate component admin/users
 ```
 
-- Asegúrate de configurar las rutas dentro de admin-routing.module.ts para que los componentes sean accesibles.
+- Configurar las rutas dentro de admin-routing.module.ts para que los componentes sean accesibles.
 
 ```typescript
 
