@@ -19,7 +19,7 @@
         ng update @angular/core @angular/cli
     ```
 
-- Este comando actualizará automáticamente las dependencias de Angular a la última versión disponible. Asegúrate de que el CLI global también esté actualizada:
+- Este comando actualizará automáticamente las dependencias de Angular a la última versión disponible. Asegurarse de que el CLI global también esté actualizada:
 
     ```
         npm install -g @angular/cli@latest
@@ -43,7 +43,7 @@ Esto mostrará las dependencias que necesitan actualización. Es recomendable bu
 
 4. Actualizar TypeScript.
 
-- Las nuevas versiones de Angular generalmente requieren versiones actualizadas de TypeScript. Asegúrate de tener la versión recomendada:
+- Las nuevas versiones de Angular generalmente requieren versiones actualizadas de TypeScript. Asegurarse de tener la versión recomendada:
 
     ```
         npm install typescript@latest
@@ -53,7 +53,7 @@ Esto mostrará las dependencias que necesitan actualización. Es recomendable bu
 
 5. Verificar configuraciones y polyfills.
 
-- Angular puede descontinuar el soporte para ciertos navegadores (como IE11 en versiones más recientes). Asegúrate de revisar y limpiar configuraciones o polyfills que ya no sean necesarios:
+- Angular puede descontinuar el soporte para ciertos navegadores (como IE11 en versiones más recientes). Revisar y limpiar configuraciones o polyfills que ya no sean necesarios:
 
 - Eliminar polyfills de IE si ya no se requieren en tu proyecto (src/polyfills.ts).
         
@@ -69,9 +69,9 @@ Esto mostrará las dependencias que necesitan actualización. Es recomendable bu
 
 7. Pruebas Exhaustivas.
 
-- Una vez que hayas actualizado el proyecto, realizar pruebas exhaustivas. Asegurarse de probar tanto las pruebas unitarias como las pruebas end-to-end (E2E), ya que los cambios en el framework pueden afectar el comportamiento de la aplicación.
+- Una vez que hayas actualizado el proyecto, realizar pruebas exhaustivas. Probar tanto las pruebas unitarias como las pruebas end-to-end (E2E), ya que los cambios en el framework pueden afectar el comportamiento de la aplicación.
 
-   Ejecutar tus pruebas unitarias:
+   Ejecutar las pruebas unitarias:
 
     ```
         ng test
