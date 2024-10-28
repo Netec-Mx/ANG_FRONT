@@ -106,7 +106,7 @@ const routes: Routes = [
 
 2. Acceder a los parámetros en el componente:
 
-- Utiliza ActivatedRoute para acceder a los parámetros:
+- Utilizar ActivatedRoute para acceder a los parámetros:
 
 ```typescript
 
