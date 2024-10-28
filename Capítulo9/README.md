@@ -31,7 +31,7 @@ src/
 
 1. Capa de entidades:
 
-Define los modelos y las reglas de negocio. Por ejemplo, podrías tener clases que representen las entidades de tu aplicación, como Usuario, Producto, etc.
+Definir los modelos y las reglas de negocio. Por ejemplo, podrías tener clases que representen las entidades de tu aplicación, como Usuario, Producto, etc.
 
 ```typescript
 
