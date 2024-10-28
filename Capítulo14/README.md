@@ -346,7 +346,7 @@ npm install @angular/forms
 
 2. Paso 2: Estructura del proyecto.
 
-- Tu proyecto debe tener la siguiente estructura básica:
+- El proyecto debe tener la siguiente estructura básica:
 
 ```arduino
 
@@ -503,7 +503,7 @@ export class RegistroPlantillaComponent {
 
 6. Paso 6: Modificar el módulo principal
 
-- En app.module.ts, asegurarse de importar los módulos necesarios:
+- En app.module.ts, importar los módulos necesarios:
 
 ```typescript
 
@@ -550,11 +550,11 @@ export class AppModule { }
 ```
 8. Paso 8: Ejecutar la aplicación.
 
-- Finalmente, ejecuta la aplicación para ver ambos formularios en acción:
+- Finalmente, ejecutar la aplicación para ver ambos formularios en acción:
 
 ```bash
 
 ng serve
 ```
 
-- Abre tu navegador y navega a http://localhost:4200/.
+- Abrir el navegador y navegar a http://localhost:4200/.
