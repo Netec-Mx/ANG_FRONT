@@ -206,8 +206,8 @@ promesaConError
 +------------------+               +------------------+
 |      Subject     |<------------->|    Observer      |
 +------------------+               +------------------+
-| +attach(o:Observer)|              | +update()       |
-| +detach(o:Observer)|              +------------------+
+| +attach(o:Observer)|             | +update()       |
+| +detach(o:Observer)|             +------------------+
 | +notify()         |
 | +getState()       |
 | +setState()       |
@@ -267,7 +267,7 @@ class Observer {
 ```
 
    3. Paso 3: Implementar el sujeto concreto.
-    - Crear una clase ConcreteSubject que extiende a Subject y añade funcionalidad para gestionar su estado.
+    - Crear una clase ConcreteSubject que extiende a Subject y añadir funcionalidad para gestionar su estado.
 
 ```javascript
 
@@ -646,7 +646,7 @@ export class BusquedaComponent implements OnInit {
 
 5. Actualización del módulo.
 
-- Asegurarse de haber importado importado ReactiveFormsModule en tu módulo principal (app.module.ts):
+- Asegurarse de haber importado importado ReactiveFormsModule en el módulo principal (app.module.ts):
 
 ```typescript
 
