@@ -85,7 +85,7 @@ export class ContadorComponent {
 
 6. Probar la aplicación
 
-- Asegurarse de que todo esté guardado y volver a cargar la aplicación en http://localhost:4200.
+- Comprobar que todo esté guardado y volver a cargar la aplicación en http://localhost:4200.
 
 ## Resultado Esperado
 - Una aplicación que permite a los usuarios:
