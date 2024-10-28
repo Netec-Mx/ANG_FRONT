@@ -9,7 +9,7 @@
 
 ## Instrucciones:
 
-1. Primero, asegurarse de tener PrimeNG y PrimeIcons instalados en el proyecto. Si aún no lo has hecho, ejecutar:
+1. Primero, tener PrimeNG y PrimeIcons instalados en el proyecto. Si aún no lo has hecho, ejecutar:
 
 ````bash
 
@@ -46,7 +46,7 @@ export class AppModule {}
 
 3. Agregar Estilos
 
-- Asegurarse de añadir los estilos de PrimeNG en el archivo styles.css o styles.scss. Puedes hacerlo así:
+- Añadir los estilos de PrimeNG en el archivo styles.css o styles.scss. Puedes hacerlo así:
 
 ````css
 @import "~primeng/resources/themes/saga-blue/theme.css"; /* Cambia "saga-blue" por el tema que prefieras */
