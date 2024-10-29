@@ -167,7 +167,7 @@ rick-and-morty/
     │   └── icons/
     │
     └── environments/
-        ├── environment.prod.ts
+        ├── environment.prod.ts<br>
         └── environment.ts
 
 ## Instalacion de bibliotecas externas
