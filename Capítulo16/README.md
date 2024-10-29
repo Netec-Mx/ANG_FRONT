@@ -156,19 +156,19 @@ rick-and-morty/
     │   │           ├── character.service.ts
     │   │           └── character.service.spec.ts
     │   │
-    │   ├── app.routing.module.ts
-    │   ├── app.component.html
-    │   ├── app.component.scss
-    │   ├── app.component.ts
-    │   ├── app.component.spec.ts
-    │   └── app.module.ts
+    │   ├── app.routing.module.ts<br>
+    │   ├── app.component.html<br>
+    │   ├── app.component.scss<br>
+    │   ├── app.component.ts<br>
+    │   ├── app.component.spec.ts<br>
+    │   └── app.module.ts<br>
     │
-    ├── assets/
-    │   └── icons/
+    ├── assets/<br>
+    │   └── icons/<br>
     │
-    └── environments/
+    └── environments/<br>
         ├── environment.prod.ts<br>
-        └── environment.ts
+        └── environment.ts<br>
 
 ## Instalacion de bibliotecas externas
 
