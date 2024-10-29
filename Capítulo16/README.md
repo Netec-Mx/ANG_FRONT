@@ -162,10 +162,10 @@ rick-and-morty/
     │   ├── app.component.ts<br>
     │   ├── app.component.spec.ts<br>
     │   └── app.module.ts<br>
-    │
+    │<br>
     ├── assets/<br>
     │   └── icons/<br>
-    │
+    │<br>
     └── environments/<br>
         ├── environment.prod.ts<br>
         └── environment.ts<br>
