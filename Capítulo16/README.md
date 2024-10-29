@@ -107,55 +107,55 @@ cd rick-and-morty
 ## Estructura que vamos a manejar
 
 
-rick-and-morty/
-│
-|── e2e/
-│
-├── node_modules/
-│
-└── src/
-    ├── app/
-    │   ├── components/
-    │   │   ├── pages/
-    │   │   │   ├── characters/
-    │   │   │   │   ├── character-detail/
-    │   │   │   │   │   ├── character-detail.routing.module.ts
-    │   │   │   │   │   ├── character-detail.component.html
-    │   │   │   │   │   ├── character-detail.component.scss
-    │   │   │   │   │   ├── character-detail.component.ts
-    │   │   │   │   │   ├── character-detail.component.spec.ts
-    │   │   │   │   │   └── character-detail.module.ts
-    │   │   │   │   └── character-list/
-    │   │   │   │       ├── character-list.routing.module.ts
-    │   │   │   │       ├── character-list.component.html
-    │   │   │   │       ├── character-list.component.scss
-    │   │   │   │       ├── character-list.component.ts
-    │   │   │   │       ├── character-list.component.spec.ts
-    │   │   │   │       └── character-list.module.ts
-    │   │   │   └── home/
-    │   │   │       ├── home.routing.module.ts
-    │   │   │       ├── home.component.html
-    │   │   │       ├── home.component.scss
-    │   │   │       ├── home.component.ts
-    │   │   │       ├── home.component.spec.ts
-    │   │   │       └── home.module.ts
-    │   │   └── shared/
-    │   │       ├── components/
-    │   │       │   ├── form-search/
-    │   │       │   │   └── form-search.component.ts
-    │   │       │   └── header/
-    │   │       │       ├── header.component.html
-    │   │       │       ├── header.component.scss
-    │   │       │       ├── header.component.ts
-    │   │       │       └── header.component.spec.ts
-    │   │       ├── interfaces/
-    │   │       │   └── character.interfaces.ts
-    │   │       ├── models/
-    │   │       │   └── trackHttpError.ts
-    │   │       └── services/
-    │   │           ├── character.service.ts
-    │   │           └── character.service.spec.ts
-    │   │
+rick-and-morty/<br>
+│<br>
+|── e2e/<br>
+│<br>
+├── node_modules/<br>
+│<br>
+└── src/<br>
+    ├── app/<br>
+    │   ├── components/<br>
+    │   │   ├── pages/<br>
+    │   │   │   ├── characters/<br>
+    │   │   │   │   ├── character-detail/<br>
+    │   │   │   │   │   ├── character-detail.routing.module.ts<br>
+    │   │   │   │   │   ├── character-detail.component.html<br>
+    │   │   │   │   │   ├── character-detail.component.scss<br>
+    │   │   │   │   │   ├── character-detail.component.ts<br>
+    │   │   │   │   │   ├── character-detail.component.spec.ts<br>
+    │   │   │   │   │   └── character-detail.module.ts<br>
+    │   │   │   │   └── character-list/<br>
+    │   │   │   │       ├── character-list.routing.module.ts<br>
+    │   │   │   │       ├── character-list.component.html<br>
+    │   │   │   │       ├── character-list.component.scss<br>
+    │   │   │   │       ├── character-list.component.ts<br>
+    │   │   │   │       ├── character-list.component.spec.ts<br>
+    │   │   │   │       └── character-list.module.ts<br>
+    │   │   │   └── home/<br>
+    │   │   │       ├── home.routing.module.ts<br>
+    │   │   │       ├── home.component.html<br>
+    │   │   │       ├── home.component.scss<br>
+    │   │   │       ├── home.component.ts<br>
+    │   │   │       ├── home.component.spec.ts<br>
+    │   │   │       └── home.module.ts<br>
+    │   │   └── shared/<br>
+    │   │       ├── components/<br>
+    │   │       │   ├── form-search/<br>
+    │   │       │   │   └── form-search.component.ts<br>
+    │   │       │   └── header/<br>
+    │   │       │       ├── header.component.html<br>
+    │   │       │       ├── header.component.scss<br>
+    │   │       │       ├── header.component.ts<br>
+    │   │       │       └── header.component.spec.ts<br>
+    │   │       ├── interfaces/<br>
+    │   │       │   └── character.interfaces.ts<br>
+    │   │       ├── models/<br>
+    │   │       │   └── trackHttpError.ts<br>
+    │   │       └── services/<br>
+    │   │           ├── character.service.ts<br>
+    │   │           └── character.service.spec.ts<br>
+    │   │<br>
     │   ├── app.routing.module.ts<br>
     │   ├── app.component.html<br>
     │   ├── app.component.scss<br>
