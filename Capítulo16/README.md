@@ -115,7 +115,7 @@ rick-and-morty/<br>
 │<br>
 └── src/<br>
     ├── app/<br>
-    │   ├── components/<br>
+    │<br>├── components/<br>
     │   │   ├── pages/<br>
     │   │   │   ├── characters/<br>
     │   │   │   │   ├── character-detail/<br>
